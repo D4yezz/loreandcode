@@ -1,0 +1,30 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "services": "Servicio",
+    "projects": "Cartera",
+    "faq": "Preguntas frecuentes",
+    "btnCta": "Ordene ahora",
+    "lang": {
+      "id": "Indonesia",
+      "en": "Inglés",
+      "de": "alemán",
+      "es": "español"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Servicios de fabricación",
+      "website": "Sitio web",
+      "subtitle": "No te preocupes. Ya está, configuramos un sitio web de alta velocidad con el estilo que desea y definitivamente haremos que su marca se destaque de inmediato.",
+      "loopingWord": [
+        "Profesional",
+        "Comercio electrónico",
+        "MIPYMES",
+        "Compañía"
+      ],
+      "btnCta": "Ordene ahora",
+      "viewService": "Nuestros Servicios"
+    }
+  }
+}

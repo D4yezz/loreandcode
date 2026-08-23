@@ -1,12 +1,25 @@
 {
-  "main": {
-    "H1": "halow"
-  },
   "Navbar": {
     "home": "Beranda",
     "services": "Layanan",
     "projects": "Portofolio",
     "faq": "FAQ",
-    "btnCta": "Order Sekarang"
+    "btnCta": "Order Sekarang",
+    "lang": {
+      "id": "Indonesia",
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Espanol"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Jasa Pembuatan",
+      "website": "Website",
+      "subtitle": " Gak pakai pusing. Kamu terima beres, kami set-up website berkecepatan tinggi dengan gaya sesuai keinginan dan pasti bikin brand kamu langsung dilirik.",
+      "loopingWord": ["Profesional", "E-Commerce", "UMKM", "Perusahaan"],
+      "btnCta": "Order Sekarang",
+      "viewService": "Layanan Kami"
+    }
   }
 }

@@ -10,6 +10,7 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { getMessages } from "next-intl/server";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,7 +54,7 @@ export default async function RootLayout(props: LayoutProps<"/[locale]">) {
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <NextIntlClientProvider messages={messages}>
-            {props.children}
+            <TooltipProvider>{props.children}</TooltipProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
