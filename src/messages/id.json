@@ -1,0 +1,12 @@
+{
+  "main": {
+    "H1": "halow"
+  },
+  "Navbar": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "projects": "Portofolio",
+    "faq": "FAQ",
+    "btnCta": "Order Sekarang"
+  }
+}

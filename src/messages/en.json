@@ -1,0 +1,12 @@
+{
+  "main": {
+    "H1": "hellow"
+  },
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Our Projects",
+    "faq": "FAQ",
+    "btnCta": "Get Started"
+  }
+}
