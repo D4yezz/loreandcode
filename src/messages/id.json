@@ -14,12 +14,16 @@
   },
   "home": {
     "hero": {
-      "title": "Jasa Pembuatan",
-      "website": "Website",
+      "title": [
+        "Jasa Pembuatan Website Profesional",
+        "Jasa Pembuatan Website E-Commerce",
+        "Jasa Pembuatan Website UMKM",
+        "Jasa Pembuatan Website Perusahaan"
+      ],
       "subtitle": " Gak pakai pusing. Kamu terima beres, kami set-up website berkecepatan tinggi dengan gaya sesuai keinginan dan pasti bikin brand kamu langsung dilirik.",
-      "loopingWord": ["Profesional", "E-Commerce", "UMKM", "Perusahaan"],
       "btnCta": "Order Sekarang",
-      "viewService": "Layanan Kami"
+      "viewService": "Layanan Kami",
+      "contact": "Hubungi Kami"
     }
   }
 }

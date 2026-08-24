@@ -1,6 +1,6 @@
 "use client";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { MoveUpRightIcon } from "@hugeicons/core-free-icons";
+import { ArrowUpRight01Icon, Cancel01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -12,9 +12,16 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { connect } from "@/components/section/home-page/hero";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
+  const isDekstop = useMediaQuery("(min-width: 1024px)");
+  const isTablet = useMediaQuery("(min-width: 768px)");
+  const [open, setOpen] = useState(false);
   const menu = [
     {
       title: t("home"),
@@ -34,11 +41,22 @@ export default function Navbar() {
     },
   ];
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [open]);
+
   return (
-    <header className="w-full h-[13vh] flex items-center justify-end px-8 font-public-sans">
-      <div className="w-full h-15 border-2 border-black flex items-center">
-        <div className="w-[15%] shadow-nav h-full flex items-center justify-center bg-main border-r-2">
-          <Link href="/" className="flex items-center w-fit h-fit text-xl">
+    <header className="w-full lg:h-[8vh] h-[7vh] flex items-center justify-end font-public-sans lg:overflow-auto overflow-hidden">
+      <div className="flex items-center justify-between w-full border-b-3 border-black h-full lg:shadow-none shadow-nav">
+        <div className="w-[15%] lg:shadow-nav shadow-none h-full flex items-center justify-center bg-main border-r-3">
+          <Link
+            href="/"
+            className="flex items-center text-lg w-fit h-fit lg:text-xl"
+          >
             <Image
               src="/logo.png"
               alt="logo"
@@ -46,29 +64,144 @@ export default function Navbar() {
               height={60}
               loading="eager"
             />
-            <span className="font-bold uppercase font-archivo tracking-tight">
-              Lore & Code
-            </span>
+            {isDekstop && (
+              <span className="font-bold tracking-tight uppercase whitespace-nowrap font-sora">
+                Lore & Code
+              </span>
+            )}
           </Link>
         </div>
-        <nav className="h-full w-[67%] flex items-center justify-center shadow-nav">
-          <ul className="flex items-center gap-14 font-semibold text-xl">
-            {menu.map((item, i) => (
-              <li key={i}>
-                <Link href={item.href} className="tracking-wide font-archivo">
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="w-[23%] flex h-full">
-          <LanguageSwitcher />
-          <button className="h-full w-[80%] flex items-center justify-center gap-2 px-4 border-l-2 border-black bg-third  uppercase text-xl font-bold font-archivo shadow-nav duration-150 hover:shadow-none">
-            {t("btnCta")}
-            <HugeiconsIcon icon={MoveUpRightIcon} strokeWidth={1} />
-          </button>
-        </div>
+        {isTablet && !isDekstop && (
+          <Link
+            href="/"
+            className="text-3xl font-bold tracking-tight uppercase whitespace-nowrap font-sora"
+          >
+            Lore & Code
+          </Link>
+        )}
+        {isDekstop ? (
+          <>
+            <nav className="h-full w-[67%] flex items-center justify-center shadow-nav">
+              <ul className="flex items-center text-xl font-semibold gap-14">
+                {menu.map((item, i) => (
+                  <li key={i}>
+                    <Link href={item.href} className="tracking-wide font-sora">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="w-[23%] flex h-full">
+              <LanguageSwitcher />
+              <button className="h-full w-[80%] flex items-center justify-center gap-2 px-4 border-l-3 border-black bg-third uppercase text-xl font-bold font-sora shadow-nav duration-150 hover:shadow-none">
+                {t("btnCta")}
+                <HugeiconsIcon
+                  icon={ArrowUpRight01Icon}
+                  size={26}
+                  strokeWidth={2.5}
+                />
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="w-[35%] md:w-[20%] flex h-full border-l-3">
+              <LanguageSwitcher />
+              <button
+                onClick={() => setOpen(true)}
+                className="flex flex-col items-end justify-center w-1/2 h-full gap-2 px-4 text-xl font-bold uppercase border-l-3 border-black bg-third font-sora"
+              >
+                <div className="w-[90%] h-1.5 bg-black" />
+                <div className="w-[60%] h-1.5 bg-black" />
+                <div className="w-[90%] h-1.5 bg-black" />
+              </button>
+            </div>
+            <AnimatePresence>
+              {open && (
+                <>
+                  <motion.div
+                    onClick={() => setOpen(false)}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 0.5 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="fixed inset-0 z-50 flex items-center w-screen h-screen bg-overlay"
+                  />
+
+                  <motion.div
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: 0.3 }}
+                    className="w-[60vw] md:w-[40vw] h-screen top-0 right-0 fixed flex flex-col items-center justify-between z-60 bg-main border-l-4"
+                  >
+                    <div className="flex flex-col items-center w-full">
+                      <div className="flex items-center justify-between w-full border-b-4 h-14 bg-background">
+                        <Link
+                          href="/"
+                          className="flex items-center text-lg w-fit h-fit"
+                        >
+                          <Image
+                            src="/logo.png"
+                            alt="logo"
+                            width={50}
+                            height={50}
+                            loading="eager"
+                          />
+                          <span className="font-bold tracking-tight uppercase whitespace-nowrap font-sora">
+                            Lore & Code
+                          </span>
+                        </Link>
+                        <button
+                          onClick={() => setOpen(false)}
+                          className="flex items-center justify-center h-full bg-pink-400 border-l-4 cursor-pointer w-13"
+                        >
+                          <HugeiconsIcon icon={Cancel01Icon} strokeWidth={4} />
+                        </button>
+                      </div>
+                      <nav className="flex items-start w-full pl-2 pr-4 mt-8 h-fit">
+                        <ul className="flex flex-col items-start w-full gap-4 text-lg font-semibold">
+                          {menu.map((item, i) => (
+                            <li
+                              key={i}
+                              className="flex items-center w-full h-12 px-4 border-2 shadow-shadow bg-background"
+                            >
+                              <Link
+                                href={item.href}
+                                className="font-bold tracking-wide uppercase font-sora"
+                              >
+                                {item.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </nav>
+                    </div>
+                    <div className="w-full pl-2 pr-4 mb-24">
+                      <ul className="flex flex-col items-start w-full text-lg font-semibold bg-third shadow-shadow">
+                        {connect.map((item, i) => (
+                          <li
+                            key={i}
+                            className="w-full bg-third flex gap-2 border-2 px-2 py-3 text-sm"
+                          >
+                            <HugeiconsIcon
+                              icon={item.icon}
+                              size={20}
+                              strokeWidth={2}
+                            />
+
+                            {item.name}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </motion.div>
+                </>
+              )}
+            </AnimatePresence>
+          </>
+        )}
       </div>
     </header>
   );
@@ -108,7 +241,7 @@ function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        className="w-[20%] h-full shadow-nav bg-pink-400 duration-150 hover:shadow-none flex items-center justify-center"
+        className="lg:w-[20%] w-1/2 h-full lg:border-l-3 lg:shadow-nav shadow-none bg-pink-400 duration-150 hover:shadow-none flex items-center justify-center"
         asChild
       >
         <button>

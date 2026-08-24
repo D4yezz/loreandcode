@@ -3,9 +3,11 @@ import HeroSection from "@/components/section/home-page/hero";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <HeroSection />
+    <main className="bg-white">
+      <div className="border-3 lg:mx-10 mx-4 lg:my-8 my-4 bg-background">
+        <Navbar />
+        <HeroSection />
+      </div>
     </main>
   );
 }

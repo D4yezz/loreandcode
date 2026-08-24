@@ -14,12 +14,17 @@
   },
   "home": {
     "hero": {
-      "title": "Manufacturing Services",
+      "title": [
+        "Professional Website Creation Services",
+        "E-Commerce Website Creation Services",
+        "MSME Website Creation Services",
+        "Company Website Creation Services"
+      ],
       "website": "Website",
       "subtitle": "No need to worry. You get a turnkey solution, we’ll set up a high-speed website with the design of your choice that’s sure to make your brand stand out right away.",
-      "loopingWord": ["Professional", "E-Commerce", "MSMEs", "Company"],
       "btnCta": "Order Now",
-      "viewService": "Our Services"
+      "viewService": "Our Services",
+      "contact": "Contact us"
     }
   }
 }

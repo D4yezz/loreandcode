@@ -14,17 +14,17 @@
   },
   "home": {
     "hero": {
-      "title": "Servicios de fabricación",
+      "title": [
+        "Servicios profesionales de creación de sitios web",
+        "Servicios de creación de sitios web de comercio electrónico",
+        "Servicios de creación de sitios web para MIPYMES",
+        "Servicios de creación de sitios web de la empresa"
+      ],
       "website": "Sitio web",
       "subtitle": "No te preocupes. Ya está, configuramos un sitio web de alta velocidad con el estilo que desea y definitivamente haremos que su marca se destaque de inmediato.",
-      "loopingWord": [
-        "Profesional",
-        "Comercio electrónico",
-        "MIPYMES",
-        "Compañía"
-      ],
       "btnCta": "Ordene ahora",
-      "viewService": "Nuestros Servicios"
+      "viewService": "Nuestros Servicios",
+      "contact": "Contáctenos"
     }
   }
 }

@@ -5,10 +5,10 @@ import {
   Geist,
   Geist_Mono,
   Public_Sans,
+  Sora,
 } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import { ThemeProvider } from "@/components/providers/theme-provider";
 import { getMessages } from "next-intl/server";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
@@ -37,6 +37,11 @@ const public_sans = Public_Sans({
   subsets: ["latin"],
 });
 
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Lore & Code",
   description: "Lore & Code",
@@ -49,14 +54,12 @@ export default async function RootLayout(props: LayoutProps<"/[locale]">) {
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} ${dm_sans.variable} ${public_sans.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} ${dm_sans.variable} ${public_sans.variable} ${sora.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>
-          <NextIntlClientProvider messages={messages}>
-            <TooltipProvider>{props.children}</TooltipProvider>
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <TooltipProvider>{props.children}</TooltipProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
