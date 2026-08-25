@@ -25,6 +25,29 @@
       "btnCta": "Ordene ahora",
       "viewService": "Nuestros Servicios",
       "contact": "Contáctenos"
+    },
+    "advantages": {
+      "title": "Ventajas",
+      "listAdvantages1": {
+        "title": "Rendimiento Ultra Rápido y Optimizado para SEO",
+        "description": "Construido con Next.js y TypeScript para garantizar la máxima velocidad y los mejores posicionamientos en Google."
+      },
+      "listAdvantages2": {
+        "title": "Diseño Totalmente Personalizable",
+        "description": "Estilo web adaptable y hecho a la medida según las necesidades de tu negocio."
+      },
+      "listAdvantages3": {
+        "title": "Interfaz Responsiva y Pixel-Perfect",
+        "description": "Una interfaz interactiva y nítida tanto en móviles como en computadoras para elevar la experiencia de usuario."
+      },
+      "listAdvantages4": {
+        "title": "Guía de Gestión de Contenido Fácil",
+        "description": "Guías estructuradas que te permiten actualizar el contenido y la navegación con total facilidad."
+      },
+      "cta": {
+        "title": "¡No solo creamos webs, resolvemos los problemas de tu negocio!",
+        "btnCta": "Empieza ya"
+      }
     }
   }
 }

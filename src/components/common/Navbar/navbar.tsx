@@ -52,7 +52,7 @@ export default function Navbar() {
   return (
     <header className="w-full lg:h-[8vh] h-[7vh] flex items-center justify-end font-public-sans lg:overflow-auto overflow-hidden">
       <div className="flex items-center justify-between w-full border-b-3 border-black h-full lg:shadow-none shadow-nav">
-        <div className="w-[15%] lg:shadow-nav shadow-none h-full flex items-center justify-center bg-main border-r-3">
+        <div className="w-[17%] lg:shadow-nav shadow-none h-full flex items-center justify-center bg-main border-r-3">
           <Link
             href="/"
             className="flex items-center text-lg w-fit h-fit lg:text-xl"
@@ -81,7 +81,7 @@ export default function Navbar() {
         )}
         {isDekstop ? (
           <>
-            <nav className="h-full w-[67%] flex items-center justify-center shadow-nav">
+            <nav className="h-full w-[65%] flex items-center justify-center shadow-nav">
               <ul className="flex items-center text-xl font-semibold gap-14">
                 {menu.map((item, i) => (
                   <li key={i}>

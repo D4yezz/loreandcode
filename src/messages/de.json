@@ -25,6 +25,29 @@
       "btnCta": "Jetzt bestellen",
       "viewService": "Unsere Leistungen",
       "contact": "Kontaktieren Sie uns"
+    },
+    "advantages": {
+      "title": "Vorteile",
+      "listAdvantages1": {
+        "title": "Blitzschnelle Performance & SEO-Optimiert",
+        "description": "Entwickelt mit Next.js & TypeScript für maximale Geschwindigkeit und optimale Google-Rankings."
+      },
+      "listAdvantages2": {
+        "title": "Individuell Anpassbares Design",
+        "description": "Maßgeschneiderte Webdesigns, perfekt abgestimmt auf die Anforderungen Ihres Unternehmens."
+      },
+      "listAdvantages3": {
+        "title": "Reaktionsschnelle & Pixel-Perfekte Benutzeroberfläche",
+        "description": "Interaktives und gestochen scharfes Design auf Mobil- und Desktop-Geräten für ein erstklassiges Nutzungserlebnis."
+      },
+      "listAdvantages4": {
+        "title": "Einfache Anleitung zur Content-Verwaltung",
+        "description": "Strukturierte Anleitungen, mit denen Sie Inhalte und Navigation jederzeit mühelos verwalten können."
+      },
+      "cta": {
+        "title": "Wir bauen nicht nur Websites – wir lösen Ihre Business-Probleme!",
+        "btnCta": "Erste Schritte"
+      }
     }
   }
 }

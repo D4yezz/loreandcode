@@ -24,6 +24,29 @@
       "btnCta": "Order Sekarang",
       "viewService": "Layanan Kami",
       "contact": "Hubungi Kami"
+    },
+    "advantages": {
+      "title": "Keunggulan",
+      "listAdvantages1": {
+        "title": "Performa Website Cepat & SEO-Friendly",
+        "description": "Dibangun menggunakan Next.js & TypeScript untuk performa maksimal dan peringkat Google yang optimal."
+      },
+      "listAdvantages2": {
+        "title": "Desain Bisa Dipersonalisasi",
+        "description": "Tema website bisa dipersonalisasi sesuai dengan kebutuhan bisnis Anda."
+      },
+      "listAdvantages3": {
+        "title": "Komponen UI Responsif & Pixel Perfect",
+        "description": "Antarmuka interaktif yang rapi di perangkat mobile maupun desktop sehingga meningkatkan pengalaman pengguna."
+      },
+      "listAdvantages4": {
+        "title": "Panduan Manajemen Konten/Website",
+        "description": "Panduan terstruktur yang memudahkan Anda mengelola konten dan navigasi website kapan saja."
+      },
+      "cta": {
+        "title": " Bukan Sekedar Bikin Web, Kami Selesaikan Masalah Bisnismu",
+        "btnCta": "Mulai Proyek"
+      }
     }
   }
 }

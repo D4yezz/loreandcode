@@ -18,37 +18,85 @@ export default function TechSection() {
   const isDekstop = useMediaQuery("(min-width: 1024px)");
   const logoSize = isDekstop ? 50 : 40;
   const techLogos = [
-    { node: <SiReact size={logoSize} />, title: "React" },
     {
-      node: <SiNextdotjs size={logoSize} />,
+      node: (
+        <SiReact
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
+      title: "React",
+    },
+    {
+      node: (
+        <SiNextdotjs
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "Next.js",
     },
     {
-      node: <SiJavascript size={logoSize} />,
+      node: (
+        <SiJavascript
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "JavaScript",
     },
     {
-      node: <SiTypescript size={logoSize} />,
+      node: (
+        <SiTypescript
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "TypeScript",
     },
     {
-      node: <SiTailwindcss size={logoSize} />,
+      node: (
+        <SiTailwindcss
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "Tailwind CSS",
     },
     {
-      node: <SiExpress size={logoSize} />,
+      node: (
+        <SiExpress
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "Express.js",
     },
     {
-      node: <SiMysql size={logoSize} />,
+      node: (
+        <SiMysql
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "MySQL",
     },
     {
-      node: <SiPostgresql size={logoSize} />,
+      node: (
+        <SiPostgresql
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "PostgreSQL",
     },
     {
-      node: <SiSupabase size={logoSize} />,
+      node: (
+        <SiSupabase
+          size={logoSize}
+          className="bg-third w-14 h-14 p-2 shadow-shadow border-2"
+        />
+      ),
       title: "Supabase",
     },
   ];
@@ -60,7 +108,7 @@ export default function TechSection() {
         direction="left"
         logoHeight={60}
         gap={isDekstop ? 100 : 50}
-        hoverSpeed={isDekstop ? 40 : 30}
+        hoverSpeed={isDekstop ? 30 : 20}
         ariaLabel="Technology partners"
       />
     </section>

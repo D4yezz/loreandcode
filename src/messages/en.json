@@ -25,6 +25,29 @@
       "btnCta": "Order Now",
       "viewService": "Our Services",
       "contact": "Contact us"
+    },
+    "advantages": {
+      "title": "Why Choose Us",
+      "listAdvantages1": {
+        "title": "High-Speed Performance & SEO-Optimized",
+        "description": "Engineered with Next.js & TypeScript for maximum speed and optimal Google search rankings."
+      },
+      "listAdvantages2": {
+        "title": "Fully Customizable Design",
+        "description": "Tailor-made web design crafted to fit your specific business identity and needs."
+      },
+      "listAdvantages3": {
+        "title": "Responsive & Pixel-Perfect UI",
+        "description": "Interactive and razor-sharp interfaces across mobile and desktop for an exceptional user experience."
+      },
+      "listAdvantages4": {
+        "title": "Easy Content Management Guide",
+        "description": "Structured guidelines enabling you to effortlessly update content and manage your site anytime."
+      },
+      "cta": {
+        "title": "We Don't Just Build Websites, We Fix Your Business Problems!",
+        "btnCta": "Get Started"
+      }
     }
   }
 }
