@@ -56,16 +56,16 @@ export default function HeroSection() {
 
   return (
     <section className="lg:min-h-[87vh] lg:h-[87vh] h-fit lg:px-12 px-4 font-dm-sans">
-      <div className="flex lg:flex-row flex-col w-full items-center justify-center lg:h-full h-screen lg:mt-0 mt-8">
-        <div className="lg:w-1/2 w-full h-full flex flex-col items-start justify-center">
-          <h1 className="lg:text-[4rem] lg:leading-16 text-[2.3rem] leading-10 font-bold font-sora lg:max-w-fit max-w-[90%] text-balance">
+      <div className="flex flex-col items-center justify-center w-full h-screen mt-8 lg:flex-row lg:h-full lg:mt-0">
+        <div className="flex flex-col items-start justify-center w-full h-full lg:w-1/2">
+          <h1 className="md:text-[4rem] md:leading-16 text-[2.3rem] leading-10 font-bold font-sora lg:max-w-fit max-w-[90%] text-balance">
             {title[activeWordIndex]}
           </h1>
-          <p className="lg:text-xl text-md mt-3 lg:pr-1 lg:pl-0 pr-2 text-balance font-sora">
+          <p className="pr-2 mt-3 md:text-xl text-md lg:pr-1 lg:pl-0 text-balance font-sora">
             {t("subtitle")}
           </p>
-          <div className="flex lg:flex-row flex-col lg:mt-8 mt-6 gap-4 font-sora lg:w-fit w-full">
-            <Button className="lg:text-lg text-md w-60 h-12 font-bold uppercase">
+          <div className="flex flex-col w-full gap-4 mt-6 lg:flex-row lg:mt-8 font-sora lg:w-fit">
+            <Button className="h-12 font-bold uppercase lg:text-lg text-md w-60">
               {t("btnCta")}{" "}
               <HugeiconsIcon
                 icon={ArrowUpRight01Icon}
@@ -73,20 +73,20 @@ export default function HeroSection() {
                 strokeWidth={2}
               />
             </Button>
-            <Button className="text-lg w-60 h-12 font-bold uppercase ">
+            <Button className="h-12 text-lg font-bold uppercase w-60 ">
               {t("viewService")}
             </Button>
           </div>
-          <div className="flex flex-col mt-10 gap-2">
+          <div className="flex flex-col gap-2 mt-10">
             <h3 className="text-xl uppercase font-sora">{t("contact")}</h3>
-            <ul className="flex items-center justify-center w-fit gap-4">
+            <ul className="flex items-center justify-center gap-4 w-fit">
               {connect.map((item, i) => (
                 <li key={i}>
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger
                         asChild
-                        className="bg-third shadow-shadow hover:shadow-none hover:translate-1 hover:translate-y-1 duration-150 border-2 size-12 flex items-center justify-center"
+                        className="flex items-center justify-center duration-150 border-2 bg-third shadow-shadow hover:shadow-none hover:translate-1 hover:translate-y-1 size-12"
                       >
                         <a href={item.link} target="_blank" rel="noreferrer">
                           <HugeiconsIcon
@@ -111,19 +111,21 @@ export default function HeroSection() {
             </ul>
           </div>
         </div>
-        <div className="lg:w-1/2 lg:h-full w-full h-screen   relative flex items-center justify-center">
-          <div className="lg:w-[90%] w-full lg:h-[90%] h-[80%] relative z-20">
+        <div className="relative flex items-center justify-center w-full h-screen lg:w-1/2 lg:h-full">
+          <div className="lg:w-[90%] w-full lg:h-[90%] md:h-full h-[90%] relative z-20">
             <Image
               src={"/home/hero.png"}
               alt="hero-image"
               fill
-              sizes="100%"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               priority
-              className="object-cover"
+              draggable={false}
+              onDragStart={(event) => event.preventDefault()}
+              className="object-contain pointer-events-none select-none"
             />
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 z-10 bg-pink-400 lg:w-[30vw] w-[60vw] h-[20vh] lg:h-[48vh] shadow-shadow border-2" />
-          <div className="absolute left-1/2 top-20 -translate-x-1/2 z-0 bg-third lg:w-[27vw] lg:h-[44vh] w-[50vw] h-[20vh] shadow-shadow border-2" />
+          <div className="absolute left-1/2 -translate-x-1/2 z-10 bg-pink-400 lg:w-[30vw] w-[80%] h-[55%] lg:h-[48vh] shadow-shadow border-2" />
+          <div className="absolute left-1/2 lg:top-20 top-10 -translate-x-1/2 z-0 bg-third lg:w-[27vw] lg:h-[44vh] w-[70%] h-[70%] shadow-shadow border-2" />
         </div>
       </div>
     </section>

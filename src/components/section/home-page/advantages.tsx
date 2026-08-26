@@ -1,5 +1,6 @@
 "use client";
 
+import useMediaQuery from "@/hooks/useMediaQuery";
 import { NavigationIcon, ReplyIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
@@ -8,6 +9,8 @@ import Link from "next/link";
 
 export default function AdvantagesSection() {
   const t = useTranslations("home.advantages");
+  const isDekstop = useMediaQuery("(min-width: 1024px)");
+  const isTablet = useMediaQuery("(min-width: 768px)");
   const advantages = Array.from({ length: 4 }, (_, index) => ({
     title: t(`listAdvantages${index + 1}.title`),
     description: t(`listAdvantages${index + 1}.description`),
@@ -15,7 +18,7 @@ export default function AdvantagesSection() {
   return (
     <section className="w-full font-sora lg:h-[90vh] h-fit flex lg:flex-row flex-col">
       <div className="lg:w-[25%] w-[90%] lg:mx-0 mx-auto lg:mt-0 mt-3 z-10 lg:z-0 lg:shadow-none shadow-shadow bg-third lg:border-r-3 lg:border-0 border-3 flex items-center lg:h-full h-fit px-6 lg:py-0 py-6 relative overflow-hidden">
-        <h1 className="relative z-10 flex flex-col items-stretch w-full px-8 text-3xl font-medium lg:text-4xl lg:px-0 lg:static">
+        <h1 className="relative z-10 flex flex-col items-stretch w-full px-8 md:max-w-[60%] lg:max-w-full max-w-full mx-auto text-3xl font-medium md:text-4xl lg:px-0 lg:static">
           <span className="self-start font-archivo">{t("title")} </span>
           <span className="flex items-center self-end font-bold tracking-tight uppercase">
             <HugeiconsIcon
@@ -33,12 +36,12 @@ export default function AdvantagesSection() {
         <div className="absolute inset-0 z-0 w-full h-full opacity-50">
           <div className="relative flex w-full h-full">
             <div className="absolute inset-0 z-0 flex flex-col w-full h-full justify-evenly">
-              {Array.from({ length: 15 }).map((_, i) => (
+              {Array.from({ length: isDekstop ? 15 : 30 }).map((_, i) => (
                 <div className="w-full h-[2.5px] bg-main" key={i}></div>
               ))}
             </div>
             <div className="absolute inset-0 z-0 flex flex-row w-full h-full justify-evenly">
-              {Array.from({ length: 15 }).map((_, i) => (
+              {Array.from({ length: isTablet ? 30 : 15 }).map((_, i) => (
                 <div className="w-[2.5px] h-full bg-main" key={i}></div>
               ))}
             </div>
@@ -48,15 +51,15 @@ export default function AdvantagesSection() {
           {advantages.map((advantage, i) => (
             <li
               key={i}
-              className="flex flex-col justify-center items-center lg:w-[85%] w-[90%] lg:h-[20%] h-[18vh] bg-white shadow-shadow hover:shadow-none duration-150 group border-2 relative"
+              className="flex flex-col justify-center items-center lg:w-[85%] w-[90%] lg:h-[20%] md:h-[15vh] h-[18vh] bg-white shadow-shadow hover:shadow-none duration-150 group border-2 relative"
             >
               <div className="absolute flex items-center justify-center w-10 h-10 font-bold duration-150 border-2 group-hover:shadow-none top-4 bg-main -left-6 shadow-shadow">
                 {i + 1}
               </div>
-              <h2 className="px-5 text-xl text-center lg:px-2 lg:text-2xl lg:text-nowrap text-balance">
+              <h2 className="px-5 text-xl text-center lg:px-2 md:px-8 md:text-2xl lg:text-nowrap text-balance">
                 {advantage.title}
               </h2>
-              <p className="lg:text-lg text-md font-public-sans lg:max-w-[90%] max-w-full text-center mt-1.5 text-balance lg:mt-3">
+              <p className="md:text-lg text-md font-public-sans md:max-w-[90%] max-w-full text-center mt-1.5 text-balance lg:mt-3">
                 {advantage.description}
               </p>
             </li>
@@ -65,7 +68,7 @@ export default function AdvantagesSection() {
       </div>
       <div className="lg:w-[20%] w-full bg-pink-400 flex flex-col justify-between lg:items-start items-end lg:h-full h-fit px-4 lg:py-6 py-4">
         <div className="flex flex-col w-full gap-6 h-fit">
-          <h2 className="text-4xl font-black text-white uppercase">
+          <h2 className="text-4xl font-black text-white uppercase lg:max-w-full md:max-w-[60%] max-w-full">
             {t("cta.title")}
           </h2>
           <Link
@@ -82,7 +85,7 @@ export default function AdvantagesSection() {
             />
           </Link>
         </div>
-        <div className="relative lg:h-[40%] h-[30vh] w-[70%] lg:w-full lg:mt-0 mt-12">
+        <div className="relative lg:h-[40%] md:h-[40vh] h-[30vh] w-[70%] lg:w-full lg:mt-0 mt-12">
           <Image
             src={"/home/computer.png"}
             alt="computer"
