@@ -48,6 +48,143 @@
         "title": "We Don't Just Build Websites, We Fix Your Business Problems!",
         "btnCta": "Get Started"
       }
+    },
+    "services": {
+      "title": "Our Services",
+      "cta": "View All Services",
+      "moreBtn": "Learn More",
+      "greatFor": "Great for",
+      "features": "Features",
+      "price": "Pricing",
+      "example": "Live Demo",
+      "items": {
+        "1": {
+          "title": "Digital Invitation Website",
+          "desc": "Aesthetic and interactive digital invitations (e-invitations). Cut printing costs while delivering a seamless RSVP experience for your guests right in their hands.",
+          "priceStart": "$25",
+          "priceEnd": "$50",
+          "features": [
+            "Premium design & layout",
+            "100% responsive across all devices",
+            "Complete event details & schedule",
+            "Event countdown timer",
+            "Integrated Google Maps location route",
+            "Custom guest name personalization",
+            "Interactive digital guestbook & live wishes",
+            "Setup & operation assistance",
+            "Photo gallery (optional)",
+            "Background music (optional)"
+          ],
+          "greatFor": [
+            "Wedding Invitations",
+            "Birthday Parties",
+            "Farewell Events",
+            "Family Gatherings",
+            "Community Events",
+            "Business Meetings",
+            "Educational Events",
+            "Reunion Parties",
+            "Sports Competitions",
+            "Special Ceremonies"
+          ],
+          "exampleWeb": [
+            "https://wedding-john-jane.vercel.app/",
+            "https://pernikahan-john-jane.vercel.app/"
+          ]
+        },
+        "2": {
+          "title": "MSME & Business Profile Web",
+          "desc": "Professional business profile website engineered to boost credibility, build a strong brand identity, and reach more customers in the digital era.",
+          "priceStart": "$35",
+          "priceEnd": "$135",
+          "features": [
+            "Modern & responsive layout",
+            "Multi-page / landing page architecture",
+            "Interactive product/service catalog",
+            "Customer testimonials section",
+            "Interactive contact form",
+            "Direct WhatsApp integration",
+            "SEO-optimized blog / article system",
+            "Search Engine Friendly (SEO)",
+            "Custom domain connection",
+            "Product search feature",
+            "Integrated Google Maps location",
+            "Website admin guide & documentation"
+          ],
+          "greatFor": [
+            "MSMEs & Small Businesses",
+            "Local Stores & Services",
+            "Culinary & F&B Businesses",
+            "Fashion Boutiques",
+            "Retail Shops",
+            "Craft & Artisan Businesses",
+            "Professional Services",
+            "Independent Agents"
+          ],
+          "exampleWeb": [
+            "https://kopi-city.vercel.app/",
+            "https://glow-botani.vercel.app/"
+          ]
+        },
+        "3": {
+          "title": "Corporate Company Profile",
+          "desc": "High-standard corporate website crafted to strengthen market position, attract potential partners, and expand reach to global markets.",
+          "priceStart": "$55",
+          "priceEnd": "$400",
+          "features": [
+            "Premium corporate design",
+            "100% responsive across devices & SEO-friendly",
+            "Multi-page / landing page structure",
+            "Multi-language support (English, Indonesian, etc.)",
+            "Comprehensive company profile page",
+            "Project portfolio showcase gallery",
+            "Vision & mission section",
+            "Career & job vacancy page",
+            "Social media links & direct WhatsApp",
+            "Press releases / news CMS",
+            "Custom domain configuration",
+            "Contact form & Google Maps office location embed",
+            "Admin website manual guide"
+          ],
+          "greatFor": [
+            "Corporations / Law Firms / Consultants",
+            "Contractors, Manufacturing, & Industrial Firms",
+            "Real Estate, Logistics, & Import-Export Agencies",
+            "Tech Startups, Creative Agencies, & B2B Providers",
+            "Growing Enterprises Expanding Internationally"
+          ],
+          "exampleWeb": ["https://nusa-build.vercel.app/"]
+        },
+        "4": {
+          "title": "Portfolio & Personal Blog Web",
+          "desc": "Showcase your finest work, achievements, and skills with a modern, responsive portfolio website built to level up your professional reputation.",
+          "priceStart": "$30",
+          "priceEnd": "$270",
+          "features": [
+            "Sleek professional layout",
+            "Responsive across all screen sizes",
+            "Smooth scroll animations",
+            "Multi-page / landing page architecture",
+            "Personal biography section",
+            "Project & artwork showcase gallery",
+            "Direct contact form",
+            "Social media profile links",
+            "Content management capability",
+            "Digital Resume / CV download button",
+            "Interactive AI Chatbot to describe your profile",
+            "Website management guide"
+          ],
+          "greatFor": [
+            "Students & Learners",
+            "Fresh Graduates",
+            "Industry Professionals",
+            "Creative Artists & Designers",
+            "Portfolio Showcasing",
+            "Impressing Special Someone"
+          ],
+          "exampleWeb": []
+        }
+      }
     }
   }
 }

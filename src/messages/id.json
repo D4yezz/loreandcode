@@ -47,6 +47,143 @@
         "title": " Bukan Sekedar Bikin Web, Kami Selesaikan Masalah Bisnismu",
         "btnCta": "Mulai Proyek"
       }
+    },
+    "services": {
+      "title": "Layanan Kami",
+      "cta": "Lihat Semua Layanan",
+      "moreBtn": "Selengkapnya",
+      "greatFor": "Sangat cocok untuk",
+      "features": "Fitur",
+      "price": "Harga",
+      "example": "Contoh Website",
+      "items": {
+        "1": {
+          "title": "Website Undangan Digital",
+          "desc": "Website undangan digital (e-invitation) estetik dan interaktif. Hemat biaya cetak serta tingkatkan kenyamanan konfirmasi tamu dalam satu genggaman.",
+          "priceStart": "Rp300.000",
+          "priceEnd": "Rp700.000",
+          "features": [
+            "Desain & layout premium",
+            "Desain responsive di semua perangkat",
+            "Informasi acara lengkap",
+            "Hitung mundur acara",
+            "Rute lokasi acara dengan peta Google Maps",
+            "Custom Nama Tamu",
+            "Fitur buku tamu / kolom ucapan langsung di website",
+            "Bantuan pengoperasian",
+            "Galeri foto (opsional)",
+            "Background music (opsional)"
+          ],
+          "greatFor": [
+            "Undangan Pernikahan",
+            "Acara Ulang Tahun",
+            "Acara Perpisahan",
+            "Acara Keluarga",
+            "Acara Komunitas",
+            "Acara Bisnis",
+            "Acara Pendidikan",
+            "Undangan Reuni",
+            "Acara Kegiatan Olahraga",
+            "Undangan Khitan"
+          ],
+          "exampleWeb": [
+            "https://wedding-john-jane.vercel.app/",
+            "https://pernikahan-john-jane.vercel.app/"
+          ]
+        },
+        "2": {
+          "title": "Website UMKM & Profil Usaha",
+          "desc": "Website profil bisnis profesional untuk meningkatkan kredibilitas, membangun citra merek yang kuat, dan menjangkau lebih banyak pelanggan.",
+          "priceStart": "Rp500.000",
+          "priceEnd": "Rp2.000.000",
+          "features": [
+            "Desain modern & responsive",
+            "Arsitektur multi-halaman / landing page",
+            "Katalog produk",
+            "Testimoni dari pelanggan",
+            "Form kontak",
+            "Integrasi direct whatsApp",
+            "Blog / Artikel SEO",
+            "SEO friendly",
+            "Custom domain",
+            "Fitur pencarian produk",
+            "Integrasi Google Maps",
+            "Panduan penggunaan website"
+          ],
+          "greatFor": [
+            "UMKM",
+            "Bisnis Lokal",
+            "Bisnis Kuliner",
+            "Toko Fashion",
+            "Toko Retail",
+            "Bisnis Kerajinan",
+            "Layanan Jasa",
+            "Agen Independen"
+          ],
+          "exampleWeb": [
+            "https://kopi-city.vercel.app/",
+            "https://glow-botani.vercel.app/"
+          ]
+        },
+        "3": {
+          "title": "Website Profil Perusahaan",
+          "desc": "Website Company Profile korporat berstandar tinggi untuk memperkuat posisi pasar, memikat calon mitra, dan siap menembus pasar internasional.",
+          "priceStart": "Rp800.000",
+          "priceEnd": "Rp6.000.000",
+          "features": [
+            "Desain premium dan profesional",
+            "Responsive di semua device & SEO friendly",
+            "Arsitektur multi-halaman / landing page",
+            "Multi bahasa (inggris, indonesia)",
+            "Halaman profil perusahaan",
+            "Galeri portofolio proyek perusahaan",
+            "Visi misi perusahaan",
+            "Halaman Karier",
+            "Tautan media sosial & direct whatsApp",
+            "CMS Berita / Ruang Pers Rilis",
+            "Custom domain",
+            "Form kontak & integrasi Google Maps",
+            "Panduan penggunaan website"
+          ],
+          "greatFor": [
+            "Perusahaan PT / CV / Firma Hukum / Konsultan",
+            "Kontraktor, Manufaktur, & Perusahaan Industri",
+            "Agen Properti, Logistic, & Export-Import",
+            "Startup Teknologi, Agency Kreatif, & Penyedia Jasa B2B",
+            "UMKM Skala Menengah yang Ingin Go International"
+          ],
+          "exampleWeb": ["https://nusa-build.vercel.app/"]
+        },
+        "4": {
+          "title": "Website Portofolio & Blog",
+          "desc": "Showcase karya dan pencapaian terbaik Anda dengan website portofolio modern yang responsif untuk meningkatkan reputasi profesional Anda.",
+          "priceStart": "Rp400.000",
+          "priceEnd": "Rp4.000.000",
+          "features": [
+            "Desain profesional",
+            "Responsive di semua device",
+            "Animasi scroll",
+            "Arsitektur multi-halaman / landing page",
+            "Halaman profil anda",
+            "Galeri proyek/karya",
+            "Form kontak",
+            "Tautan media sosial",
+            "Fitur manajemen konten website",
+            "Unggah CV digital langsung",
+            "Chatbot AI yang bisa mendeskripsikan diri Anda",
+            "Panduan penggunaan website"
+          ],
+          "greatFor": [
+            "Pelajar",
+            "Fresh Graduate",
+            "Profesional",
+            "Pamer Karya",
+            "Pamer Portofolio",
+            "Pamer ke Pacar"
+          ],
+          "exampleWeb": []
+        }
+      }
     }
   }
 }

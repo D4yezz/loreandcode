@@ -48,6 +48,143 @@
         "title": "Wir bauen nicht nur Websites – wir lösen Ihre Business-Probleme!",
         "btnCta": "Erste Schritte"
       }
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "cta": "Alle Leistungen Anzeigen",
+      "moreBtn": "Mehr Erfahren",
+      "greatFor": "Ideal für",
+      "features": "Funktionen",
+      "price": "Preise",
+      "example": "Live-Demo",
+      "items": {
+        "1": {
+          "title": "Digitale Einladungs-Website",
+          "desc": "Ästhetische und interaktive digitale Einladungen. Sparen Sie Druckkosten und bieten Sie Ihren Gästen eine mühelose digitale RSVP-Erfahrung.",
+          "priceStart": "$25",
+          "priceEnd": "$50",
+          "features": [
+            "Premium Design & Layout",
+            "100% Responsive auf allen Geräten",
+            "Vollständige Veranstaltungsdetails",
+            "Event-Countdown-Timer",
+            "Google Maps Routenplanung",
+            "Personalisierte Gästenamen",
+            "Digitales Gästebuch & Live-Wünsche",
+            "Hilfe bei der Einrichtung",
+            "Fotogalerie (optional)",
+            "Hintergrundmusik (optional)"
+          ],
+          "greatFor": [
+            "Hochzeitseinladungen",
+            "Geburtstagsfeiern",
+            "Abschiedsfeste",
+            "Familientreffen",
+            "Community-Events",
+            "Geschäftstreffen",
+            "Bildungsveranstaltungen",
+            "Reunion-Partys",
+            "Sportveranstaltungen",
+            "Besondere Zeremonien"
+          ],
+          "exampleWeb": [
+            "https://wedding-john-jane.vercel.app/",
+            "https://pernikahan-john-jane.vercel.app/"
+          ]
+        },
+        "2": {
+          "title": "KMU & Unternehmensprofil Web",
+          "desc": "Professionelle Website für kleine und mittlere Unternehmen zur Stärkung der Glaubwürdigkeit und zum Ausbau Ihrer digitalen Reichweite.",
+          "priceStart": "$35",
+          "priceEnd": "$135",
+          "features": [
+            "Modernes & responsives Design",
+            "Multi-Page / Landing-Page Struktur",
+            "Interaktiver Produkt- / Dienstleistungskatalog",
+            "Kundenbewertungen & Testimonials",
+            "Interaktives Kontaktformular",
+            "Direkte WhatsApp-Integration",
+            "SEO-optimiertes Blog-System",
+            "Suchmaschinenfreundlich (SEO)",
+            "Eigene Domain-Anbindung",
+            "Produktsuchfunktion",
+            "Google Maps Standortanbindung",
+            "Website-Verwaltungsanleitung"
+          ],
+          "greatFor": [
+            "KMU & Kleinunternehmen",
+            "Lokale Geschäfte & Dienstleister",
+            "Gastronomie & F&B",
+            "Modeboutiquen",
+            "Einzelhandelsgeschäfte",
+            "Handwerksbetriebe",
+            "Freie Berufe",
+            "Unabhängige Agenten"
+          ],
+          "exampleWeb": [
+            "https://kopi-city.vercel.app/",
+            "https://glow-botani.vercel.app/"
+          ]
+        },
+        "3": {
+          "title": "Corporate Company Profile",
+          "desc": "Hochwertige Unternehmens-Websites zur Festigung Ihrer Marktposition, Partnergewinnung und internationalen Skalierung.",
+          "priceStart": "$55",
+          "priceEnd": "$400",
+          "features": [
+            "Erstklassiges Corporate Design",
+            "100 % geräteübergreifend und SEO-freundlich",
+            "Mehrseitige / Landing-Page Architektur",
+            "Mehrsprachen-Unterstützung (Mehrsprachig)",
+            "Umfassende Unternehmensprofil-Seite",
+            "Projekt- und Portfolio-Galerie",
+            "Vision & Missions-Abschnitt",
+            "Karriere- und Stellenangebotsseite",
+            "Social-Media-Links und direkte WhatsApp",
+            "Pressemitteilungen / News CMS",
+            "Einrichtung eigener Domains",
+            "Kontaktformular und Einbettung des Bürostandorts in Google Maps",
+            "Administrator-Handbuch"
+          ],
+          "greatFor": [
+            "Unternehmen / Kanzleien / Berater",
+            "Bauunternehmen & Industrie",
+            "Immobilien & Logistikunternehmen",
+            "Tech-Startups & B2B-Dienstleister",
+            "Wachsende Unternehmen mit Auslandsfokus"
+          ],
+          "exampleWeb": ["https://nusa-build.vercel.app/"]
+        },
+        "4": {
+          "title": "Portfolio & Blog Website",
+          "desc": "Präsentieren Sie Ihre besten Arbeiten und Erfolge mit einer modernen, schnellen Portfolio-Website für maximale professionelle Wirkung.",
+          "priceStart": "$30",
+          "priceEnd": "$270",
+          "features": [
+            "Stilvolles professionelles Layout",
+            "Optimiert für alle Bildschirmgrößen",
+            "Sanfte Scroll-Animationen",
+            "Mehrseitige Struktur",
+            "Persönlicher Biografie-Abschnitt",
+            "Galerie für Projekte & Arbeiten",
+            "Direktes Kontaktformular",
+            "Links zu Social-Media-Profilen",
+            "Content-Management-Funktion",
+            "Digitaler CV/Lebenslauf-Download",
+            "Interaktiver KI-Chatbot zur Selbstbeschreibung",
+            "Handbuch zur Website-Verwaltung"
+          ],
+          "greatFor": [
+            "Schüler & Studenten",
+            "Absolventen",
+            "Berufstätige & Experten",
+            "Kreative & Designer",
+            "Portfolio-Präsentationen",
+            "Beeindrucken besonderer Menschen"
+          ],
+          "exampleWeb": []
+        }
+      }
     }
   }
 }

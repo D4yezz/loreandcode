@@ -15,27 +15,38 @@ import {
   TelegramIcon,
   Mail01Icon,
   ArrowUpRight01Icon,
+  ThreadsIcon,
 } from "@hugeicons/core-free-icons";
 import { useTranslations } from "next-intl";
 
 export const connect = [
   {
     name: "@loreandcode",
+    title: "Instagram",
     link: "https://www.instagram.com/loreandcode/",
     icon: Instagram,
   },
   {
+    name: "@loreandcode",
+    title: "Threads",
+    link: "https://www.instagram.com/loreandcode/",
+    icon: ThreadsIcon,
+  },
+  {
     name: "loreandcode",
+    title: "Twitter",
     link: "https://www.facebook.com/loreandcode/",
     icon: NewTwitterIcon,
   },
   {
     name: "loreandcode",
+    title: "Telegram",
     link: "https://www.facebook.com/loreandcode/",
     icon: TelegramIcon,
   },
   {
     name: "loreandcode@gmail.com",
+    title: "Email",
     link: "https://twitter.com/loreandcode/",
     icon: Mail01Icon,
   },
@@ -88,7 +99,12 @@ export default function HeroSection() {
                         asChild
                         className="flex items-center justify-center duration-150 border-2 bg-third shadow-shadow hover:shadow-none hover:translate-1 hover:translate-y-1 size-12"
                       >
-                        <a href={item.link} target="_blank" rel="noreferrer">
+                        <a
+                          href={item.link}
+                          title={item.title}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <HugeiconsIcon
                             icon={item.icon}
                             size={24}

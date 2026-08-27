@@ -48,6 +48,143 @@
         "title": "¡No solo creamos webs, resolvemos los problemas de tu negocio!",
         "btnCta": "Empieza ya"
       }
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "cta": "Ver Todos Los Servicios",
+      "moreBtn": "Ver Más",
+      "greatFor": "Ideal para",
+      "features": "Características",
+      "price": "Precios",
+      "example": "Demo en Vivo",
+      "items": {
+        "1": {
+          "title": "Sitio Web de Invitaciones Digitales",
+          "desc": "Invitaciones digitales estéticas e interactivas. Ahorra en impresión y ofrece a tus invitados una experiencia de confirmación impecable en sus teléfonos.",
+          "priceStart": "$25",
+          "priceEnd": "$50",
+          "features": [
+            "Diseño y distribución premium",
+            "100% adaptable a todos los dispositivos",
+            "Detalles completos del evento",
+            "Contador regresivo del evento",
+            "Ruta de ubicación con Google Maps",
+            "Personalización con nombre de invitado",
+            "Libro de visitas digital y saludos en vivo",
+            "Asistencia de configuración y uso",
+            "Galería de fotos (opcional)",
+            "Música de fondo (opcional)"
+          ],
+          "greatFor": [
+            "Invitaciones de Boda",
+            "Fiestas de Cumpleaños",
+            "Eventos de Despedida",
+            "Reuniones Familiares",
+            "Eventos Comunitarios",
+            "Reuniones de Negocios",
+            "Eventos Educativos",
+            "Reuniones de Exalumnos",
+            "Eventos Deportivos",
+            "Ceremonias Especiales"
+          ],
+          "exampleWeb": [
+            "https://wedding-john-jane.vercel.app/",
+            "https://pernikahan-john-jane.vercel.app/"
+          ]
+        },
+        "2": {
+          "title": "Sitio Web para PyMEs y Negocios",
+          "desc": "Webs profesionales diseñadas para aumentar la credibilidad, fortalecer la identidad de marca y atraer a más clientes en el entorno digital.",
+          "priceStart": "$35",
+          "priceEnd": "$135",
+          "features": [
+            "Diseño moderno y adaptable",
+            "Estructura multipágina / landing page",
+            "Catálogo interactivo de productos/servicios",
+            "Sección de testimonios de clientes",
+            "Formulario de contacto interactivo",
+            "Integración directa con WhatsApp",
+            "Sistema de blog optimizado para SEO",
+            "Optimización para motores de búsqueda (SEO)",
+            "Conexión de dominio personalizado",
+            "Búsqueda de productos integrada",
+            "Ubicación integrada con Google Maps",
+            "Guía de administración del sitio web"
+          ],
+          "greatFor": [
+            "PyMEs y Pequeños Negocios",
+            "Tiendas Locales y Servicios",
+            "Negocios de Gastronomía",
+            "Boutiques de Moda",
+            "Tiendas Minoristas",
+            "Negocios de Artesanías",
+            "Servicios Profesionales",
+            "Agentes Independientes"
+          ],
+          "exampleWeb": [
+            "https://kopi-city.vercel.app/",
+            "https://glow-botani.vercel.app/"
+          ]
+        },
+        "3": {
+          "title": "Perfil Corporativo de Empresa",
+          "desc": "Sitios web corporativos de alto nivel creados para impulsar la presencia institucional, atraer socios y escalar a nivel internacional.",
+          "priceStart": "$55",
+          "priceEnd": "$400",
+          "features": [
+            "Diseño corporativo de primer nivel",
+            "Adaptable a cualquier dispositivo y compatible con SEO",
+            "Arquitectura multipágina / landing page",
+            "Soporte multilingüe (Español, Inglés)",
+            "Página completa de perfil empresarial",
+            "Galería de portafolio de proyectos",
+            "Sección de visión y misión",
+            "Página de carreras y vacantes",
+            "Enlaces a redes sociales y WhatsApp directo",
+            "CMS para comunicados de prensa / noticias",
+            "Configuración de dominio propio",
+            "Formulario de contacto y ubicación de la oficina en Google Maps",
+            "Manual de usuario para administrador"
+          ],
+          "greatFor": [
+            "Empresas / Bufetes de Abogados / Consultoras",
+            "Constructoras, Manufactura e Industria",
+            "Inmobiliarias, Logística e Import/Export",
+            "Startups de Tecnología y Proveedores B2B",
+            "Empresas en Crecimiento con Enfoque Global"
+          ],
+          "exampleWeb": ["https://nusa-build.vercel.app/"]
+        },
+        "4": {
+          "title": "Sitio Web de Portafolio y Blog",
+          "desc": "Exhibe tus mejores proyectos y habilidades con un portafolio moderno y de alta velocidad creado para destacar tu reputación profesional.",
+          "priceStart": "$30",
+          "priceEnd": "$270",
+          "features": [
+            "Diseño profesional y elegante",
+            "Totalmente adaptable a móviles y PC",
+            "Animaciones de desplazamiento fluidas",
+            "Estructura multipágina",
+            "Sección de biografía personal",
+            "Galería de proyectos y trabajos",
+            "Formulario de contacto directo",
+            "Enlaces a redes sociales",
+            "Gestión de contenido integrada",
+            "Descarga directa de Currículum/CV digital",
+            "Chatbot con IA para describir tu perfil",
+            "Guía de administración de la web"
+          ],
+          "greatFor": [
+            "Estudiantes y Aprendices",
+            "Recién Graduados",
+            "Profesionales del Sector",
+            "Artistas y Diseñadores Creativos",
+            "Exhibición de Portafolio",
+            "Impresionar a Alguien Especial"
+          ],
+          "exampleWeb": []
+        }
+      }
     }
   }
 }
