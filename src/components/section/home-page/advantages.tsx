@@ -36,7 +36,7 @@ export default function AdvantagesSection() {
         <div className="absolute inset-0 z-0 w-full h-full opacity-50">
           <div className="relative flex w-full h-full">
             <div className="absolute inset-0 z-0 flex flex-col w-full h-full justify-evenly">
-              {Array.from({ length: isDekstop ? 15 : 30 }).map((_, i) => (
+              {Array.from({ length: isDekstop ? 20 : 30 }).map((_, i) => (
                 <div className="w-full h-[2.5px] bg-main" key={i}></div>
               ))}
             </div>
@@ -109,7 +109,7 @@ function StarElement() {
           src={"/home/star.png"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt="star"
+          alt="star-1"
           draggable={false}
           onDragStart={(event) => event.preventDefault()}
           className="object-contain pointer-events-none select-none"
@@ -120,7 +120,7 @@ function StarElement() {
           src={"/home/star.png"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt="star"
+          alt="star-2"
           draggable={false}
           onDragStart={(event) => event.preventDefault()}
           className="object-contain pointer-events-none select-none"
@@ -131,7 +131,7 @@ function StarElement() {
           src={"/home/star.png"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt="thunder"
+          alt="star-3"
           draggable={false}
           onDragStart={(event) => event.preventDefault()}
           className="object-contain pointer-events-none select-none"
@@ -142,7 +142,7 @@ function StarElement() {
           src={"/home/star2.png"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt="thunder"
+          alt="star-element-1"
           draggable={false}
           onDragStart={(event) => event.preventDefault()}
           className="object-contain pointer-events-none select-none"
@@ -157,7 +157,7 @@ function StarElement() {
           src={"/home/star3.png"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          alt="thunder"
+          alt="star-element-2"
           draggable={false}
           onDragStart={(event) => event.preventDefault()}
           className="object-contain pointer-events-none select-none"

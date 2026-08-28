@@ -115,6 +115,7 @@ export default function ServiceCarousel({
                     <Image
                       src={`/service/${item.img}/1.png`}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
                       alt={`Gambar Website ${item.title}`}
                       className="object-cover"
                     />

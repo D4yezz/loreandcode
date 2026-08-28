@@ -25,7 +25,7 @@ export default function ServiceSection() {
           <h1 className="text-4xl font-bold">{t("title")}</h1>
           <Link
             href="/services"
-            className="px-6 py-2 text-lg font-semibold border-2 w-fit h-fit bg-third shadow-shadow hover:shadow-none duration-150 hover:translate-1"
+            className="px-6 py-2 text-lg font-semibold duration-150 border-2 w-fit h-fit bg-third shadow-shadow hover:shadow-none hover:translate-1"
           >
             {t("cta")}
           </Link>
@@ -38,17 +38,17 @@ export default function ServiceSection() {
       <div className="w-[40%] h-full bg-main border-l-3 flex flex-col items-center justify-center py-4 relative overflow-hidden">
         {selectedService ? (
           <Card className="border-2 bg-white max-h-full w-[80%] mx-auto shadow-shadow flex flex-col p-6 z-30">
-            <CardHeader className="border-b-4 mx-auto px-0 py-3 w-full">
+            <CardHeader className="w-full px-0 py-3 mx-auto border-b-4">
               <CardTitle className="text-2xl font-black">
                 {selectedService.title}
               </CardTitle>
-              <div className="font-bold text-lg">
+              <div className="text-lg font-bold">
                 {selectedService.priceStart} - {selectedService.priceEnd}
               </div>
             </CardHeader>
             <CardContent className="flex flex-col gap-4 p-0">
               <div>
-                <h3 className="font-bold text-lg mb-2">{t("features")}:</h3>
+                <h3 className="mb-2 text-lg font-bold">{t("features")}:</h3>
                 <ul className="flex flex-col gap-2">
                   {selectedService.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm">
@@ -65,7 +65,7 @@ export default function ServiceSection() {
               </div>
 
               <div>
-                <h3 className="font-bold text-lg mb-2 uppercase">
+                <h3 className="mb-2 text-lg font-bold uppercase">
                   {t("greatFor")}:
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -84,10 +84,7 @@ export default function ServiceSection() {
         ) : (
           <div className="p-4">Pilih layanan untuk melihat detail</div>
         )}
-        <div className="absolute border-2 z-20 w-10 h-10 -top-6 -left-6 lg:w-20 lg:h-20 bg-third rotate-6"></div>
-        <div className="absolute border-2 z-10 lg:top-9 lg:left-8 top-8 left-16 lg:w-12 lg:h-12 w-7 h-7 bg-third -rotate-6"></div>
-        <div className="absolute border-2 z-0 w-7 h-7 lg:top-5 lg:left-16 top-2 left-13 bg-third -rotate-12"></div>
-        <div className="absolute border-2 z-0 w-9 h-9 lg:top-18 lg:left-5 top-2 left-13 bg-third rotate-17"></div>
+        <MiniPageElement />
         <div className="absolute z-0 flex items-center justify-center w-40 h-40 rotate-45 lg:w-70 lg:h-70 lg:-bottom-30 -bottom-22 -right-22 lg:-right-30">
           <div className="w-full h-full bg-pink-400 shadow-shadow rotate-90 rounded-[50%] border-2"></div>
           <div className="lg:w-30 lg:h-30 w-20 h-20 absolute bg-main rounded-[50%] border-3"></div>
@@ -97,7 +94,7 @@ export default function ServiceSection() {
             src={"/home/star2.png"}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            alt="thunder"
+            alt="star-element"
             draggable={false}
             onDragStart={(event) => event.preventDefault()}
             className="object-contain pointer-events-none select-none"
@@ -105,5 +102,55 @@ export default function ServiceSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+export function MiniPageElement() {
+  return (
+    <>
+      <div className="absolute z-0 flex flex-col w-46 bg-white border-2 h-32 top-2 right-8 shadow-shadow rotate-12">
+        <div className="flex items-center justify-between w-full h-5 px-2 border-b-2">
+          <span className="text-[10px] font-semibold">Lore & Code</span>
+          <div className="flex items-center gap-1 w-fit">
+            <div className="bg-red-500 rounded-full size-2"></div>
+            <div className="bg-yellow-400 rounded-full size-2"></div>
+            <div className="bg-green-500 rounded-full size-2"></div>
+          </div>
+        </div>
+        <div className="w-full h-full p-1">
+          <div className="relative w-full h-full overflow-hidden rounded-sm">
+            <Image
+              src={"/home/cars.gif"}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              alt="wallpaper"
+              draggable={false}
+              onDragStart={(event) => event.preventDefault()}
+              className="object-cover pointer-events-none select-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="absolute z-10 flex flex-col h-45 bg-white border-2 w-35 -top-4 left-5 shadow-shadow -rotate-20">
+        <div className="w-full h-full px-2 pt-2 ">
+          <div className="relative w-full h-full overflow-hidden">
+            <Image
+              src={
+                "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHRzZHhzd3R0bWt3dm8wNWRrbWRreWEyZW0wazRqNmhvb3J4OWFhaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mj4ruS6mHkdKEdmwc1/giphy.gif"
+              }
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              alt="wallpaper"
+              draggable={false}
+              onDragStart={(e) => e.preventDefault()}
+              className="object-cover pointer-events-none select-none"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-between w-full h-fit px-2 py-2">
+          <span className="text-[10px] font-semibold">Lore & Code</span>
+        </div>
+      </div>
+    </>
   );
 }
