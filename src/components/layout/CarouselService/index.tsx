@@ -31,7 +31,7 @@ export default function ServiceCarousel({
     AutoPlay({
       delay: 4500,
       stopOnMouseEnter: true,
-      stopOnInteraction: false,
+      stopOnInteraction: true,
     }),
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -94,46 +94,48 @@ export default function ServiceCarousel({
   }, [emblaApi, onInit, onSelect, selectedIndex, service, setSelectedService]);
 
   return (
-    <div className="relative flex flex-col w-full gap-6 mx-auto">
+    <div className="relative flex flex-col w-full gap-0 mx-auto lg:gap-6">
       <div className="px-1 py-2 -mx-4 overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {service.map((item, index) => (
             <div className="flex-[0_0_100%] min-w-0 px-3" key={index}>
-              <Card className="p-0 w-[87%] h-full gap-0 bg-main mx-auto justify-between">
-                <CardHeader className="flex items-center justify-between w-full px-4 pt-2 pb-2 bg-white border-b-2 h-fit">
-                  <h3 className="text-xl font-bold w-[80%] uppercase">
+              <Card className="p-0 lg:w-[87%] w-[95%] h-full gap-0 bg-main mx-auto justify-between">
+                <CardHeader className="flex items-center justify-between w-full px-2 pt-2 pb-2 bg-white border-b-2 lg:px-4 h-fit">
+                  <h3 className="lg:text-xl text-sm font-bold  lg:w-[80%] w-[90%] uppercase">
                     {item.title}
                   </h3>
-                  <div className="flex items-center w-[20%] justify-end gap-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div className="flex items-center lg:w-[20%] w-[10%] justify-end lg:gap-2 gap-1">
+                    <div className="w-2 h-2 bg-red-500 rounded-full lg:w-3 lg:h-3"></div>
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full lg:w-3 lg:h-3"></div>
+                    <div className="w-2 h-2 bg-green-500 rounded-full lg:w-3 lg:h-3"></div>
                   </div>
                 </CardHeader>
                 <CardContent className="flex flex-col w-full gap-4 px-4 pt-3 h-fit">
-                  <div className="relative w-full h-[50vh] border-2 overflow-hidden">
+                  <div className="relative w-full md:h-[50vh] h-50 border-2 overflow-hidden">
                     <Image
                       src={`/service/${item.img}/1.png`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
-                      alt={`Gambar Website ${item.title}`}
-                      className="object-cover"
+                      alt={`${item.title}`}
+                      className="object-center"
                     />
                   </div>
-                  <div className="flex flex-col w-full p-4 bg-white border-2 h-fit shadow-shadow">
-                    <h3 className="text-3xl font-bold text-balance">
+                  <div className="flex flex-col w-full p-4 text-center bg-white border-2 h-fit shadow-shadow lg:text-left">
+                    <h3 className="text-2xl font-bold lg:text-3xl text-balance">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-sm text-justify">{item.desc}</p>
+                    <p className="mt-2 text-sm lg:text-wrap text-balance">
+                      {item.desc}
+                    </p>
                   </div>
                 </CardContent>
-                <CardFooter className="flex items-center justify-between w-full p-4">
-                  <span className="px-2 py-1 text-xl font-bold text-black border-2 bg-third shadow-shadow">
+                <CardFooter className="flex flex-col items-center justify-between w-full gap-4 p-4 md:flex-row md:gap-0">
+                  <span className="w-full px-2 py-1 text-xl font-bold text-center text-black border-2 md:w-fit bg-third shadow-shadow">
                     {item.priceStart} - {item.priceEnd}
                   </span>
                   <Button
                     asChild
-                    className="w-[30%] bg-pink-400 text-white font-semibold text-lg shadow-none border-l-2"
+                    className="md:w-[30%] w-full bg-pink-400 text-white font-semibold text-lg shadow-none border-l-2"
                   >
                     <Link href={`/services/${item.id}`}>{t("moreBtn")}</Link>
                   </Button>
@@ -144,7 +146,7 @@ export default function ServiceCarousel({
         </div>
       </div>
 
-      <div className="flex items-center justify-between w-[87%] mx-auto">
+      <div className="flex items-center justify-between w-[87%] mx-auto my-4">
         <div className="flex items-center gap-3">
           {scrollSnaps.map((_, index) => (
             <button
