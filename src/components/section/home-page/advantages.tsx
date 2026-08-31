@@ -9,7 +9,7 @@ import { Link } from "@/i18n/navigation";
 
 export default function AdvantagesSection() {
   const t = useTranslations("home.advantages");
-  const isDekstop = useMediaQuery("(min-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
   const advantages = Array.from({ length: 4 }, (_, index) => ({
     title: t(`listAdvantages${index + 1}.title`),
@@ -36,7 +36,7 @@ export default function AdvantagesSection() {
         <div className="absolute inset-0 z-0 w-full h-full opacity-50">
           <div className="relative flex w-full h-full">
             <div className="absolute inset-0 z-0 flex flex-col w-full h-full justify-evenly">
-              {Array.from({ length: isDekstop ? 20 : 30 }).map((_, i) => (
+              {Array.from({ length: isDesktop ? 20 : 30 }).map((_, i) => (
                 <div className="w-full h-[2.5px] bg-main" key={i}></div>
               ))}
             </div>

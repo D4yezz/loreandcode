@@ -17,27 +17,27 @@ export function useWorkflowData(): WorkflowItem[] {
     { id: "1", className: "bg-main -rotate-2", orientation: "left" as const },
     {
       id: "2",
-      className: "bg-pink-400 -rotate-4 -mt-18",
+      className: "bg-pink-400 -rotate-4 lg:-mt-18",
       orientation: "right" as const,
     },
     {
       id: "3",
-      className: "bg-third rotate-2 -mt-12",
+      className: "bg-third rotate-2 lg:-mt-12",
       orientation: "left" as const,
     },
     {
       id: "4",
-      className: "bg-main rotate-2 -mt-12",
+      className: "bg-main rotate-2 lg:-mt-12",
       orientation: "right" as const,
     },
     {
       id: "5",
-      className: "bg-pink-400 -rotate-5 -mt-8",
+      className: "bg-pink-400 -rotate-5 lg:-mt-8",
       orientation: "left" as const,
     },
     {
       id: "6",
-      className: "bg-third -rotate-2 -mt-18",
+      className: "bg-third -rotate-2 lg:-mt-18",
       orientation: "right" as const,
     },
   ];

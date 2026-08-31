@@ -19,7 +19,7 @@ import { connect } from "@/components/section/home-page/hero";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
-  const isDekstop = useMediaQuery("(min-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
   const [open, setOpen] = useState(false);
   const menu = [
@@ -64,14 +64,14 @@ export default function Navbar() {
               height={60}
               loading="eager"
             />
-            {isDekstop && (
+            {isDesktop && (
               <span className="font-bold tracking-tight uppercase whitespace-nowrap font-sora">
                 Lore & Code
               </span>
             )}
           </Link>
         </div>
-        {isTablet && !isDekstop && (
+        {isTablet && !isDesktop && (
           <Link
             href="/"
             className="text-3xl font-bold tracking-tight uppercase whitespace-nowrap font-sora"
@@ -79,7 +79,7 @@ export default function Navbar() {
             Lore & Code
           </Link>
         )}
-        {isDekstop ? (
+        {isDesktop ? (
           <>
             <nav className="h-full w-[65%] flex items-center justify-center shadow-nav">
               <ul className="flex items-center text-xl font-semibold gap-14">

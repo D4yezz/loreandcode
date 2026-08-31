@@ -1,4 +1,5 @@
 "use client";
+import useMediaQuery from "@/hooks/useMediaQuery";
 import { WorkflowItem } from "@/utils/workflow-data";
 import { Tick01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -6,11 +7,11 @@ import Image from "next/image";
 
 export default function CardWorkflow({ data }: { data: WorkflowItem[] }) {
   return (
-    <div className="relative flex flex-col mt-20">
+    <div className="relative flex flex-col gap-8 mt-10 lg:mt-20 lg:gap-0">
       {data.map((item, index: number) => (
         <div
           key={index}
-          className="w-[80vw] mx-auto h-fit flex odd:justify-start even:justify-end items-center relative z-20"
+          className="lg:w-[80vw] w-full mx-auto h-fit flex odd:justify-start even:justify-end items-center relative z-20"
         >
           <CardItem
             key={index}
@@ -42,9 +43,11 @@ function CardItem({
   className: string;
   orientation: "left" | "right";
 }) {
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const isTablet = useMediaQuery("(min-width: 768px)");
   return (
     <div
-      className={`relative w-[55%] h-[30vh] border-3 border-black flex z-10 overflow-visible shadow-shadow ${className}`}
+      className={`relative lg:w-[55%] md:w-[70%] w-full lg:h-[31vh] md:h-[25vh] h-[21vh] border-3 border-black flex z-10 overflow-visible shadow-shadow ${className}`}
     >
       {orientation === "left" ? (
         <>
@@ -63,28 +66,33 @@ function CardItem({
       )}
 
       <div
-        className={`w-[70%] flex flex-col justify-center p-4 pr-6 ${orientation === "left" ? "order-1" : "order-2"}`}
+        className={`w-[70%] flex flex-col justify-center lg:p-4 p-2 ${orientation === "left" ? "order-1 md:pr-6 pr-4" : "order-2 md:pl-6 pl-4"}`}
       >
-        <div className="flex flex-col items-center justify-between w-full h-full">
-          <h2 className="text-2xl font-bold  w-[95%] bg-white border-2 py-1 px-2">
+        <div className="flex flex-col items-center justify-center w-full h-full gap-2">
+          <h2 className="lg:text-xl text-md font-bold lg:w-[95%] w-full bg-white border-2 py-1 px-2">
             {title}
           </h2>
-          <p className="text-sm text-justify w-[95%] bg-white border-2 px-3 py-2">
+          <p className="lg:text-sm text-xs text-justify lg:w-[95%] w-full bg-white border-2 lg:px-3 p-1 lg:py-2">
             {desc}
           </p>
-          <ul className="flex flex-col gap-2 w-[95%] bg-white border-2 p-2">
-            {checklist.map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-xs md:text-sm">
-                <HugeiconsIcon
-                  icon={Tick01Icon}
-                  size={20}
-                  className="text-main"
-                  strokeWidth={2}
-                />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          {isTablet && (
+            <ul className="flex flex-col gap-2 lg:w-[95%] w-full bg-white border-2 p-2">
+              {checklist.map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-1 text-xs lg:gap-2 md:text-sm"
+                >
+                  <HugeiconsIcon
+                    icon={Tick01Icon}
+                    size={isDesktop ? 20 : 18}
+                    className="text-main"
+                    strokeWidth={2}
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
       <div
@@ -94,10 +102,12 @@ function CardItem({
           className={`w-4 h-full bg-white z-10 absolute top-0 ${orientation === "left" ? "right-0 border-l-2" : "left-0 border-r-2"}`}
         ></div>
         <div className="w-[60%] h-[60%] flex items-center justify-center">
-          <span className="text-6xl font-bold text-center">{number}</span>
+          <span className="md:text-7xl text-5xl font-bold text-center font-archivo">
+            {number}
+          </span>
         </div>
         <div
-          className={`absolute z-0 w-12 h-12 -top-2 ${orientation === "left" ? "right-0 rotate-8" : "left-0 -rotate-18"}`}
+          className={`absolute z-0 md:w-12 md:h-12 w-10 h-10 -top-2 ${orientation === "left" ? "right-0 rotate-8" : "left-0 -rotate-18"}`}
         >
           <Image
             src={"/home/white-star.png"}
@@ -110,7 +120,7 @@ function CardItem({
           />
         </div>
         <div
-          className={`absolute z-0 w-12 h-12 top-10 ${orientation === "left" ? "left-0 rotate-8" : "right-0 -rotate-18"}`}
+          className={`absolute z-0 md:w-12 md:h-12 w-9 h-9 lg:top-10 top-8 ${orientation === "left" ? "lg:left-0 left-1 rotate-8" : "lg:right-0 right-1 -rotate-18"}`}
         >
           <Image
             src={`/home/eye${orientation === "left" ? "-left" : "-right"}.png`}
@@ -123,7 +133,7 @@ function CardItem({
           />
         </div>
         <div
-          className={`absolute z-0 w-20 h-20 -bottom-4 ${orientation === "left" ? "left-0 rotate-18" : "right-0 -rotate-16"}`}
+          className={`absolute z-0 md:w-20 md:h-20 w-17 h-17 -bottom-4 ${orientation === "left" ? "lg:left-0 left-1 rotate-18" : "lg:right-0 right-1 -rotate-16"}`}
         >
           <Image
             src={`/home/saturn.png`}

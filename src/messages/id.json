@@ -215,7 +215,7 @@
         },
         "5": {
           "title": "Peninjauan Bersama & Revisi",
-          "desc": "Tautan prapratinjau (demo link) diberikan kepada klien untuk diuji bersama. Proses perbaikan dilakukan sesuai kuota revisi paket untuk memastikan hasil yang presisi.",
+          "desc": "Tautan pratinjau (demo link) diberikan kepada klien untuk diuji bersama. Proses perbaikan dilakukan sesuai kuota revisi paket untuk memastikan hasil yang presisi.",
           "checklist": [
             "Penyesuaian Konten/Tampilan",
             "Persetujuan Final Klien"

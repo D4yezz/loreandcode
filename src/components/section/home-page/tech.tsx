@@ -15,8 +15,8 @@ import {
 } from "@icons-pack/react-simple-icons";
 
 export default function TechSection() {
-  const isDekstop = useMediaQuery("(min-width: 1024px)");
-  const logoSize = isDekstop ? 50 : 40;
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const logoSize = isDesktop ? 50 : 40;
   const techLogos = [
     {
       node: (
@@ -104,11 +104,11 @@ export default function TechSection() {
     <section className="w-full border-y-3 bg-main lg:py-8 py-4">
       <LogoLoop
         logos={techLogos}
-        speed={isDekstop ? 80 : 60}
+        speed={isDesktop ? 80 : 60}
         direction="left"
         logoHeight={60}
-        gap={isDekstop ? 100 : 50}
-        hoverSpeed={isDekstop ? 30 : 20}
+        gap={isDesktop ? 100 : 50}
+        hoverSpeed={isDesktop ? 30 : 20}
         ariaLabel="Technology partners"
       />
     </section>
