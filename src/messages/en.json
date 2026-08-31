@@ -185,6 +185,52 @@
           "exampleWeb": []
         }
       }
+    },
+    "workflow": {
+      "title": "From Brief to Launch",
+      "subtitle": "A structured, transparent, and measurable development process from initial brief to official launch.",
+      "stepLabel": "Step",
+      "items": {
+        "1": {
+          "title": "Project Discussion & Brief",
+          "desc": "Initial discussion to understand business needs, determine website type, map out page structure, and agree on the visual direction.",
+          "checklist": ["Scope & Feature Agreement", "Sitemap Structure"]
+        },
+        "2": {
+          "title": "Asset & Content Gathering",
+          "desc": "Collecting essential materials from the client, such as logos, product/event photos, profile texts, contact info, and required guest or legal data.",
+          "checklist": [
+            "Photos & Logos Collected",
+            "Copywriting & Content Ready"
+          ]
+        },
+        "3": {
+          "title": "UI Design & Code Slicing",
+          "desc": "Translating design concepts into modern, clean, and responsive code built with Next.js/React and Tailwind CSS.",
+          "checklist": [
+            "Responsive UI/UX Interface",
+            "Feature & Form Integration"
+          ]
+        },
+        "4": {
+          "title": "Testing & Speed Optimization",
+          "desc": "Comprehensive Quality Assurance (QA) including cross-device responsiveness checks, page loading speed tests, and basic SEO setup.",
+          "checklist": [
+            "Speed Optimization Score",
+            "100% Bug-Free & Responsive"
+          ]
+        },
+        "5": {
+          "title": "Client Review & Revisions",
+          "desc": "A live demo link is provided for mutual review. Necessary adjustments are made according to package revision quotas to ensure exact results.",
+          "checklist": ["Content & Layout Tweaks", "Final Client Approval"]
+        },
+        "6": {
+          "title": "Launch & Handover",
+          "desc": "Deploying the site to the client's custom domain, handing over repository/credentials, and providing administrative guides for easy management.",
+          "checklist": ["Website Live on Main Domain", "Admin Guide Handover"]
+        }
+      }
     }
   }
 }

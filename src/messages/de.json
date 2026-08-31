@@ -185,6 +185,52 @@
           "exampleWeb": []
         }
       }
+    },
+    "workflow": {
+      "title": "Vom Briefing bis zum Launch",
+      "subtitle": "Ein strukturierter, transparenter und messbarer Entwicklungsprozess von der Erstberatung bis zum Go-Live.",
+      "stepLabel": "Schritt",
+      "items": {
+        "1": {
+          "title": "Projektberatung & Briefing",
+          "desc": "Erstgespräch zum Verständnis der Geschäftsanforderungen, Festlegung des Website-Typs, der Seitenstruktur und des visuellen Konzepts.",
+          "checklist": ["Umfangs- & Funktionsvereinbarung", "Sitemap-Struktur"]
+        },
+        "2": {
+          "title": "Medien & Inhalte Sammeln",
+          "desc": "Zusammenstellung grundlegender Materialien wie Logos, Produkt-/Eventfotos, Profiltexte, Kontaktdaten und rechtliche Angaben.",
+          "checklist": ["Fotos & Logos Gesammelt", "Texte & Inhalte Bereit"]
+        },
+        "3": {
+          "title": "UI-Design & Programmierung",
+          "desc": "Umsetzung des Konzepts in modernen, sauberen und responsiven Code auf Basis von Next.js/React und Tailwind CSS.",
+          "checklist": [
+            "Responsive UI/UX-Oberfläche",
+            "Formular- & Funktionsintegration"
+          ]
+        },
+        "4": {
+          "title": "Testen & Leistungsoptimierung",
+          "desc": "Umfassende Qualitätssicherung inklusive Tests auf allen Mobil-/Desktop-Bildschirmen, Ladezeittests und Basis-SEO-Konfiguration.",
+          "checklist": ["Speed-Optimierungswert", "100% Fehlerfrei & Responsiv"]
+        },
+        "5": {
+          "title": "Gemeinsame Überprüfung & Revisions",
+          "desc": "Bereitstellung eines Vorschau-Links zur gemeinsamen Begutachtung und Durchführung vertraglich vereinbarter Anpassungen.",
+          "checklist": [
+            "Inhalts- & Layoutanpassungen",
+            "Finales Kunden-Feedback"
+          ]
+        },
+        "6": {
+          "title": "Launch & Übergabe",
+          "desc": "Bereitstellung der Website auf der Hauptdomain des Kunden, Übergabe der Zugänge und Bereitstellung einer kurzen Bedienungsanleitung.",
+          "checklist": [
+            "Website Live auf Hauptdomain",
+            "Übergabe der Admin-Anleitung"
+          ]
+        }
+      }
     }
   }
 }

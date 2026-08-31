@@ -105,9 +105,9 @@ export default function ServiceCarousel({
                     {item.title}
                   </h3>
                   <div className="flex items-center lg:w-[20%] w-[10%] justify-end lg:gap-2 gap-1">
-                    <div className="w-2 h-2 bg-red-500 rounded-full lg:w-3 lg:h-3"></div>
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full lg:w-3 lg:h-3"></div>
-                    <div className="w-2 h-2 bg-green-500 rounded-full lg:w-3 lg:h-3"></div>
+                    <div className="w-2 h-2 bg-red-500 border-2 rounded-full lg:w-4 lg:h-4"></div>
+                    <div className="w-2 h-2 bg-yellow-400 border-2 rounded-full lg:w-4 lg:h-4"></div>
+                    <div className="w-2 h-2 bg-green-500 border-2 rounded-full lg:w-4 lg:h-4"></div>
                   </div>
                 </CardHeader>
                 <CardContent className="flex flex-col w-full gap-4 px-4 pt-3 h-fit">

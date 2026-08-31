@@ -112,3 +112,41 @@
   background-color: oklch(89.72% 0.08732 212.275 / 0.683);
   color: oklch(35.613% 0.06319 215.815);
 }
+
+.ticket-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0px;
+  left: 45%;
+
+  width: 2vw;
+  height: 3vh;
+
+  background: var(--background);
+
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  /* border-bottom: 2px solid var(--border); */
+
+  box-shadow: 0px 1px 0 2px black;
+}
+
+.ticket-card::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  right: -40px;
+
+  width: 40px;
+  height: 40px;
+
+  background: transparent;
+
+  border-bottom-left-radius: var(--radius-3xl);
+
+  box-shadow: -20px 40px 0 20px var(--background);
+}

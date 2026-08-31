@@ -185,6 +185,62 @@
           "exampleWeb": []
         }
       }
+    },
+
+    "workflow": {
+      "title": "Del resumen al lanzamiento",
+      "subtitle": "Un proceso de desarrollo estructurado, transparente y medible desde el briefing inicial hasta el lanzamiento oficial.",
+      "stepLabel": "Paso",
+      "items": {
+        "1": {
+          "title": "Discusión y Brief del Proyecto",
+          "desc": "Discusión inicial para comprender las necesidades del negocio, definir el tipo de sitio web, estructurar las páginas y acordar el concepto visual.",
+          "checklist": [
+            "Acuerdo de Alcance y Funciones",
+            "Estructura del Mapa del Sitio"
+          ]
+        },
+        "2": {
+          "title": "Recopilación de Recurso y Contenidos",
+          "desc": "Recopilación de materiales básicos del cliente, como logotipos, fotos de productos/eventos, textos de perfil, datos de contacto e información legal.",
+          "checklist": [
+            "Recopilación de Fotos y Logos",
+            "Textos y Contenidos Listos"
+          ]
+        },
+        "3": {
+          "title": "Diseño UI y Maquetación de Código",
+          "desc": "Traducción del concepto en código moderno, limpio y adaptable utilizando Next.js/React y Tailwind CSS.",
+          "checklist": [
+            "Interfaz UI/UX Responsiva",
+            "Integración de Formularios y Funciones"
+          ]
+        },
+        "4": {
+          "title": "Pruebas y Optimización de Rendimiento",
+          "desc": "Control de calidad integral que incluye pruebas de visualización en pantallas móviles/escritorio, velocidad de carga y configuración SEO básica.",
+          "checklist": [
+            "Puntuación de Optimización de Velocidad",
+            "100% Libre de Errores y Responsivo"
+          ]
+        },
+        "5": {
+          "title": "Revisión Conjunta y Revisiones",
+          "desc": "Se proporciona un enlace de vista previa para revisión mutua. Se realizan los ajustes según la cuota de revisiones para garantizar el resultado exacto.",
+          "checklist": [
+            "Ajustes de Contenido y Diseño",
+            "Aprobación Final del Cliente"
+          ]
+        },
+        "6": {
+          "title": "Lanzamiento y Entrega",
+          "desc": "Despliegue del sitio en el dominio principal del cliente, entrega de credenciales y provisión de guías de administración para una gestión sencilla.",
+          "checklist": [
+            "Sitio Web en Vivo en Dominio Principal",
+            "Entrega de la Guía del Administrador"
+          ]
+        }
+      }
     }
   }
 }

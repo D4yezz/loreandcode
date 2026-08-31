@@ -184,6 +184,52 @@
           "exampleWeb": []
         }
       }
+    },
+    "workflow": {
+      "title": "Dari Brief Sampai Peluncuran",
+      "subtitle": "Proses pengerjaan proyek yang terstruktur, transparan, dan terukur dari awal hingga peluncuran.",
+      "stepLabel": "Langkah",
+      "items": {
+        "1": {
+          "title": "Diskusi & Brief Proyek",
+          "desc": "Diskusi awal untuk memahami kebutuhan bisnis, menentukan jenis website, menyusun struktur halaman, serta menyepakati konsep visual yang ingin dicapai.",
+          "checklist": ["Kesepakatan Scope & Fitur", "Struktur Halaman"]
+        },
+        "2": {
+          "title": "Pengumpulan Aset & Materi",
+          "desc": "Pengumpulan materi dasar dari klien, seperti logo, foto produk/acara, teks profil, informasi kontak, hingga data tamu atau legalitas yang diperlukan.",
+          "checklist": [
+            "Aset Foto & Logo Terkumpul",
+            "Teks & Konten Siap Pakai"
+          ]
+        },
+        "3": {
+          "title": "Desain UI & Slicing Code",
+          "desc": "Menerjemahkan konsep ke dalam kode program berbasis Next.js/React dan Tailwind CSS dengan UI yang modern, rapi, dan responsif.",
+          "checklist": ["Antarmuka UI/UX Responsif", "Integrasi Fitur & Form"]
+        },
+        "4": {
+          "title": "Pengujian & Optimasi Performa",
+          "desc": "Pengecekan kualitas menyeluruh (Quality Assurance), meliputi uji tampilan di layar HP/desktop, tes kecepatan muat halaman, serta konfigurasi SEO dasar.",
+          "checklist": ["Skor Speed Optimization", "Bebas Bug & Responsif 100%"]
+        },
+        "5": {
+          "title": "Peninjauan Bersama & Revisi",
+          "desc": "Tautan prapratinjau (demo link) diberikan kepada klien untuk diuji bersama. Proses perbaikan dilakukan sesuai kuota revisi paket untuk memastikan hasil yang presisi.",
+          "checklist": [
+            "Penyesuaian Konten/Tampilan",
+            "Persetujuan Final Klien"
+          ]
+        },
+        "6": {
+          "title": "Peluncuran & Serah Terima",
+          "desc": "Website resmi di-deploy ke domain utama klien, penyerahan akses/kodingan, serta pemberian panduan pengelolaan singkat agar website siap digunakan.",
+          "checklist": [
+            "Website Live di Domain Utama",
+            "Penyerahan Panduan Admin"
+          ]
+        }
+      }
     }
   }
 }
