@@ -231,6 +231,43 @@
           ]
         }
       }
+    },
+    "FAQ": {
+      "badge": "FAQ",
+      "title": "Häufig Gestellte Fragen",
+      "cardHead": "Haben Sie Eine Spezifische Frage?",
+      "subtitle": "Haben Sie ein einzigartiges Konzept oder Fragen zur Paketauswahl? Sprechen Sie direkt mit uns. Wir helfen Ihnen gerne weiter!",
+      "btnCta": "Kostenlos Beraten",
+      "questions": [
+        {
+          "title": "Wie lange dauert die Fertigstellung eines Website-Projekts?",
+          "content": "Die Fertigstellungszeit liegt zwischen 3 und 14 Werktagen, abhängig von Umfang und Komplexität des gewählten Pakets (Landing Page, KMU oder Unternehmensprofil)."
+        },
+        {
+          "title": "Welche Frameworks und Technologien nutzen Sie?",
+          "content": "Wir entwickeln mit Next.js, TypeScript und Tailwind CSS für extrem schnelle, sichere und SEO-optimierte Websites."
+        },
+        {
+          "title": "Muss ich Domain und Hosting selbst bereitstellen?",
+          "content": "Je nach gewähltem Paket können Sie Ihre eigene Domain und Ihr Hosting nutzen oder unsere schlüsselfertige Infrastruktur in Anspruch nehmen."
+        },
+        {
+          "title": "Wie funktionieren Zahlungssystem und Überarbeitungen?",
+          "content": "Die Zahlung erfolgt in Etappen (Anzahlung und Restzahlung beim Go-Live). Jedes Paket enthält Überarbeitungskontingente für optimale Ergebnisse."
+        },
+        {
+          "title": "Gibt es eine Anleitung zur selbstständigen Website-Verwaltung?",
+          "content": "Ja, wir liefern eine vollständige PDF-Dokumentation und Video-Tutorials, damit Sie Inhalte problemlos selbst verwalten können."
+        },
+        {
+          "title": "Kann ich ein individuelles Design passend zu meiner Marke anfordern?",
+          "content": "Selbstverständlich! Jedes Paket wird individuell an Ihre Markenidentität (Farben, visueller Stil, Seitenstruktur) angepasst."
+        },
+        {
+          "title": "Wird nach dem Go-Live eine Wartung oder Inhaltsaktualisierung angeboten?",
+          "content": "Ja, wir bieten Wartungs- und Update-Optionen nach dem Launch an, damit Ihre Website dauerhaft sicher und aktuell bleibt."
+        }
+      ]
     }
   }
 }

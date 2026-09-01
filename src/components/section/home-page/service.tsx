@@ -138,9 +138,9 @@ export function MiniPageElement() {
         <div className="flex items-center justify-between w-full h-5 px-2 border-b-2">
           <span className="text-[10px] font-semibold">Lore & Code</span>
           <div className="flex items-center gap-1 w-fit">
-            <div className="bg-red-500 rounded-full size-2"></div>
-            <div className="bg-yellow-400 rounded-full size-2"></div>
-            <div className="bg-green-500 rounded-full size-2"></div>
+            <div className="bg-red-500 rounded-full size-2 border"></div>
+            <div className="bg-yellow-400 rounded-full size-2 border"></div>
+            <div className="bg-green-500 rounded-full size-2 border"></div>
           </div>
         </div>
         <div className="w-full h-full p-1">

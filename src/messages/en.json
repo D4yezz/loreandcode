@@ -231,6 +231,43 @@
           "checklist": ["Website Live on Main Domain", "Admin Guide Handover"]
         }
       }
+    },
+    "FAQ": {
+      "badge": "FAQs",
+      "title": "Frequently Asked Questions",
+      "cardHead": "Have a Specific Question?",
+      "subtitle": "Have a unique concept or confused about choosing a package? Talk to us directly. We're ready to bring your dream website to life!",
+      "btnCta": "Free Consultation",
+      "questions": [
+        {
+          "title": "What is the estimated completion time for a website project?",
+          "content": "Completion takes between 3 to 14 business days, depending on the scale and complexity of the selected package (Landing Page, MSME, or Corporate Profile)."
+        },
+        {
+          "title": "What framework or technologies do you use?",
+          "content": "We build with Next.js, TypeScript, and Tailwind CSS to deliver ultra-fast, secure, and Google SEO-optimized websites."
+        },
+        {
+          "title": "Do I need to prepare my own domain and hosting?",
+          "content": "Depending on your selected package, you can bring your own domain and hosting or leverage our turnkey hosting infrastructure."
+        },
+        {
+          "title": "How does the payment system and revision workflow work?",
+          "content": "Payments are made in milestone stages (down payment and final balance upon go-live). Every package includes revision quotas to guarantee your satisfaction."
+        },
+        {
+          "title": "Do you provide guides for managing the website?",
+          "content": "Yes, we provide comprehensive PDF documentation and video tutorials to help you easily manage and update your website content."
+        },
+        {
+          "title": "Can I request a custom design tailored to my brand?",
+          "content": "Absolutely! Every package can be customized to match your brand identity—including color palettes, visual aesthetics, content layout, and page structure."
+        },
+        {
+          "title": "Is post-launch maintenance or content update available?",
+          "content": "Yes, we offer ongoing maintenance and post-launch update plans to keep your website secure, fresh, and continuously evolving."
+        }
+      ]
     }
   }
 }

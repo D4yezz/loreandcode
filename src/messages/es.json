@@ -241,6 +241,43 @@
           ]
         }
       }
+    },
+    "FAQ": {
+      "badge": "FAQ",
+      "title": "Preguntas Frecuentes",
+      "cardHead": "¿Tienes una Pregunta Específica?",
+      "subtitle": "¿Tienes una idea única o dudas sobre qué paquete elegir? Habla directamente con nosotros. ¡Estamos listos para ayudarte!",
+      "btnCta": "Consulta gratuita",
+      "questions": [
+        {
+          "title": "¿Cuál es el tiempo estimado de entrega de un proyecto web?",
+          "content": "El tiempo de desarrollo varía entre 3 y 14 días hábiles, según la escala y complejidad del paquete seleccionado (Landing Page, PyME o Perfil Corporativo)."
+        },
+        {
+          "title": "¿Qué framework o tecnología utilizan?",
+          "content": "Utilizamos Next.js, TypeScript y Tailwind CSS para ofrecer sitios web de alto rendimiento, seguros y optimizados para el SEO de Google."
+        },
+        {
+          "title": "¿Debo preparar mi propio dominio y hosting?",
+          "content": "Dependiendo del paquete seleccionado, puedes usar tu propio dominio y hosting o aprovechar los servicios de infraestructura que ofrecemos."
+        },
+        {
+          "title": "¿Cómo funciona el sistema de pago y el proceso de revisión?",
+          "content": "El pago se realiza por etapas (anticipo y saldo al publicar). Cada paquete incluye una cuota de revisiones para garantizar el resultado esperado."
+        },
+        {
+          "title": "¿Incluyen una guía para gestionar o usar el sitio web?",
+          "content": "Sí, proporcionamos una guía completa en PDF y tutoriales en video para ayudarte a administrar el contenido de tu sitio web fácilmente."
+        },
+        {
+          "title": "¿Puedo solicitar un diseño personalizado para mi marca?",
+          "content": "¡Por supuesto! Cada paquete se adapta a la identidad de tu marca, incluyendo colores, estilo visual y estructura de páginas."
+        },
+        {
+          "title": "¿Ofrecen mantenimiento o actualización de contenido tras el lanzamiento?",
+          "content": "Sí, ofrecemos opciones de mantenimiento y actualización tras el lanzamiento para mantener tu web segura y actualizada."
+        }
+      ]
     }
   }
 }

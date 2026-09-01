@@ -1,5 +1,6 @@
 import Navbar from "@/components/common/Navbar/navbar";
 import AdvantagesSection from "@/components/section/home-page/advantages";
+import FaqSection from "@/components/section/home-page/faq";
 import HeroSection from "@/components/section/home-page/hero";
 import ServiceSection from "@/components/section/home-page/service";
 import TechSection from "@/components/section/home-page/tech";
@@ -15,6 +16,7 @@ export default function Home() {
         <AdvantagesSection />
         <ServiceSection />
         <WorkflowSection />
+        <FaqSection />
       </div>
     </main>
   );

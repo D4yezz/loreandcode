@@ -230,6 +230,43 @@
           ]
         }
       }
+    },
+    "FAQ": {
+      "badge": "FAQ",
+      "title": "Pertanyaan yang sering ditanyakan",
+      "cardHead": "Punya Pertanyaan Khusus?",
+      "subtitle": "Punya konsep unik atau bingung pilih paket? Diskusi langsung bersama kami. Kami siap bantu wujudkan website impianmu!",
+      "btnCta": "Konsultasi Gratis",
+      "questions": [
+        {
+          "title": "Berapa lama estimasi pengerjaan satu proyek website?",
+          "content": "Waktu pengerjaan berkisar antara 3 hingga 14 hari kerja, tergantung pada skala dan kompleksitas paket yang dipilih (Landing Page, UMKM, atau Company Profile)."
+        },
+        {
+          "title": "Apa framework / teknologi yang digunakan?",
+          "content": "Kami menggunakan Next.js, TypeScript, dan Tailwind CSS untuk menghasilkan website berkecepatan tinggi, aman, serta dioptimalkan penuh untuk SEO Google."
+        },
+        {
+          "title": "Apakah saya perlu menyiapkan domain dan hosting sendiri?",
+          "content": "Tergantung paket yang dipilih, Anda dapat menggunakan domain dan hosting sendiri atau memanfaatkan infrastruktur siap pakai dari kami."
+        },
+        {
+          "title": "Bagaimana sistem pembayaran dan alur revisinya?",
+          "content": "Pembayaran dilakukan bertahap (sistem DP dan pelunasan saat go-live). Setiap paket sudah mencakup kuota revisi untuk memastikan hasil sesuai ekspektasi. Revisi tambahan di luar kuota akan dikenakan biaya sesuai kesepakatan."
+        },
+        {
+          "title": "Apakah ada panduan cara mengelola websitenya?",
+          "content": "Ya, kami menyediakan panduan lengkap dalam bentuk dokumentasi PDF dan video tutorial untuk membantu Anda mengelola konten website dengan mudah."
+        },
+        {
+          "title": "Apakah saya bisa request desain custom sesuai brand saya?",
+          "content": "Tentu, setiap paket dapat disesuaikan dengan kebutuhan brand Anda. Kami akan menyesuaikan warna, gaya visual, organisasi konten, dan struktur halaman agar selaras dengan identitas bisnis Anda."
+        },
+        {
+          "title": "Apakah website bisa dilanjutkan untuk maintenance atau update konten setelah go-live?",
+          "content": "Ya, kami menyediakan opsi maintenance dan update konten pasca-launch agar website tetap aman, relevan, dan terus berkembang sesuai kebutuhan bisnis Anda."
+        }
+      ]
     }
   }
 }
