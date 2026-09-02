@@ -267,6 +267,32 @@
           "content": "Ya, kami menyediakan opsi maintenance dan update konten pasca-launch agar website tetap aman, relevan, dan terus berkembang sesuai kebutuhan bisnis Anda."
         }
       ]
+    },
+    "footer": {
+      "cta": {
+        "titleLine1": "Ingin Membangun",
+        "titleLine2": "Website Impianmu?",
+        "btn": "Mulai Proyek"
+      },
+      "brand": {
+        "descBefore": "Kami membangun website ",
+        "highlight": "high-performance",
+        "descAfter": " dengan estetika berani. Solusi tepat untuk brand yang ingin tampil beda."
+      },
+      "headings": {
+        "navigation": "Navigasi",
+        "contact": "Kontak",
+        "social": "Sosial"
+      },
+      "contact": {
+        "telegram": "Telegram",
+        "email": "Email",
+        "location": "Kota Malang, Jawa Timur, Indonesia"
+      },
+      "bottom": {
+        "rights": "Hak cipta dilindungi undang-undang.",
+        "createdBy": "Dibuat oleh"
+      }
     }
   }
 }

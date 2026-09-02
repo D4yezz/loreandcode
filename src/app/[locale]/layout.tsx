@@ -54,7 +54,8 @@ export default async function RootLayout(props: LayoutProps<"/[locale]">) {
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} ${dm_sans.variable} ${public_sans.variable} ${sora.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} ${dm_sans.variable} ${public_sans.variable} ${sora.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>

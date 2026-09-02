@@ -268,6 +268,32 @@
           "content": "Ja, wir bieten Wartungs- und Update-Optionen nach dem Launch an, damit Ihre Website dauerhaft sicher und aktuell bleibt."
         }
       ]
+    },
+    "footer": {
+      "cta": {
+        "titleLine1": "Möchten Sie Ihre",
+        "titleLine2": "Traum-Website Bauen?",
+        "btn": "Projekt Starten"
+      },
+      "brand": {
+        "descBefore": "Wir bauen ",
+        "highlight": "High-Performance",
+        "descAfter": "-Websites mit mutiger Ästhetik. Die richtige Lösung für Marken, die auffallen wollen."
+      },
+      "headings": {
+        "navigation": "Navigation",
+        "contact": "Kontakt",
+        "social": "Soziale Medien"
+      },
+      "contact": {
+        "telegram": "Telegram",
+        "email": "E-Mail",
+        "location": "Stadt Malang, Ost-Java, Indonesien"
+      },
+      "bottom": {
+        "rights": "Alle Rechte vorbehalten.",
+        "createdBy": "Erstellt von"
+      }
     }
   }
 }

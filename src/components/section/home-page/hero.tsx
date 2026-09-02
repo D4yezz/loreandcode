@@ -66,7 +66,10 @@ export default function HeroSection() {
   }, [title.length]);
 
   return (
-    <section className="lg:min-h-[87vh] lg:h-[87vh] h-fit lg:px-12 px-4 font-dm-sans">
+    <section
+      id="hero"
+      className="lg:min-h-[87vh] lg:h-[87vh] h-fit lg:px-12 px-4 font-dm-sans"
+    >
       <div className="flex flex-col items-center justify-center w-full h-screen mt-8 lg:flex-row lg:h-full lg:mt-0">
         <div className="flex flex-col items-start justify-center w-full h-full lg:w-1/2">
           <h1 className="md:text-[4rem] md:leading-16 text-[2.3rem] leading-10 font-bold font-sora lg:max-w-fit max-w-[90%] text-balance">

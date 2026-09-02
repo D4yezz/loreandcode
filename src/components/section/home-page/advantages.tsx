@@ -16,7 +16,10 @@ export default function AdvantagesSection() {
     description: t(`listAdvantages${index + 1}.description`),
   }));
   return (
-    <section className="w-full font-sora lg:h-[90vh] h-fit flex lg:flex-row flex-col border-b-3">
+    <section
+      id="advantages"
+      className="w-full font-sora lg:h-[90vh] h-fit flex lg:flex-row flex-col border-b-3"
+    >
       <div className="lg:w-[25%] w-[90%] lg:mx-0 mx-auto lg:mt-0 mt-3 z-10 lg:z-0 lg:shadow-none shadow-shadow bg-third lg:border-r-3 lg:border-0 border-3 flex items-center lg:h-full h-fit px-6 lg:py-0 py-6 relative overflow-hidden">
         <h1 className="relative z-10 flex flex-col items-stretch w-full px-8 md:max-w-[60%] lg:max-w-full max-w-full mx-auto text-3xl font-medium md:text-4xl lg:px-0 lg:static">
           <span className="self-start font-archivo">{t("title")} </span>

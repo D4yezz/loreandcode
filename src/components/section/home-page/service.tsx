@@ -20,7 +20,10 @@ export default function ServiceSection() {
   );
 
   return (
-    <section className="flex w-full lg:flex-row flex-col lg:h-[115vh] font-sora">
+    <section
+      id="services"
+      className="flex w-full lg:flex-row flex-col lg:h-[115vh] font-sora"
+    >
       <div className="lg:w-[60%] w-full lg:h-full h-fit flex flex-col lg:gap-8 gap-6 lg:pt-8 pt-6 px-4">
         <div className="flex items-center justify-between px-0 lg:px-10">
           <h1 className="text-2xl font-bold lg:text-4xl">{t("title")}</h1>
@@ -36,7 +39,7 @@ export default function ServiceSection() {
           setSelectedService={setSelectedService}
         />
       </div>
-      <div className="lg:w-[40%] w-full lg:h-full h-[90vh] bg-main lg:border-l-3 border-t-3 flex flex-col items-center lg:justify-center justify-end lg:py-0 py-6 relative overflow-hidden">
+      <div className="lg:w-[40%] w-full lg:h-full h-[90vh] bg-main lg:border-l-3 lg:border-t-0 border-t-3 flex flex-col items-center lg:justify-center justify-end lg:py-0 py-6 relative overflow-hidden">
         <AnimatePresence mode="wait">
           {selectedService ? (
             <motion.div

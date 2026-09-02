@@ -35,8 +35,11 @@ export default function FaqSection() {
   const t = useTranslations("home.FAQ");
   const questions = t.raw("questions") as FAQItem[];
   return (
-    <section className="relative flex flex-col items-center w-full min-h-screen lg:flex-row lg:h-screen bg-background border-b-3 font-sora">
-      <div className="lg:w-[40%] w-full lg:h-full h-[80vh] p-8 flex flex-col justify-center lg:gap-12 gap-6 relative lg:border-r-3 border-b-3 bg-pink-400 overflow-hidden">
+    <section
+      id="faq"
+      className="relative flex flex-col items-center w-full min-h-screen lg:flex-row lg:h-screen bg-background border-b-3 font-sora"
+    >
+      <div className="lg:w-[40%] w-full lg:h-full h-[80vh] p-8 flex flex-col justify-center lg:gap-12 gap-6 relative lg:border-r-3 lg:border-b-0 border-b-3 bg-pink-400 overflow-hidden">
         <div className="flex flex-col w-full gap-4">
           <div className="z-10 flex items-center justify-center gap-2 px-4 py-2 font-bold border-2 bg-main text-md w-fit shadow-shadow">
             <div className="bg-white border-2 rounded-full size-4"></div>

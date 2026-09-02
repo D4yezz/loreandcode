@@ -24,7 +24,7 @@ function LeftDecoration() {
           className="object-contain pointer-events-none select-none"
         />
       </div>
-      <div className="absolute z-0 flex flex-col w-20 bg-white border-2 lg:h-45 lg:w-25 h-35 lg:bottom-7 top-1/4 lg:left-10 -right-6 shadow-shadow lg:rotate-50 -rotate-25">
+      <div className="absolute z-0 flex flex-col w-20 bg-white border-2 lg:h-45 lg:w-25 h-35 lg:bottom-7 bottom-3/5 lg:left-10 -right-6 shadow-shadow lg:rotate-50 -rotate-25">
         <div className="w-full h-full px-2 pt-2 ">
           <div className="relative w-full h-full overflow-hidden">
             <Image
@@ -33,7 +33,7 @@ function LeftDecoration() {
               }
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              alt="wallpaper"
+              alt="batman gif"
               draggable={false}
               onDragStart={(e) => e.preventDefault()}
               className="object-cover object-center pointer-events-none select-none"
@@ -120,7 +120,7 @@ function RightDecoration() {
               }
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              alt="wallpaper"
+              alt="road gif"
               draggable={false}
               onDragStart={(event) => event.preventDefault()}
               className="object-cover pointer-events-none select-none"

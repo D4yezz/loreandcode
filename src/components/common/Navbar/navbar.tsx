@@ -129,7 +129,7 @@ export default function Navbar() {
                     className="fixed inset-0 z-50 flex items-center w-screen h-screen bg-overlay"
                   />
 
-                  <motion.div
+                  <motion.aside
                     initial={{ opacity: 0, x: 100 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 100 }}
@@ -196,7 +196,7 @@ export default function Navbar() {
                         ))}
                       </ul>
                     </div>
-                  </motion.div>
+                  </motion.aside>
                 </>
               )}
             </AnimatePresence>

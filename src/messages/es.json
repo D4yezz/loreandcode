@@ -278,6 +278,32 @@
           "content": "Sí, ofrecemos opciones de mantenimiento y actualización tras el lanzamiento para mantener tu web segura y actualizada."
         }
       ]
+    },
+    "footer": {
+      "cta": {
+        "titleLine1": "¿Quieres Construir Tu",
+        "titleLine2": "Sitio Web Soñado?",
+        "btn": "Iniciar Proyecto"
+      },
+      "brand": {
+        "descBefore": "Construimos sitios web de ",
+        "highlight": "alto rendimiento",
+        "descAfter": " con una estética audaz. La solución perfecta para marcas que buscan destacar."
+      },
+      "headings": {
+        "navigation": "Navegación",
+        "contact": "Contacto",
+        "social": "Redes Sociales"
+      },
+      "contact": {
+        "telegram": "Telegram",
+        "email": "Correo Electrónico",
+        "location": "Ciudad de Malang, Java Oriental, Indonesia"
+      },
+      "bottom": {
+        "rights": "Todos los derechos reservados.",
+        "createdBy": "Creado por"
+      }
     }
   }
 }

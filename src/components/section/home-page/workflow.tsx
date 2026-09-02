@@ -13,7 +13,10 @@ export default function WorkflowSection() {
   const isTablet = useMediaQuery("(min-width: 768px)");
 
   return (
-    <section className="w-full font-sora min-h-screen h-fit flex flex-col p-8 pb-20 lg:justify-center items-center border-t-3 relative overflow-hidden border-b-3">
+    <section
+      id="workflow"
+      className="w-full font-sora min-h-screen h-fit flex flex-col p-8 pb-20 lg:justify-center items-center border-t-3 relative overflow-hidden border-b-3"
+    >
       <div className="flex justify-between w-[50vw] lg:h-[10%] h-[8%] absolute z-0 left-1/2 -translate-x-1/2 top-0">
         <div className="w-2 h-full bg-black"></div>
         <div className="w-2 h-full bg-black"></div>
