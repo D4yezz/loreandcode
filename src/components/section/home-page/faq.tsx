@@ -35,17 +35,17 @@ export default function FaqSection() {
   const t = useTranslations("home.FAQ");
   const questions = t.raw("questions") as FAQItem[];
   return (
-    <section className="flex items-center w-full min-h-screen h-screen relative bg-background border-b-3 font-sora">
-      <div className="w-[40%] h-full p-8 flex flex-col justify-center gap-12 relative border-r-3 bg-pink-400 overflow-hidden">
-        <div className="flex w-full flex-col gap-4">
-          <div className="bg-main text-md font-bold w-fit px-4 py-2 z-10 flex items-center justify-center gap-2 border-2 shadow-shadow">
-            <div className="size-4 rounded-full border-2 bg-white"></div>
+    <section className="relative flex flex-col items-center w-full min-h-screen lg:flex-row lg:h-screen bg-background border-b-3 font-sora">
+      <div className="lg:w-[40%] w-full lg:h-full h-[80vh] p-8 flex flex-col justify-center lg:gap-12 gap-6 relative lg:border-r-3 border-b-3 bg-pink-400 overflow-hidden">
+        <div className="flex flex-col w-full gap-4">
+          <div className="z-10 flex items-center justify-center gap-2 px-4 py-2 font-bold border-2 bg-main text-md w-fit shadow-shadow">
+            <div className="bg-white border-2 rounded-full size-4"></div>
             {t("badge")}
           </div>
-          <h1 className="text-5xl font-bold">{t("title")}</h1>
+          <h1 className="z-10 text-5xl font-bold text-white">{t("title")}</h1>
         </div>
-        <Card className="bg-white z-10 p-0 gap-0">
-          <CardHeader className="flex justify-between items-center border-b-2 px-2 bg-main mb-4">
+        <Card className="z-10 gap-0 p-0 bg-white">
+          <CardHeader className="flex items-center justify-between px-2 mb-4 border-b-2 bg-main">
             <div className="flex items-center text-md w-fit h-fit">
               <Image
                 src="/logo.png"
@@ -75,7 +75,7 @@ export default function FaqSection() {
           <CardFooter className="p-4">
             <a
               href="#"
-              className="w-full flex items-center justify-center gap-2 text-lg font-semibold border-2 py-2 bg-main hover:bg-third duration-150"
+              className="flex items-center justify-center w-full gap-2 py-2 text-lg font-semibold duration-150 border-2 bg-main hover:bg-third"
             >
               {t("btnCta")}
               <HugeiconsIcon
@@ -89,19 +89,19 @@ export default function FaqSection() {
         </Card>
         <LeftDecoration />
       </div>
-      <div className="w-[60%] h-full p-4 flex flex-col items-center justify-center relative overflow-hidden">
+      <div className="lg:w-[60%] w-full lg:h-full h-screen lg:p-4 flex flex-col items-center justify-center relative overflow-hidden">
         <Accordion
           type="single"
           defaultValue={questions[0].title}
           collapsible
-          className="w-full max-w-[80%] z-40"
+          className="w-full lg:max-w-[80%] max-w-[90%] z-40"
         >
           {questions.map((item, index) => (
             <AccordionItem key={index} value={item.title}>
-              <AccordionTrigger className="text-lg">
+              <AccordionTrigger className="lg:text-lg text-md">
                 {item.title}
               </AccordionTrigger>
-              <AccordionContent className="text-base">
+              <AccordionContent className="text-sm lg:text-base">
                 {item.content}
               </AccordionContent>
             </AccordionItem>
