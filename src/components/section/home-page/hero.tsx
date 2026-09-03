@@ -68,9 +68,9 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="lg:min-h-[87vh] lg:h-[87vh] h-fit lg:px-12 px-4 font-dm-sans"
+      className="lg:min-h-screen lg:h-screen h-fit lg:px-12 px-4 font-dm-sans"
     >
-      <div className="flex flex-col items-center justify-center w-full h-screen mt-8 lg:flex-row lg:h-full lg:mt-0">
+      <div className="flex flex-col items-center justify-center w-full h-screen mt-22 lg:flex-row lg:h-full lg:mt-0">
         <div className="flex flex-col items-start justify-center w-full h-full lg:w-1/2">
           <h1 className="md:text-[4rem] md:leading-16 text-[2.3rem] leading-10 font-bold font-sora lg:max-w-fit max-w-[90%] text-balance">
             {title[activeWordIndex]}
@@ -87,7 +87,7 @@ export default function HeroSection() {
                 strokeWidth={2}
               />
             </Button>
-            <Button className="h-12 text-lg font-bold uppercase w-60 ">
+            <Button className="h-12 text-lg font-bold uppercase w-60">
               {t("viewService")}
             </Button>
           </div>
@@ -144,7 +144,7 @@ export default function HeroSection() {
             />
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 z-10 bg-pink-400 lg:w-[30vw] w-[80%] h-[55%] lg:h-[48vh] shadow-shadow border-2" />
-          <div className="absolute left-1/2 lg:top-20 top-10 -translate-x-1/2 z-0 bg-third lg:w-[27vw] lg:h-[44vh] w-[70%] h-[70%] shadow-shadow border-2" />
+          <div className="absolute left-1/2 lg:top-40 top-10 -translate-x-1/2 z-0 bg-third lg:w-[27vw] lg:h-[40vh] w-[70%] h-[70%] shadow-shadow border-2" />
         </div>
       </div>
     </section>

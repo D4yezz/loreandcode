@@ -22,6 +22,9 @@ export default function Navbar() {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const menu = [
     {
       title: t("home"),
@@ -37,9 +40,17 @@ export default function Navbar() {
     },
     {
       title: t("faq"),
-      href: "/contact",
+      href: "#faq",
     },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -50,8 +61,12 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="w-full lg:h-[8vh] h-[7vh] flex items-center justify-end font-public-sans lg:overflow-auto overflow-hidden">
-      <div className="flex items-center justify-between w-full border-b-3 border-black h-full lg:shadow-none shadow-nav">
+    <header
+      className={`fixed top-0 left-0 right-0 z-90 w-full transition-all duration-300 flex items-center justify-end font-public-sans ${isScrolled ? "p-0 lg:py-0 lg:px-10 lg:h-[9vh] h-[7vh]" : "lg:py-4 p-4 lg:px-10 lg:h-[12vh] h-[10vh]"}`}
+    >
+      <div
+        className={`flex items-center justify-between w-full h-full border-black lg:shadow-none shadow-nav bg-background relative ${isScrolled ? "border-b-3 lg:border-3" : "border-3"}`}
+      >
         <div className="w-[17%] lg:shadow-nav shadow-none h-full flex items-center justify-center bg-main border-r-3">
           <Link
             href="/"
@@ -94,7 +109,7 @@ export default function Navbar() {
             </nav>
             <div className="w-[23%] flex h-full">
               <LanguageSwitcher />
-              <button className="h-full w-[80%] flex items-center justify-center gap-2 px-4 border-l-3 border-black bg-third uppercase text-xl font-bold font-sora shadow-nav duration-150 hover:shadow-none">
+              <button className="h-full w-[80%] flex items-center justify-center gap-2 px-4 border-l-3 border-black bg-third uppercase text-lg whitespace-nowrap font-bold font-sora shadow-nav duration-150 hover:shadow-none">
                 {t("btnCta")}
                 <HugeiconsIcon
                   icon={ArrowUpRight01Icon}
@@ -110,7 +125,7 @@ export default function Navbar() {
               <LanguageSwitcher />
               <button
                 onClick={() => setOpen(true)}
-                className="flex flex-col items-end justify-center w-1/2 h-full gap-2 px-4 text-xl font-bold uppercase border-l-3 border-black bg-third font-sora"
+                className="flex flex-col items-end justify-center w-1/2 h-full gap-2 px-4 text-xl font-bold uppercase border-black border-l-3 bg-third font-sora"
               >
                 <div className="w-[90%] h-1.5 bg-black" />
                 <div className="w-[60%] h-1.5 bg-black" />
@@ -123,20 +138,26 @@ export default function Navbar() {
                   <motion.div
                     onClick={() => setOpen(false)}
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 0.5 }}
+                    animate={{ opacity: 0.2 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="fixed inset-0 z-50 flex items-center w-screen h-screen bg-overlay"
+                    className="absolute inset-0 z-50 flex items-center w-screen h-screen bg-black"
                   />
 
                   <motion.aside
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
+                    initial={{ height: 0 }}
+                    animate={{ height: "auto" }}
+                    exit={{ height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="w-[60vw] md:w-[40vw] h-screen top-0 right-0 fixed flex flex-col items-center justify-between z-60 bg-main border-l-4"
+                    className="w-full gap-10 top-0 left-0 absolute flex flex-col items-center justify-between z-60 bg-main border-b-3"
                   >
-                    <div className="flex flex-col items-center w-full">
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="flex flex-col items-center w-full"
+                    >
                       <div className="flex items-center justify-between w-full border-b-4 h-14 bg-background">
                         <Link
                           href="/"
@@ -160,30 +181,39 @@ export default function Navbar() {
                           <HugeiconsIcon icon={Cancel01Icon} strokeWidth={4} />
                         </button>
                       </div>
-                      <nav className="flex items-start w-full pl-2 pr-4 mt-8 h-fit">
-                        <ul className="flex flex-col items-start w-full gap-4 text-lg font-semibold">
+                      <motion.nav
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="flex items-start w-full pl-2 pr-4 mt-4 h-fit"
+                      >
+                        <ul className="flex flex-col items-start w-full text-4xl text-white gap-2 font-semibold">
                           {menu.map((item, i) => (
-                            <li
-                              key={i}
-                              className="flex items-center w-full h-12 px-4 border-2 shadow-shadow bg-background"
-                            >
+                            <li key={i} className="flex items-center">
                               <Link
                                 href={item.href}
-                                className="font-bold tracking-wide uppercase font-sora"
+                                className="font-black uppercase font-sora whitespace-nowrap underline decoration-2 decoration-white underline-offset-4"
                               >
                                 {item.title}
                               </Link>
                             </li>
                           ))}
                         </ul>
-                      </nav>
-                    </div>
-                    <div className="w-full pl-2 pr-4 mb-24">
-                      <ul className="flex flex-col items-start w-full text-lg font-semibold bg-third shadow-shadow">
+                      </motion.nav>
+                    </motion.div>
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="w-full pl-2 pr-4 mb-4"
+                    >
+                      <ul className="grid grid-cols-2 w-full text-lg gap-2 font-semibold">
                         {connect.map((item, i) => (
                           <li
                             key={i}
-                            className="w-full bg-third flex gap-2 border-2 px-2 py-3 text-sm"
+                            className="flex w-full last:col-span-2 gap-2 px-2 py-3 text-sm border-2 bg-white"
                           >
                             <HugeiconsIcon
                               icon={item.icon}
@@ -195,7 +225,7 @@ export default function Navbar() {
                           </li>
                         ))}
                       </ul>
-                    </div>
+                    </motion.div>
                   </motion.aside>
                 </>
               )}

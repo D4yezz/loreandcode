@@ -2,7 +2,7 @@
 import {
   LeftDecoration,
   RightDecoration,
-} from "@/components/layout/DecorationFaq";
+} from "@/components/common/DecorationFaq";
 import {
   Accordion,
   AccordionContent,

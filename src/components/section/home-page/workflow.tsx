@@ -1,5 +1,5 @@
 "use client";
-import CardWorkflow from "@/components/layout/CardWorkflow";
+import CardWorkflow from "@/components/common/CardWorkflow";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useWorkflowData } from "@/utils/workflow-data";
 import { useTranslations } from "next-intl";

@@ -1,5 +1,5 @@
-import Footer from "@/components/common/Footer/footer";
-import Navbar from "@/components/common/Navbar/navbar";
+import Footer from "@/components/layout/Footer/footer";
+import Navbar from "@/components/layout/Navbar/navbar";
 import AdvantagesSection from "@/components/section/home-page/advantages";
 import FaqSection from "@/components/section/home-page/faq";
 import HeroSection from "@/components/section/home-page/hero";

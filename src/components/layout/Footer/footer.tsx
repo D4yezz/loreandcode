@@ -50,7 +50,7 @@ export default function Footer() {
           </svg>
         </div>
 
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-center lg:text-left z-10">
+        <h2 className="text-3xl whitespace-nowrap md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-center lg:text-left z-10">
           {t("cta.titleLine1")} <br />{" "}
           <span className="bg-white border-2 border-black px-2 mt-2 inline-block shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             {t("cta.titleLine2")}
@@ -68,7 +68,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-8 lg:p-12">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-4 lg:p-12">
         <div className="lg:col-span-1">
           <h3 className="text-3xl font-black uppercase bg-third text-black inline-block px-3 py-1 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-4 transform -rotate-2">
             Lore & Code
@@ -181,7 +181,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Lore & Code.{" "}
           <span className="hidden lg:inline">{t("bottom.rights")}</span>
         </p>
-        <p className="mt-2 lg:mt-0 bg-main text-black border-3 px-3 py-1">
+        <p className="bg-main text-black border-3 px-3 py-1">
           {t("bottom.createdBy")} <a href="https://www.dayezzz.my.id">Dias</a>
         </p>
       </div>

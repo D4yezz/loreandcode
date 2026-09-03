@@ -1,6 +1,6 @@
 "use client";
 import { Link } from "@/i18n/navigation";
-import ServiceCarousel from "@/components/layout/CarouselService";
+import ServiceCarousel from "@/components/common/CarouselService";
 import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
