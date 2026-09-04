@@ -23,7 +23,6 @@ export default function Navbar() {
   const isTablet = useMediaQuery("(min-width: 768px)");
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menu = [
     {
@@ -35,12 +34,12 @@ export default function Navbar() {
       href: "/services",
     },
     {
-      title: t("projects"),
-      href: "/projects",
-    },
-    {
       title: t("faq"),
       href: "#faq",
+    },
+    {
+      title: t("contact"),
+      href: "/contact",
     },
   ];
 

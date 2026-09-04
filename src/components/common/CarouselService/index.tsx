@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import {
   Card,
   CardHeader,
@@ -137,7 +137,7 @@ export default function ServiceCarousel({
                     asChild
                     className="md:w-[30%] w-full bg-pink-400 text-white font-semibold text-lg shadow-none border-l-2"
                   >
-                    <Link href={`/services/${item.id}`}>{t("moreBtn")}</Link>
+                    <Link href={`/service/${item.slug}`}>{t("moreBtn")}</Link>
                   </Button>
                 </CardFooter>
               </Card>

@@ -2,8 +2,8 @@
   "Navbar": {
     "home": "Home",
     "services": "Service",
-    "projects": "Portfolio",
     "faq": "FAQs",
+    "contact": "Contact",
     "btnCta": "Order Now",
     "lang": {
       "id": "Indonesia",
@@ -93,7 +93,7 @@
           ]
         },
         "2": {
-          "title": "MSME & Business Profile Web",
+          "title": "MSME Website and Business Profile",
           "desc": "Professional business profile website engineered to boost credibility, build a strong brand identity, and reach more customers in the digital era.",
           "priceStart": "$35",
           "priceEnd": "$135",
@@ -156,7 +156,7 @@
           "exampleWeb": ["https://nusa-build.vercel.app/"]
         },
         "4": {
-          "title": "Portfolio & Personal Blog Web",
+          "title": "Portfolio and Personal Blog Web",
           "desc": "Showcase your finest work, achievements, and skills with a modern, responsive portfolio website built to level up your professional reputation.",
           "priceStart": "$30",
           "priceEnd": "$270",
@@ -269,31 +269,54 @@
         }
       ]
     },
-    "footer": {
-      "cta": {
-        "titleLine1": "Want to Build Your",
-        "titleLine2": "Dream Website?",
-        "btn": "Start a Project"
+    "serviceDetail": {
+      "metadata": {
+        "title": "Service Not Found | Lore & Code",
+        "description": "The service you are looking for is unavailable or the link is invalid."
       },
-      "brand": {
-        "descBefore": "We build ",
-        "highlight": "high-performance",
-        "descAfter": " websites with bold aesthetics. The right solution for brands that want to stand out."
-      },
-      "headings": {
-        "navigation": "Navigation",
-        "contact": "Contact",
-        "social": "Socials"
-      },
-      "contact": {
-        "telegram": "Telegram",
-        "email": "Email",
-        "location": "Malang City, East Java, Indonesia"
-      },
-      "bottom": {
-        "rights": "All rights reserved.",
-        "createdBy": "Built by"
-      }
+      "backHome": "Back to Home",
+      "serviceBadge": "Service Details",
+      "galleryTitle": "Preview & Design Gallery",
+      "gallerySubtitle": "Click on any image to enlarge the screenshot preview",
+      "featuresTitle": "Key Package Features",
+      "greatForTitle": "Great For",
+      "exampleWebTitle": "Live Demo Websites",
+      "pricingLabel": "Estimated Cost",
+      "headingBanner": "Ready to Develop Your Business?",
+      "subHeadingBanner1": "Start building your",
+      "subHeadingBanner2": "with Lore & Code today.",
+      "orderCta": "Order This Service",
+      "consultCta": "Free Consultation via WhatsApp",
+      "notFoundTitle": "Service Not Found",
+      "notFoundDesc": "Sorry, the service you are looking for is unavailable or the link is invalid.",
+      "zoomHint": "Click to enlarge",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "cta": {
+      "titleLine1": "Want to Build Your",
+      "titleLine2": "Dream Website?",
+      "btn": "Start a Project"
+    },
+    "brand": {
+      "descBefore": "We build ",
+      "highlight": "high-performance",
+      "descAfter": " websites with bold aesthetics. The right solution for brands that want to stand out."
+    },
+    "headings": {
+      "navigation": "Navigation",
+      "contact": "Contact",
+      "social": "Socials"
+    },
+    "contact": {
+      "telegram": "Telegram",
+      "email": "Email",
+      "location": "Malang City, East Java, Indonesia"
+    },
+    "bottom": {
+      "rights": "All rights reserved.",
+      "createdBy": "Built by"
     }
   }
 }

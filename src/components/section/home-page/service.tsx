@@ -101,7 +101,7 @@ export default function ServiceSection() {
                     asChild
                     className="w-full mt-2 text-lg font-semibold border-l-2 shadow-none bg-third"
                   >
-                    <Link href={`/services/${selectedService.id}`}>
+                    <Link href={`/service/${selectedService.slug}`}>
                       {t("moreBtn")}
                     </Link>
                   </Button>

@@ -2,8 +2,8 @@
   "Navbar": {
     "home": "Inicio",
     "services": "Servicio",
-    "projects": "Cartera",
     "faq": "Preguntas",
+    "contact": "Contacto",
     "btnCta": "Ordene ahora",
     "lang": {
       "id": "Indonesia",
@@ -279,31 +279,54 @@
         }
       ]
     },
-    "footer": {
-      "cta": {
-        "titleLine1": "¿Quieres Construir Tu",
-        "titleLine2": "Sitio Web Soñado?",
-        "btn": "Iniciar Proyecto"
+    "serviceDetail": {
+      "metadata": {
+        "title": "Servicio no encontrado | ",
+        "description": "El servicio que busca no está disponible o el enlace no es válido."
       },
-      "brand": {
-        "descBefore": "Construimos sitios web de ",
-        "highlight": "alto rendimiento",
-        "descAfter": " con una estética audaz. La solución perfecta para marcas que buscan destacar."
-      },
-      "headings": {
-        "navigation": "Navegación",
-        "contact": "Contacto",
-        "social": "Redes Sociales"
-      },
-      "contact": {
-        "telegram": "Telegram",
-        "email": "Correo Electrónico",
-        "location": "Ciudad de Malang, Java Oriental, Indonesia"
-      },
-      "bottom": {
-        "rights": "Todos los derechos reservados.",
-        "createdBy": "Creado por"
-      }
+      "backHome": "Volver a Inicio",
+      "serviceBadge": "Detalles del Servicio",
+      "galleryTitle": "Galería de Diseños y Vista Previa",
+      "gallerySubtitle": "Haz clic en la imagen para ampliar la captura de pantalla",
+      "featuresTitle": "Características Clave del Paquete",
+      "greatForTitle": "Ideal Para",
+      "exampleWebTitle": "Sitios Web de Demostración",
+      "pricingLabel": "Costo Estimado",
+      "headingBanner": "Listo para Desarrollar tu Negocio?",
+      "subHeadingBanner1": "Comienza a construir tu",
+      "subHeadingBanner2": "con Lore & Code hoy.",
+      "orderCta": "Pedir Este Servicio",
+      "consultCta": "Consulta Gratuita por WhatsApp",
+      "notFoundTitle": "Servicio No Encontrado",
+      "notFoundDesc": "Lo sentimos, el servicio que buscas no está disponible o el enlace es inválido.",
+      "zoomHint": "Clic para ampliar",
+      "close": "Cerrar"
+    }
+  },
+  "footer": {
+    "cta": {
+      "titleLine1": "¿Quieres Construir Tu",
+      "titleLine2": "Sitio Web Soñado?",
+      "btn": "Iniciar Proyecto"
+    },
+    "brand": {
+      "descBefore": "Construimos sitios web de ",
+      "highlight": "alto rendimiento",
+      "descAfter": " con una estética audaz. La solución perfecta para marcas que buscan destacar."
+    },
+    "headings": {
+      "navigation": "Navegación",
+      "contact": "Contacto",
+      "social": "Redes Sociales"
+    },
+    "contact": {
+      "telegram": "Telegram",
+      "email": "Correo Electrónico",
+      "location": "Ciudad de Malang, Java Oriental, Indonesia"
+    },
+    "bottom": {
+      "rights": "Todos los derechos reservados.",
+      "createdBy": "Creado por"
     }
   }
 }

@@ -2,8 +2,8 @@
   "Navbar": {
     "home": "Beranda",
     "services": "Layanan",
-    "projects": "Portofolio",
     "faq": "FAQ",
+    "contact": "Kontak",
     "btnCta": "Order Sekarang",
     "lang": {
       "id": "Indonesia",
@@ -92,7 +92,7 @@
           ]
         },
         "2": {
-          "title": "Website UMKM & Profil Usaha",
+          "title": "Website UMKM dan Profil Usaha",
           "desc": "Website profil bisnis profesional untuk meningkatkan kredibilitas, membangun citra merek yang kuat, dan menjangkau lebih banyak pelanggan.",
           "priceStart": "Rp500.000",
           "priceEnd": "Rp2.000.000",
@@ -155,7 +155,7 @@
           "exampleWeb": ["https://nusa-build.vercel.app/"]
         },
         "4": {
-          "title": "Website Portofolio & Blog",
+          "title": "Website Portofolio dan Blog",
           "desc": "Showcase karya dan pencapaian terbaik Anda dengan website portofolio modern yang responsif untuk meningkatkan reputasi profesional Anda.",
           "priceStart": "Rp400.000",
           "priceEnd": "Rp4.000.000",
@@ -268,31 +268,54 @@
         }
       ]
     },
-    "footer": {
-      "cta": {
-        "titleLine1": "Ingin Membangun",
-        "titleLine2": "Website Impianmu?",
-        "btn": "Mulai Proyek"
+    "serviceDetail": {
+      "metadata": {
+        "title": "Layanan Tidak Ada | Lore & Code",
+        "description": "Layanan yang Anda cari tidak ditemukan."
       },
-      "brand": {
-        "descBefore": "Kami membangun website ",
-        "highlight": "high-performance",
-        "descAfter": " dengan estetika berani. Solusi tepat untuk brand yang ingin tampil beda."
-      },
-      "headings": {
-        "navigation": "Navigasi",
-        "contact": "Kontak",
-        "social": "Sosial"
-      },
-      "contact": {
-        "telegram": "Telegram",
-        "email": "Email",
-        "location": "Kota Malang, Jawa Timur, Indonesia"
-      },
-      "bottom": {
-        "rights": "Hak cipta dilindungi undang-undang.",
-        "createdBy": "Dibuat oleh"
-      }
+      "backHome": "Kembali ke Beranda",
+      "serviceBadge": "Detail Layanan",
+      "galleryTitle": "Pratinjau & Galeri Tampilan",
+      "gallerySubtitle": "Klik gambar untuk memperbesar tampilan antarmuka website",
+      "featuresTitle": "Fitur Lengkap Paket",
+      "greatForTitle": "Sangat Cocok Untuk",
+      "exampleWebTitle": "Contoh Website Live",
+      "pricingLabel": "Estimasi Biaya",
+      "headingBanner": "Siap Mengembangkan Bisnismu?",
+      "subHeadingBanner1": "Mulai buat",
+      "subHeadingBanner2": "bersama Lore & Code hari ini.",
+      "orderCta": "Pesan Layanan Ini",
+      "consultCta": "Konsultasi Gratis via WhatsApp",
+      "notFoundTitle": "Layanan Tidak Ditemukan",
+      "notFoundDesc": "Maaf, layanan yang Anda cari tidak tersedia atau URL yang Anda tuju salah.",
+      "zoomHint": "Klik untuk memperbesar",
+      "close": "Tutup"
+    }
+  },
+  "footer": {
+    "cta": {
+      "titleLine1": "Ingin Membangun",
+      "titleLine2": "Website Impianmu?",
+      "btn": "Mulai Proyek"
+    },
+    "brand": {
+      "descBefore": "Kami membangun website ",
+      "highlight": "high-performance",
+      "descAfter": " dengan estetika berani. Solusi tepat untuk brand yang ingin tampil beda."
+    },
+    "headings": {
+      "navigation": "Navigasi",
+      "contact": "Kontak",
+      "social": "Sosial"
+    },
+    "contact": {
+      "telegram": "Telegram",
+      "email": "Email",
+      "location": "Kota Malang, Jawa Timur, Indonesia"
+    },
+    "bottom": {
+      "rights": "Hak cipta dilindungi undang-undang.",
+      "createdBy": "Dibuat oleh"
     }
   }
 }

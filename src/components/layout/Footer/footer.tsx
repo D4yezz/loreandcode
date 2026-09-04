@@ -11,7 +11,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const nav = useTranslations("Navbar");
-  const t = useTranslations("home.footer");
+  const t = useTranslations("footer");
   const menu = [
     {
       title: nav("home"),
@@ -22,16 +22,16 @@ export default function Footer() {
       href: "/services",
     },
     {
-      title: nav("projects"),
-      href: "/projects",
-    },
-    {
       title: nav("faq"),
       href: "#faq",
     },
+    {
+      title: nav("contact"),
+      href: "/contact",
+    },
   ];
   return (
-    <footer className="w-full bg-background border-black text-black overflow-hidden font-sora">
+    <footer className="w-full bg-background border-black text-black overflow-hidden font-sora border-t-3">
       <div className="border-b-3 border-black bg-third p-8 lg:p-12 flex flex-col lg:flex-row items-center justify-between gap-6 relative">
         <div className="absolute top-4 right-10 hidden lg:block">
           <svg
