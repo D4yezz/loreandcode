@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { getServiceItemServer, SERVICE_SLUGS } from "@/utils/services-data";
+import { getServiceItemServer, getRecommendedServicesServer, SERVICE_SLUGS } from "@/utils/services-data";
 import Navbar from "@/components/layout/Navbar/navbar";
 import Footer from "@/components/layout/Footer/footer";
 import ServiceHero from "@/components/section/service-page/hero";
 import ServiceGallery from "@/components/section/service-page/gallery";
 import ServiceFeaturesTarget from "@/components/section/service-page/features-target";
 import ServiceCtaBanner from "@/components/section/service-page/cta-banner";
+import ServiceRecommendations from "@/components/section/service-page/recommendations";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -52,6 +53,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   const tItems = await getTranslations("home.services.items");
   const tDetail = await getTranslations("home.serviceDetail");
   const service = getServiceItemServer(slug, tItems);
+  const recommendedServices = getRecommendedServicesServer(slug, tItems);
 
   if (!service) {
     return (
@@ -88,8 +90,10 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         <ServiceGallery service={service} />
         <ServiceFeaturesTarget service={service} />
         <ServiceCtaBanner service={service} />
+        <ServiceRecommendations services={recommendedServices} />
         <Footer />
       </div>
     </main>
   );
 }
+

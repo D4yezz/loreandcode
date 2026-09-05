@@ -289,8 +289,59 @@
       "notFoundTitle": "Layanan Tidak Ditemukan",
       "notFoundDesc": "Maaf, layanan yang Anda cari tidak tersedia atau URL yang Anda tuju salah.",
       "zoomHint": "Klik untuk memperbesar",
-      "close": "Tutup"
+      "close": "Tutup",
+      "recommendationsTitle": "Rekomendasi Layanan Lainnya",
+      "recommendationsSubtitle": "Jelajahi pilihan paket layanan menarik lainnya untuk memperkuat identitas digital dan pertumbuhan bisnis Anda.",
+      "viewDetail": "Lihat Detail"
     }
+  },
+  "contactPage": {
+    "badge": "HUBUNGI KAMI",
+    "title": "Mari Berdiskusi Proyek Impianmu",
+    "subtitle": "Punya ide website hebat atau ingin konsultasi gratis? Isi formulir di bawah atau hubungi kami langsung via Telegram!",
+    "form": {
+      "badge": "Formulir Kontak",
+      "title": "Kirim Pesan Langsung",
+      "nameLabel": "Nama Lengkap",
+      "namePlaceholder": "Masukkan nama Anda...",
+      "emailLabel": "Alamat Email",
+      "emailPlaceholder": "nama@email.com",
+      "serviceLabel": "Pilih Layanan (Opsional)",
+      "selectServiceDefault": "-- Pilih Layanan --",
+      "customWeb": "Kustom Projek / Lainnya",
+      "messageLabel": "Pesan / Detail Proyek",
+      "messagePlaceholder": "Ceritakan tentang konsep, fitur, atau pertanyaan proyek Anda...",
+      "submitBtn": "Kirim Pesan ke Telegram",
+      "sendingBtn": "Mengirim...",
+      "successTitle": "Pesan Berhasil Terkirim!",
+      "successDesc": "Terima kasih telah menghubungi kami. Pesan Anda telah diteruskan ke Telegram kami dan akan segera kami respon.",
+      "errorTitle": "Gagal Mengirim Pesan",
+      "errorDesc": "Terjadi kendala saat mengirim pesan otomatis. Anda bisa langsung menghubungi kami via Telegram secara manual.",
+      "orTelegramBtn": "Kirim via Telegram Manual",
+      "anotherMessageBtn": "Kirim Pesan Lain"
+    },
+    "info": {
+      "badge": "INFO KONTAK",
+      "title": "Terhubung Lebih Cepat",
+      "fastResponseTitle": "Respon Cepat",
+      "fastResponseDesc": "Kami aktif membalas pesan rata-rata < 1 jam pada jam operasional.",
+      "telegramTitle": "Telegram Resmi",
+      "telegramUsername": "@loreandcode",
+      "emailTitle": "Email Resmi",
+      "emailAddress": "adiasmuhsin1206@gmail.com",
+      "locationTitle": "Lokasi",
+      "location": "Kota Malang, Jawa Timur, Indonesia",
+      "hoursTitle": "Jam Operasional",
+      "hoursDesc": "Senin - Sabtu (08:00 - 20:00 WIB)",
+      "follow": " Ikuti Media Sosial Kami"
+    }
+  },
+  "notFound": {
+    "badge": "ERROR 404",
+    "title": "Halaman Tidak Ditemukan!",
+    "subtitle": "Ups! Sepertinya halaman yang kamu cari telah dipindahkan, dihapus, atau tidak pernah ada sebelumnya.",
+    "backHome": "Kembali ke Beranda",
+    "viewServices": "Lihat Layanan"
   },
   "footer": {
     "cta": {

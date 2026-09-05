@@ -11,7 +11,7 @@ File ini berisi panduan, instruksi, dan arsitektur projek yang wajib dipatuhi ol
 - **Styling**: Tailwind CSS v4 / OKLCH Color Palette
 - **Animation**: Framer Motion
 - **Component Library**: shadcn/ui & Radix UI
-- **Icons**: Lucide React & Hugeicons
+- **Icons**: Hugeicons
 - **Localization / i18n**: `next-intl` (JSON dictionaries in `locales/`)
 - **Package Manager**: `npm` (Do NOT use `pnpm` or `yarn`)
 
@@ -101,7 +101,33 @@ export default function ServiceCard({ title, desc, className }: ServiceCardProps
   const t = useTranslations("common");
 
   return (
-    <div className={cn("p-6 border-4 border-black bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]", className)}>
+    <div className={cn("p-6 border-4 border-black bg-white shadow-shadow", className)}>
+      <h3 className="text-2xl font-bold">{title}</h3>
+      <p className="mt-2 text-slate-700">{desc}</p>
+    </div>
+  );
+}
+```
+
+Atau Contoh Benar (DO):
+
+```bash
+"use client";
+
+import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
+
+interface ServiceCardProps {
+  title: string;
+  desc: string;
+  className?: string;
+}
+
+export default function ServiceCard({ title, desc, className }: ServiceCardProps) {
+  const t = useTranslations("common");
+
+  return (
+    <div className={cn("p-6 border-3 border-black bg-white shadow-shadow", className)}>
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="mt-2 text-slate-700">{desc}</p>
     </div>
@@ -127,6 +153,8 @@ export const ServiceCard = (props: any) => {
 ## 5. Localization (i18n) & Data Fetching
 
 - Selalu gunakan next-intl untuk teks yang tampil di layar. Dilarang menguji teks hardcoded di dalam komponen visual.
+
+- Pastikan jika ingin menambah teks baru, cek terlebih dahulu di halaman dan di section apa teks tersebut akan digunakan, seperti teks welcome di letakkan di object home.hero.
 
 - Untuk mengambil data array dari JSON di locales/, gunakan t.raw("key_name") secara instan, bukan memanggil satu per satu berdasarkan indeks.
 

@@ -9,7 +9,7 @@ import WorkflowSection from "@/components/section/home-page/workflow";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-white overflow-y-hidden">
       <div className="border-3 lg:mx-10 mx-4 lg:my-8 my-4 bg-background">
         <Navbar />
         <HeroSection />

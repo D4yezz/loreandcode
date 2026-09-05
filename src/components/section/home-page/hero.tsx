@@ -14,14 +14,10 @@ import {
   NewTwitterIcon,
   TelegramIcon,
   Mail01Icon,
-  ArrowUpRight01Icon,
   ThreadsIcon,
-  CornerRightDownIcon,
-  ArrowMoveDownLeftIcon,
   NavigationIcon,
 } from "@hugeicons/core-free-icons";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 
 export const connect = [
   {

@@ -290,8 +290,59 @@
       "notFoundTitle": "Service Not Found",
       "notFoundDesc": "Sorry, the service you are looking for is unavailable or the link is invalid.",
       "zoomHint": "Click to enlarge",
-      "close": "Close"
+      "close": "Close",
+      "recommendationsTitle": "Other Recommended Services",
+      "recommendationsSubtitle": "Explore other high-quality service packages to elevate your digital presence and business growth.",
+      "viewDetail": "View Details"
     }
+  },
+  "contactPage": {
+    "badge": "CONTACT US",
+    "title": "Let's Talk About Your Dream Project",
+    "subtitle": "Have a great website idea or need a free consultation? Fill out the form below or contact us directly on Telegram!",
+    "form": {
+      "badge": "Contact Form",
+      "title": "Send a Direct Message",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your name...",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "name@email.com",
+      "serviceLabel": "Select Service (Optional)",
+      "selectServiceDefault": "-- Select Service --",
+      "customWeb": "Custom Project / Other",
+      "messageLabel": "Message / Project Details",
+      "messagePlaceholder": "Tell us about your project concept, required features, or questions...",
+      "submitBtn": "Send Message to Telegram",
+      "sendingBtn": "Sending...",
+      "successTitle": "Message Sent Successfully!",
+      "successDesc": "Thank you for reaching out. Your message has been sent to our Telegram and we will respond shortly.",
+      "errorTitle": "Failed to Send Message",
+      "errorDesc": "An issue occurred while sending the message. You can reach out directly via Telegram manually.",
+      "orTelegramBtn": "Send via Telegram Directly",
+      "anotherMessageBtn": "Send Another Message"
+    },
+    "info": {
+      "badge": "CONTACT INFO",
+      "title": "Connect Faster",
+      "fastResponseTitle": "Fast Response",
+      "fastResponseDesc": "We actively reply to messages within < 1 hour during business hours.",
+      "telegramTitle": "Official Telegram",
+      "telegramUsername": "@loreandcode",
+      "emailTitle": "Official Email",
+      "emailAddress": "adiasmuhsin1206@gmail.com",
+      "locationTitle": "Location",
+      "location": "Malang City, East Java, Indonesia",
+      "hoursTitle": "Working Hours",
+      "hoursDesc": "Monday - Saturday (08:00 - 20:00 WIB)",
+      "follow": "Follow Us on Social Media"
+    }
+  },
+  "notFound": {
+    "badge": "ERROR 404",
+    "title": "Page Not Found!",
+    "subtitle": "Oops! The page you are looking for has been moved, deleted, or never existed.",
+    "backHome": "Back to Home",
+    "viewServices": "View Services"
   },
   "footer": {
     "cta": {

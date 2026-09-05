@@ -26,7 +26,6 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
       id="service-hero"
       className="flex flex-col gap-6 lg:gap-8 pt-18 lg:pt-20 px-4 md:px-8 lg:px-12"
     >
-      {/* Breadcrumb & Back Navigation */}
       <nav
         aria-label="Breadcrumb"
         className="flex flex-wrap items-center justify-between gap-4"
@@ -43,10 +42,9 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
         </Badge>
       </nav>
 
-      {/* Hero Header Card */}
       <header className="bg-white border-4 border-black p-6 md:p-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
-          <div className="flex flex-col gap-4 max-w-3xl">
+          <div className="flex flex-col gap-4 lg:max-w-[60%] max-w-full">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-balance font-sora">
               {service.title}
             </h1>

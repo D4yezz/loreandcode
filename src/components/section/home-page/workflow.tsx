@@ -40,7 +40,7 @@ export default function WorkflowSection() {
             ))}
           </div>
           <div className="absolute inset-0 z-0 flex flex-row w-full h-full justify-evenly">
-            {Array.from({ length: isTablet ? 45 : 15 }).map((_, i) => (
+            {Array.from({ length: isTablet ? 20 : 15 }).map((_, i) => (
               <div className="w-[2.5px] h-full bg-main" key={i}></div>
             ))}
           </div>

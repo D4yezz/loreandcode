@@ -24,7 +24,7 @@ export default function ServiceSection() {
       id="services"
       className="flex w-full lg:flex-row flex-col lg:h-[115vh] font-sora"
     >
-      <div className="lg:w-[60%] w-full lg:h-full h-fit flex flex-col gap-6 lg:pt-8 pt-6 lg:px-13 px-4 md:px-8 relative overflow-hidden">
+      <div className="lg:w-[60%] w-full lg:h-full h-fit flex flex-col gap-6 lg:pt-8 pt-6 lg:px-13 px-4 md:px-8 md:pb-0 pb-4 relative overflow-hidden">
         <div className="flex items-center lg:justify-start justify-center h-12">
           <div className="w-12 h-full border-3 bg-white flex items-center justify-center text-3xl font-dm-sans font-bold">
             #

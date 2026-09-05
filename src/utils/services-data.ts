@@ -31,7 +31,7 @@ export const SERVICE_CONFIGS = [
     folder: "online-invitation",
     imagesCount: 7,
   },
-  { id: "2", slug: "webiste-business-profile", folder: "umkm", imagesCount: 8 },
+  { id: "2", slug: "website-business-profile", folder: "umkm", imagesCount: 8 },
   {
     id: "3",
     slug: "company-profile",
@@ -103,4 +103,37 @@ export function getServiceItemServer(
     imagesCount: config.imagesCount,
     images,
   };
+}
+
+export function getRecommendedServicesServer(
+  currentSlug: string,
+  tItems: ServiceTranslations,
+): ServiceItem[] {
+  const configs = SERVICE_CONFIGS.filter(
+    (c) =>
+      c.slug.toLowerCase() !== currentSlug.toLowerCase() &&
+      c.id !== currentSlug,
+  );
+
+  return configs.map((config) => {
+    const key = config.id;
+    const images = Array.from(
+      { length: config.imagesCount },
+      (_, i) => `/service/${config.folder}/${i + 1}.png`,
+    );
+    return {
+      id: key,
+      slug: config.slug,
+      title: tItems(`${key}.title`),
+      desc: tItems(`${key}.desc`),
+      priceStart: tItems(`${key}.priceStart`),
+      priceEnd: tItems(`${key}.priceEnd`),
+      features: tItems.raw(`${key}.features`) as string[],
+      greatFor: tItems.raw(`${key}.greatFor`) as string[],
+      exampleWeb: tItems.raw(`${key}.exampleWeb`) as string[],
+      img: config.folder,
+      imagesCount: config.imagesCount,
+      images,
+    };
+  });
 }

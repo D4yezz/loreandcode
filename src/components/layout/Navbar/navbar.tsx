@@ -35,11 +35,11 @@ export default function Navbar() {
     },
     {
       title: t("services"),
-      href: "#services",
+      href: "/#services",
     },
     {
       title: t("faq"),
-      href: "#faq",
+      href: "/#faq",
     },
     {
       title: t("contact"),

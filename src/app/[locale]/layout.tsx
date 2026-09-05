@@ -11,6 +11,7 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,7 @@ export default async function RootLayout(props: LayoutProps<"/[locale]">) {
         <NextIntlClientProvider messages={messages}>
           <TooltipProvider>{props.children}</TooltipProvider>
         </NextIntlClientProvider>
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );

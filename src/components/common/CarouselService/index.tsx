@@ -101,17 +101,17 @@ export default function ServiceCarousel({
             <div className="flex-[0_0_100%] min-w-0 px-3" key={index}>
               <Card className="p-0 w-full h-full gap-0 bg-main mx-auto justify-between">
                 <CardHeader className="flex items-center justify-between w-full px-2 pt-2 pb-2 bg-white border-b-2 lg:px-4 h-fit">
-                  <h3 className="lg:text-xl text-sm font-bold  lg:w-[80%] w-[90%] uppercase">
+                  <h3 className="md:text-xl text-sm font-bold lg:w-[80%] w-[90%] uppercase">
                     {item.title}
                   </h3>
-                  <div className="flex items-center lg:w-[20%] w-[10%] justify-end lg:gap-2 gap-1">
-                    <div className="w-2 h-2 bg-red-500 border-2 rounded-full lg:w-4 lg:h-4"></div>
-                    <div className="w-2 h-2 bg-yellow-400 border-2 rounded-full lg:w-4 lg:h-4"></div>
-                    <div className="w-2 h-2 bg-green-500 border-2 rounded-full lg:w-4 lg:h-4"></div>
+                  <div className="flex items-center lg:w-[20%] w-[10%] justify-end md:gap-2 gap-1">
+                    <div className="w-2 h-2 bg-red-500 border-2 rounded-full md:w-4 md:h-4"></div>
+                    <div className="w-2 h-2 bg-yellow-400 border-2 rounded-full md:w-4 md:h-4"></div>
+                    <div className="w-2 h-2 bg-green-500 border-2 rounded-full md:w-4 md:h-4"></div>
                   </div>
                 </CardHeader>
-                <CardContent className="flex flex-col w-full gap-4 px-4 pt-3 h-fit">
-                  <div className="relative w-full md:h-[40vh] h-50 border-2 overflow-hidden">
+                <CardContent className="flex flex-col w-full gap-4 px-4 pt-2 h-fit">
+                  <div className="relative w-full md:h-[45vh] h-60 border-2 overflow-hidden">
                     <Image
                       src={`/service/${item.img}/1.png`}
                       fill
@@ -121,7 +121,7 @@ export default function ServiceCarousel({
                     />
                   </div>
                   <div className="flex flex-col w-full p-4 text-center bg-white border-2 h-fit shadow-shadow lg:text-left">
-                    <h3 className="text-2xl font-bold lg:text-3xl text-balance">
+                    <h3 className="text-xl font-bold md:text-3xl text-balance">
                       {item.title}
                     </h3>
                     <p className="mt-2 text-sm lg:text-wrap text-balance">

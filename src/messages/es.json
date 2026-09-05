@@ -299,8 +299,59 @@
       "notFoundTitle": "Servicio No Encontrado",
       "notFoundDesc": "Lo sentimos, el servicio que buscas no está disponible o el enlace es inválido.",
       "zoomHint": "Clic para ampliar",
-      "close": "Cerrar"
+      "close": "Cerrar",
+      "recommendationsTitle": "Otras Recomendaciones de Servicios",
+      "recommendationsSubtitle": "Explora otros paquetes de servicios de alta calidad para potenciar tu presencia digital y hacer crecer tu negocio.",
+      "viewDetail": "Ver Detalles"
     }
+  },
+  "contactPage": {
+    "badge": "CONTÁCTANOS",
+    "title": "Hablemos de Tu Proyecto Soñado",
+    "subtitle": "¿Tienes una gran idea de sitio web o necesitas una consulta gratuita? ¡Completa el formulario a continuación o contáctanos directamente por Telegram!",
+    "form": {
+      "badge": "Formulario de contacto",
+      "title": "Enviar un mensaje directo",
+      "nameLabel": "Nombre Completo",
+      "namePlaceholder": "Ingresa tu nombre...",
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "nombre@email.com",
+      "serviceLabel": "Seleccionar Servicio (Opcional)",
+      "selectServiceDefault": "-- Seleccionar Servicio --",
+      "customWeb": "Proyecto a medida / Otros",
+      "messageLabel": "Mensaje / Detalles del Proyecto",
+      "messagePlaceholder": "Cuéntanos sobre tu concepto de proyecto o preguntas...",
+      "submitBtn": "Enviar Mensaje a Telegram",
+      "sendingBtn": "Enviando...",
+      "successTitle": "¡Mensaje Enviado con Éxito!",
+      "successDesc": "Gracias por contactarnos. Tu mensaje ha sido enviado a nuestro Telegram y responderemos a la brevedad.",
+      "errorTitle": "Error al Enviar el Mensaje",
+      "errorDesc": "Ocurrió un problema al enviar el mensaje. Puedes contactarnos directamente por Telegram.",
+      "orTelegramBtn": "Enviar por Telegram Directamente",
+      "anotherMessageBtn": "Enviar Otro Mensaje"
+    },
+    "info": {
+      "badge": "INFO DE CONTACTO",
+      "title": "Conéctate Más Rápido",
+      "fastResponseTitle": "Respuesta Rápida",
+      "fastResponseDesc": "Respondemos activamente a los mensajes en < 1 hora durante el horario laboral.",
+      "telegramTitle": "Telegram Oficial",
+      "telegramUsername": "@loreandcode",
+      "emailTitle": "Correo Oficial",
+      "emailAddress": "adiasmuhsin1206@gmail.com",
+      "locationTitle": "Ubicación",
+      "location": "Ciudad de Malang, Java Oriental, Indonesia",
+      "hoursTitle": "Horario de Atención",
+      "hoursDesc": "Lunes - Sábado (08:00 - 20:00 WIB)",
+      "follow": "Síguenos en las redes sociales"
+    }
+  },
+  "notFound": {
+    "badge": "ERROR 404",
+    "title": "¡Página No Encontrada!",
+    "subtitle": "¡Ups! Parece que la página que buscas ha sido movida, eliminada o nunca existió.",
+    "backHome": "Volver al Inicio",
+    "viewServices": "Ver Servicios"
   },
   "footer": {
     "cta": {
