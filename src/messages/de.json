@@ -4,7 +4,7 @@
     "services": "Service",
     "faq": "FAQs",
     "contact": "Kontakt",
-    "btnCta": "Jetzt bestellen",
+    "btnCta": "Kostenlos Beraten",
     "lang": {
       "id": "Indonesien",
       "en": "Englisch",
@@ -22,8 +22,8 @@
       ],
       "website": "Webseite",
       "subtitle": "Mach dir keine Sorge. Sie sind fertig, wir richten eine Hochgeschwindigkeits-Website im gewünschten Stil ein und sorgen garantiert dafür, dass Ihre Marke sofort wahrgenommen wird.",
-      "btnCta": "Jetzt bestellen",
-      "viewService": "Unsere Leistungen",
+      "viewService": "Dienst auswählen",
+      "btnCta": "Workflow anzeigen",
       "contact": "Kontaktieren Sie uns"
     },
     "advantages": {

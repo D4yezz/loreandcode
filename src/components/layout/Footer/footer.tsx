@@ -19,7 +19,7 @@ export default function Footer() {
     },
     {
       title: nav("services"),
-      href: "/services",
+      href: "#services",
     },
     {
       title: nav("faq"),
@@ -57,15 +57,13 @@ export default function Footer() {
           </span>
         </h2>
 
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/contact"
           className="bg-main text-black text-xl font-black uppercase lg:py-4 py-3 flex items-center justify-center gap-2 lg:px-8 px-6 border-3 border-black shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all z-10"
         >
           {t("cta.btn")}{" "}
           <HugeiconsIcon icon={ArrowUpRight03Icon} size={24} strokeWidth={2} />
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-4 lg:p-12">

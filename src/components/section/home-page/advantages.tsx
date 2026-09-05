@@ -75,7 +75,7 @@ export default function AdvantagesSection() {
             {t("cta.title")}
           </h2>
           <Link
-            href={"/"}
+            href={"#services"}
             className="flex items-center px-6 text-lg font-bold uppercase duration-150 border-2 hover:shadow-none h-14 w-fit bg-main shadow-shadow"
           >
             {t("cta.btnCta")}

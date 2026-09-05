@@ -99,7 +99,7 @@ export default function ServiceCarousel({
         <div className="flex">
           {service.map((item, index) => (
             <div className="flex-[0_0_100%] min-w-0 px-3" key={index}>
-              <Card className="p-0 lg:w-[87%] w-[95%] h-full gap-0 bg-main mx-auto justify-between">
+              <Card className="p-0 w-full h-full gap-0 bg-main mx-auto justify-between">
                 <CardHeader className="flex items-center justify-between w-full px-2 pt-2 pb-2 bg-white border-b-2 lg:px-4 h-fit">
                   <h3 className="lg:text-xl text-sm font-bold  lg:w-[80%] w-[90%] uppercase">
                     {item.title}
@@ -111,7 +111,7 @@ export default function ServiceCarousel({
                   </div>
                 </CardHeader>
                 <CardContent className="flex flex-col w-full gap-4 px-4 pt-3 h-fit">
-                  <div className="relative w-full md:h-[50vh] h-50 border-2 overflow-hidden">
+                  <div className="relative w-full md:h-[40vh] h-50 border-2 overflow-hidden">
                     <Image
                       src={`/service/${item.img}/1.png`}
                       fill
@@ -135,7 +135,7 @@ export default function ServiceCarousel({
                   </span>
                   <Button
                     asChild
-                    className="md:w-[30%] w-full bg-pink-400 text-white font-semibold text-lg shadow-none border-l-2"
+                    className="md:w-[30%] w-full bg-pink-400 text-black font-semibold text-lg shadow-none border-l-2"
                   >
                     <Link href={`/service/${item.slug}`}>{t("moreBtn")}</Link>
                   </Button>
@@ -146,7 +146,7 @@ export default function ServiceCarousel({
         </div>
       </div>
 
-      <div className="flex items-center justify-between w-[87%] mx-auto my-4">
+      <div className="flex items-center justify-between w-full mx-auto my-4">
         <div className="flex items-center gap-3">
           {scrollSnaps.map((_, index) => (
             <button

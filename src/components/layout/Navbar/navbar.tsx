@@ -1,6 +1,10 @@
 "use client";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { ArrowUpRight01Icon, Cancel01Icon } from "@hugeicons/core-free-icons";
+import {
+  ArrowUpRight01Icon,
+  Cancel01Icon,
+  NavigationIcon,
+} from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -31,7 +35,7 @@ export default function Navbar() {
     },
     {
       title: t("services"),
-      href: "/services",
+      href: "#services",
     },
     {
       title: t("faq"),
@@ -61,7 +65,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-90 w-full transition-all duration-300 flex items-center justify-end font-public-sans ${isScrolled ? "p-0 lg:py-0 lg:px-10 lg:h-[9vh] h-[7vh]" : "lg:py-4 p-4 lg:px-10 lg:h-[12vh] h-[10vh]"}`}
+      className={`fixed top-0 left-0 right-0 z-90 w-full transition-all duration-300 flex items-center justify-end font-public-sans ${isScrolled ? "p-0 lg:py-0 lg:px-10 lg:h-[8vh] h-[7vh]" : "lg:py-4 p-4 lg:px-10 lg:h-[12vh] h-[11vh]"}`}
     >
       <div
         className={`flex items-center justify-between w-full h-full border-black lg:shadow-none shadow-nav bg-background relative ${isScrolled ? "border-b-3 lg:border-3" : "border-3"}`}
@@ -108,14 +112,19 @@ export default function Navbar() {
             </nav>
             <div className="w-[23%] flex h-full">
               <LanguageSwitcher />
-              <button className="h-full w-[80%] flex items-center justify-center gap-2 px-4 border-l-3 border-black bg-third uppercase text-lg whitespace-nowrap font-bold font-sora shadow-nav duration-150 hover:shadow-none">
+              <Link
+                href={"/contact"}
+                className="h-full w-[80%] flex items-center justify-center gap-2 px-4 border-l-3 border-black bg-third uppercase text-lg whitespace-nowrap font-bold font-sora shadow-nav duration-150 hover:shadow-none"
+              >
                 {t("btnCta")}
                 <HugeiconsIcon
-                  icon={ArrowUpRight01Icon}
+                  icon={NavigationIcon}
+                  fill="#000000"
+                  color="oklch(71.4% 0.203 305.504) "
                   size={26}
-                  strokeWidth={2.5}
+                  className="rotate-45"
                 />
-              </button>
+              </Link>
             </div>
           </>
         ) : (
@@ -148,7 +157,7 @@ export default function Navbar() {
                     animate={{ height: "auto" }}
                     exit={{ height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="w-full gap-10 top-0 left-0 absolute flex flex-col items-center justify-between z-60 bg-main border-b-3"
+                    className="absolute top-0 left-0 flex flex-col items-center justify-between w-full z-60 bg-main border-b-3"
                   >
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
@@ -187,12 +196,12 @@ export default function Navbar() {
                         transition={{ duration: 0.3 }}
                         className="flex items-start w-full pl-2 pr-4 mt-4 h-fit"
                       >
-                        <ul className="flex flex-col items-start w-full text-4xl text-white gap-2 font-semibold">
+                        <ul className="flex flex-col items-start w-full gap-2 text-4xl font-semibold text-white">
                           {menu.map((item, i) => (
                             <li key={i} className="flex items-center">
                               <Link
                                 href={item.href}
-                                className="font-black uppercase font-sora whitespace-nowrap underline decoration-2 decoration-white underline-offset-4"
+                                className="font-black underline uppercase font-sora whitespace-nowrap decoration-2 decoration-white underline-offset-4"
                               >
                                 {item.title}
                               </Link>
@@ -206,13 +215,13 @@ export default function Navbar() {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="w-full pl-2 pr-4 mb-4"
+                      className="w-full pl-2 pr-4 mb-4 mt-10"
                     >
-                      <ul className="grid grid-cols-2 w-full text-lg gap-2 font-semibold">
+                      <ul className="grid w-full grid-cols-2 gap-2 text-md font-semibold">
                         {connect.map((item, i) => (
                           <li
                             key={i}
-                            className="flex w-full last:col-span-2 gap-2 px-2 py-3 text-sm border-2 bg-white"
+                            className="flex w-full gap-2 px-2 py-3 bg-white border-3 last:col-span-2"
                           >
                             <HugeiconsIcon
                               icon={item.icon}
@@ -224,6 +233,27 @@ export default function Navbar() {
                           </li>
                         ))}
                       </ul>
+                    </motion.div>
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="flex w-full"
+                    >
+                      <Link
+                        href={"/contact"}
+                        className="flex items-center justify-center w-full h-full gap-2 px-4 py-3 text-lg font-bold uppercase duration-150 border-black border-t-3 bg-third whitespace-nowrap font-sora shadow-nav hover:shadow-none"
+                      >
+                        {t("btnCta")}
+                        <HugeiconsIcon
+                          icon={NavigationIcon}
+                          fill="#000000"
+                          color="oklch(71.4% 0.203 305.504) "
+                          size={26}
+                          className="rotate-45"
+                        />
+                      </Link>
                     </motion.div>
                   </motion.aside>
                 </>

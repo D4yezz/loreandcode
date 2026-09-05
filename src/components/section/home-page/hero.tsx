@@ -16,8 +16,12 @@ import {
   Mail01Icon,
   ArrowUpRight01Icon,
   ThreadsIcon,
+  CornerRightDownIcon,
+  ArrowMoveDownLeftIcon,
+  NavigationIcon,
 } from "@hugeicons/core-free-icons";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export const connect = [
   {
@@ -78,17 +82,24 @@ export default function HeroSection() {
           <p className="pr-2 mt-3 md:text-xl text-md lg:pr-1 lg:pl-0 text-balance font-sora">
             {t("subtitle")}
           </p>
-          <div className="flex flex-col w-full gap-4 mt-6 lg:flex-row lg:mt-8 font-sora lg:w-fit">
-            <Button className="h-12 font-bold uppercase lg:text-lg text-md w-60">
-              {t("btnCta")}{" "}
-              <HugeiconsIcon
-                icon={ArrowUpRight01Icon}
-                size={26}
-                strokeWidth={2}
-              />
+          <div className="flex flex-col w-full gap-4 mt-6 md:flex-row lg:mt-8 font-sora lg:w-fit">
+            <Button
+              className="h-12 text-lg font-bold uppercase md:w-80 w-full"
+              asChild
+            >
+              <a href="#services">
+                {t("viewService")}
+                <HugeiconsIcon
+                  icon={NavigationIcon}
+                  fill="#000000"
+                  color="#00C8F0"
+                  size={24}
+                  className="rotate-45"
+                />
+              </a>
             </Button>
-            <Button className="h-12 text-lg font-bold uppercase w-60">
-              {t("viewService")}
+            <Button className="h-12 font-bold uppercase lg:text-lg text-md md:w-80 w-full">
+              <a href="#workflow">{t("btnCta")}</a>
             </Button>
           </div>
           <div className="flex flex-col gap-2 mt-10">
@@ -136,7 +147,7 @@ export default function HeroSection() {
               src={"/home/hero.png"}
               alt="hero-image"
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
               priority
               draggable={false}
               onDragStart={(event) => event.preventDefault()}

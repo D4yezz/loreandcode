@@ -4,7 +4,7 @@
     "services": "Service",
     "faq": "FAQs",
     "contact": "Contact",
-    "btnCta": "Order Now",
+    "btnCta": "Free Consultation",
     "lang": {
       "id": "Indonesia",
       "en": "English",
@@ -22,8 +22,8 @@
       ],
       "website": "Website",
       "subtitle": "No need to worry. You get a turnkey solution, we’ll set up a high-speed website with the design of your choice that’s sure to make your brand stand out right away.",
-      "btnCta": "Order Now",
-      "viewService": "Our Services",
+      "viewService": "Select a Service",
+      "btnCta": "View Workflow",
       "contact": "Contact us"
     },
     "advantages": {

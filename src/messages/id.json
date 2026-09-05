@@ -4,7 +4,7 @@
     "services": "Layanan",
     "faq": "FAQ",
     "contact": "Kontak",
-    "btnCta": "Order Sekarang",
+    "btnCta": "Konsultasi Gratis",
     "lang": {
       "id": "Indonesia",
       "en": "English",
@@ -21,8 +21,8 @@
         "Jasa Pembuatan Website Perusahaan"
       ],
       "subtitle": " Gak pakai pusing. Kamu terima beres, kami set-up website berkecepatan tinggi dengan gaya sesuai keinginan dan pasti bikin brand kamu langsung dilirik.",
-      "btnCta": "Order Sekarang",
-      "viewService": "Layanan Kami",
+      "viewService": "Pilih Layanan",
+      "btnCta": "Lihat Alur Kerja",
       "contact": "Hubungi Kami"
     },
     "advantages": {

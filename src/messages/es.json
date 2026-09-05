@@ -4,7 +4,7 @@
     "services": "Servicio",
     "faq": "Preguntas",
     "contact": "Contacto",
-    "btnCta": "Ordene ahora",
+    "btnCta": "Consulta gratuita",
     "lang": {
       "id": "Indonesia",
       "en": "Inglés",
@@ -22,8 +22,8 @@
       ],
       "website": "Sitio web",
       "subtitle": "No te preocupes. Ya está, configuramos un sitio web de alta velocidad con el estilo que desea y definitivamente haremos que su marca se destaque de inmediato.",
-      "btnCta": "Ordene ahora",
-      "viewService": "Nuestros Servicios",
+      "viewService": "Selecciona un servicio",
+      "btnCta": "Ver flujo de trabajo",
       "contact": "Contáctenos"
     },
     "advantages": {
@@ -186,7 +186,6 @@
         }
       }
     },
-
     "workflow": {
       "title": "Del resumen al lanzamiento",
       "subtitle": "Un proceso de desarrollo estructurado, transparente y medible desde el briefing inicial hasta el lanzamiento oficial.",

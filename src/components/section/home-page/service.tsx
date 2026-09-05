@@ -24,15 +24,14 @@ export default function ServiceSection() {
       id="services"
       className="flex w-full lg:flex-row flex-col lg:h-[115vh] font-sora"
     >
-      <div className="lg:w-[60%] w-full lg:h-full h-fit flex flex-col lg:gap-8 gap-6 lg:pt-8 pt-6 px-4">
-        <div className="flex items-center justify-between px-0 lg:px-10">
-          <h1 className="text-2xl font-bold lg:text-4xl">{t("title")}</h1>
-          <Link
-            href="/services"
-            className="px-2 py-2 text-sm font-semibold text-center duration-150 border-2 lg:px-6 lg:text-lg w-fit h-fit bg-third shadow-shadow hover:shadow-none hover:translate-1"
-          >
-            {t("cta")}
-          </Link>
+      <div className="lg:w-[60%] w-full lg:h-full h-fit flex flex-col gap-6 lg:pt-8 pt-6 lg:px-13 px-4 md:px-8 relative overflow-hidden">
+        <div className="flex items-center lg:justify-start justify-center h-12">
+          <div className="w-12 h-full border-3 bg-white flex items-center justify-center text-3xl font-dm-sans font-bold">
+            #
+          </div>
+          <h1 className="text-2xl font-semibold lg:text-4xl z-10 uppercase bg-main border-y-3 border-r-3 tracking-wide px-2 h-full flex items-center">
+            {t("title")}
+          </h1>
         </div>
         <ServiceCarousel
           service={services}

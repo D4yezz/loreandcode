@@ -16,6 +16,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import ShapeGrid from "@/components/ui/ShapeGrid";
+import { Link } from "@/i18n/navigation";
 import {
   Cancel01Icon,
   ChangeScreenModeIcon,
@@ -47,8 +48,8 @@ export default function FaqSection() {
           </div>
           <h1 className="z-10 text-5xl font-bold text-white">{t("title")}</h1>
         </div>
-        <Card className="z-10 gap-0 p-0 bg-white">
-          <CardHeader className="flex items-center justify-between px-2 mb-4 border-b-2 bg-main">
+        <Card className="z-10 gap-0 p-0 bg-white border-3">
+          <CardHeader className="flex items-center justify-between px-2 mb-4 border-b-3 bg-main">
             <div className="flex items-center text-md w-fit h-fit">
               <Image
                 src="/logo.png"
@@ -76,9 +77,9 @@ export default function FaqSection() {
             <p className="text-lg max-w-[95%]">{t("subtitle")}</p>
           </CardContent>
           <CardFooter className="p-4">
-            <a
-              href="#"
-              className="flex items-center justify-center w-full gap-2 py-2 text-lg font-semibold duration-150 border-2 bg-main hover:bg-third"
+            <Link
+              href="/contact"
+              className="flex items-center justify-center w-full gap-2 py-2 text-lg font-semibold duration-150 border-3 bg-main hover:bg-third"
             >
               {t("btnCta")}
               <HugeiconsIcon
@@ -87,7 +88,7 @@ export default function FaqSection() {
                 strokeWidth={2}
                 className="rotate-90"
               />
-            </a>
+            </Link>
           </CardFooter>
         </Card>
         <LeftDecoration />
