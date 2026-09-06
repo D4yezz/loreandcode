@@ -1,10 +1,6 @@
 "use client";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import {
-  ArrowUpRight01Icon,
-  Cancel01Icon,
-  NavigationIcon,
-} from "@hugeicons/core-free-icons";
+import { Cancel01Icon, NavigationIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -19,7 +15,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { connect } from "@/components/section/home-page/hero";
+import { connect } from "@/constants/connect-data";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");

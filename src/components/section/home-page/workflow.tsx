@@ -15,17 +15,17 @@ export default function WorkflowSection() {
   return (
     <section
       id="workflow"
-      className="w-full font-sora min-h-screen h-fit flex flex-col p-8 pb-20 lg:justify-center items-center border-t-3 relative overflow-hidden border-b-3"
+      className="relative flex flex-col items-center w-full min-h-screen p-8 pb-20 overflow-hidden font-sora h-fit lg:justify-center border-t-3 border-b-3"
     >
       <div className="flex justify-between w-[50vw] lg:h-[10%] h-[8%] absolute z-0 left-1/2 -translate-x-1/2 top-0">
         <div className="w-2 h-full bg-black"></div>
         <div className="w-2 h-full bg-black"></div>
       </div>
-      <div className="flex flex-col text-center lg:gap-3 gap-1 z-10 lg:mt-4 bg-white lg:px-8 px-4 py-4 border-3 shadow-shadow">
-        <h1 className="lg:text-5xl text-2xl uppercase font-bold">
+      <div className="z-10 flex flex-col gap-1 px-4 py-4 text-center bg-white lg:gap-3 lg:mt-4 lg:px-8 border-3 shadow-shadow">
+        <h1 className="text-2xl font-bold uppercase lg:text-5xl">
           {t("title")}
         </h1>
-        <p className="lg:text-xl text-md lg:text-wrap text-balance font-medium">
+        <p className="font-medium lg:text-xl text-md lg:text-wrap text-balance">
           {t("subtitle")}
         </p>
       </div>
@@ -40,9 +40,11 @@ export default function WorkflowSection() {
             ))}
           </div>
           <div className="absolute inset-0 z-0 flex flex-row w-full h-full justify-evenly">
-            {Array.from({ length: isTablet ? 20 : 15 }).map((_, i) => (
-              <div className="w-[2.5px] h-full bg-main" key={i}></div>
-            ))}
+            {Array.from({ length: isDesktop ? 45 : isTablet ? 20 : 15 }).map(
+              (_, i) => (
+                <div className="w-[2.5px] h-full bg-main" key={i}></div>
+              ),
+            )}
           </div>
         </div>
       </div>

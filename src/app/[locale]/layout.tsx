@@ -12,6 +12,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
+import LenisProvider from "@/components/providers/LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,10 +60,12 @@ export default async function RootLayout(props: LayoutProps<"/[locale]">) {
       className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} ${dm_sans.variable} ${public_sans.variable} ${sora.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider messages={messages}>
-          <TooltipProvider>{props.children}</TooltipProvider>
-        </NextIntlClientProvider>
-        <Toaster position="top-center" richColors />
+        <LenisProvider>
+          <NextIntlClientProvider messages={messages}>
+            <TooltipProvider>{props.children}</TooltipProvider>
+          </NextIntlClientProvider>
+          <Toaster position="top-center" richColors />
+        </LenisProvider>
       </body>
     </html>
   );
