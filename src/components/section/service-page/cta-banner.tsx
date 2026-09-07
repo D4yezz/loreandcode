@@ -1,9 +1,10 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ServiceItem } from "@/utils/services-data";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowUpRight03Icon } from "@hugeicons/core-free-icons";
+import { Link } from "@/i18n/navigation";
 
 interface ServiceCtaBannerProps {
   service: ServiceItem;
@@ -11,10 +12,15 @@ interface ServiceCtaBannerProps {
 
 export default function ServiceCtaBanner({ service }: ServiceCtaBannerProps) {
   const t = useTranslations("home.serviceDetail");
+  const isIndonesian = useLocale() === "id";
 
-  const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(
-    `Halo Lore & Code, saya tertarik untuk memesan ${service.title}. Boleh minta informasi lebih lanjut?`,
-  )}`;
+  const bookingMessage = isIndonesian
+    ? `Halo Lore & Code, saya tertarik untuk memesan ${service.title}. Boleh minta informasi lebih lanjut?`
+    : `Hello Lore & Code, I am interested in ordering ${service.title}. Could you provide more information?`;
+
+  const bookingContactUrl = `/contact?service=${encodeURIComponent(
+    service.title,
+  )}&message=${encodeURIComponent(bookingMessage)}`;
 
   return (
     <section id="service-cta" className="px-4 md:px-8 lg:px-12 font-sora">
@@ -27,10 +33,8 @@ export default function ServiceCtaBanner({ service }: ServiceCtaBannerProps) {
             {t("subHeadingBanner1")} {service.title} {t("subHeadingBanner2")}
           </p>
         </div>
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={bookingContactUrl}
           className="bg-white text-black font-black uppercase text-lg py-4 px-8 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center gap-2 whitespace-nowrap"
         >
           <span>{t("orderCta")}</span>
@@ -39,7 +43,7 @@ export default function ServiceCtaBanner({ service }: ServiceCtaBannerProps) {
             size={24}
             strokeWidth={2.5}
           />
-        </a>
+        </Link>
       </div>
     </section>
   );

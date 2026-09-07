@@ -1,5 +1,6 @@
 "use client";
-import { Link } from "@/i18n/navigation";
+import { LINKS } from "@/constants/links";
+import { Link, usePathname } from "@/i18n/navigation";
 import {
   ArrowUpRight03Icon,
   GithubIcon,
@@ -12,22 +13,23 @@ import { useTranslations } from "next-intl";
 export default function Footer() {
   const nav = useTranslations("Navbar");
   const t = useTranslations("footer");
+  const pathname = usePathname();
   const menu = [
     {
       title: nav("home"),
-      href: "/",
+      href: pathname === "/" ? "#hero" : "/",
     },
     {
       title: nav("services"),
-      href: "#services",
+      href: "/#services",
     },
     {
       title: nav("faq"),
-      href: "#faq",
+      href: "/#faq",
     },
     {
       title: nav("contact"),
-      href: "/contact",
+      href: pathname === "/contact" ? "#hero" : "/contact",
     },
   ];
   return (
@@ -117,10 +119,10 @@ export default function Footer() {
                 {t("contact.telegram")}
               </span>
               <a
-                href="https://t.me/loreandcode"
+                href={LINKS.telegram}
                 className="bg-white border-2 border-black px-2 py-1 inline-block mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-pink-400 hover:text-black transition-colors"
               >
-                @loreandcode
+                {LINKS.telegram.replace("https://t.me/", "@")}
               </a>
             </li>
             <li>
@@ -128,10 +130,10 @@ export default function Footer() {
                 {t("contact.email")}
               </span>
               <a
-                href="mailto:adiasmuhsin1206@gmail.com"
+                href={`mailto:${LINKS.email}`}
                 className="bg-white border-2 border-black px-2 py-1 inline-block mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-main hover:text-black transition-colors break-all"
               >
-                adiasmuhsin1206@gmail.com
+                {LINKS.email}
               </a>
             </li>
             <li className="mt-2 flex items-center gap-2">
@@ -147,7 +149,7 @@ export default function Footer() {
           </h4>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://www.instagram.com/loreandcode/"
+              href={LINKS.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-main border-3 border-black shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center font-black text-lg"
@@ -155,7 +157,7 @@ export default function Footer() {
               <HugeiconsIcon icon={Instagram} size={24} strokeWidth={2} />
             </a>
             <a
-              href="https://github.com/D4yezz/"
+              href={LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-third border-3 border-black shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center font-black text-lg"
@@ -163,7 +165,7 @@ export default function Footer() {
               <HugeiconsIcon icon={GithubIcon} size={24} strokeWidth={2} />
             </a>
             <a
-              href="https://www.twitter.com/loreandcode/"
+              href={LINKS.x}
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-pink-400 border-3 border-black shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center font-black text-lg"

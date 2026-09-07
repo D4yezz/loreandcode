@@ -2,39 +2,37 @@ import {
   Instagram,
   Mail01Icon,
   NewTwitterIcon,
-  TelegramIcon,
   ThreadsIcon,
 } from "@hugeicons/core-free-icons";
+import { LINKS } from "./links";
 
 export const connect = [
   {
     name: "@loreandcode",
     title: "Instagram",
-    link: "https://www.instagram.com/loreandcode/",
+    link: LINKS.instagram,
+    // link: "https://www.instagram.com/loreandcode/",
     icon: Instagram,
   },
   {
     name: "@loreandcode",
     title: "Threads",
-    link: "https://www.instagram.com/loreandcode/",
+    link: LINKS.threads,
+    // link: "https://www.threads.com/@loreandcode",
     icon: ThreadsIcon,
   },
   {
     name: "loreandcode",
     title: "Twitter",
-    link: "https://www.facebook.com/loreandcode/",
+    link: LINKS.x,
+    // link: "https://x.com/loreandcode",
     icon: NewTwitterIcon,
   },
   {
-    name: "loreandcode",
-    title: "Telegram",
-    link: "https://www.facebook.com/loreandcode/",
-    icon: TelegramIcon,
-  },
-  {
-    name: "loreandcode@gmail.com",
+    name: "adiasmuhsin1206@gmail.com",
     title: "Email",
-    link: "https://twitter.com/loreandcode/",
+    link: "mailto:" + LINKS.email,
+    // link: "https://mail.google.com/mail/?view=cm&fs=1&to=adiasmuhsin1206%40gmail.com",
     icon: Mail01Icon,
   },
 ];

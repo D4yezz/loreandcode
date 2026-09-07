@@ -111,13 +111,13 @@ export default function ServiceCarousel({
                   </div>
                 </CardHeader>
                 <CardContent className="flex flex-col w-full gap-4 px-4 pt-2 h-fit">
-                  <div className="relative w-full md:h-[45vh] h-60 border-2 overflow-hidden">
+                  <div className="relative w-full md:h-[45vh] h-50 border-2 overflow-hidden bg-white">
                     <Image
                       src={`/service/${item.img}/1.png`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
                       alt={`${item.title}`}
-                      className="object-center"
+                      className="object-contain"
                     />
                   </div>
                   <div className="flex flex-col w-full p-4 text-center bg-white border-2 h-fit shadow-shadow lg:text-left">

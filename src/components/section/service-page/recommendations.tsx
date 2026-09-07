@@ -52,6 +52,7 @@ export default function ServiceRecommendations({
                       src={item.images[0]}
                       alt={item.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
                       className="object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   ) : (

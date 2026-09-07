@@ -12,6 +12,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Cancel01Icon, ViewIcon } from "@hugeicons/core-free-icons";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLenis } from "@/components/providers/LenisProvider";
 
 interface ServiceGalleryProps {
   service: ServiceItem;
@@ -82,13 +83,19 @@ export default function ServiceGallery({ service }: ServiceGalleryProps) {
     };
   }, [emblaApi, onInit, onSelect]);
 
+  const lenis = useLenis();
+
   useEffect(() => {
+    if (!lenis) return;
+
     if (modalOpen) {
+      lenis.stop();
       document.body.style.overflow = "hidden";
     } else {
+      lenis.start();
       document.body.style.overflow = "auto";
     }
-  }, [modalOpen]);
+  }, [modalOpen, lenis]);
 
   const handleImageClick = (idx: number) => {
     setModalImageIndex(idx);
@@ -156,7 +163,7 @@ export default function ServiceGallery({ service }: ServiceGalleryProps) {
                   onClick={() => scrollTo(idx)}
                   className={`relative w-12 h-9 md:w-16 md:h-12 border-2 border-black overflow-hidden transition-all shrink-0 ${
                     isActive
-                      ? "bg-pink-400 ring-4 ring-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] translate-y-[-2px]"
+                      ? "bg-pink-400 border-3 translate-y-0.5"
                       : "bg-white opacity-60 hover:opacity-100 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
                   }`}
                   aria-label={`Go to slide ${idx + 1}`}

@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ServiceItem } from "@/utils/services-data";
 import { Badge } from "@/components/ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -16,15 +16,29 @@ interface ServiceHeroProps {
 
 export default function ServiceHero({ service }: ServiceHeroProps) {
   const t = useTranslations("home.serviceDetail");
+  const locale = useLocale();
+  const isIndonesian = locale === "id";
 
-  const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(
-    `Halo Lore & Code, saya tertarik untuk memesan ${service.title}. Boleh minta informasi lebih lanjut?`,
-  )}`;
+  const bookingMessage = isIndonesian
+    ? `Halo Lore & Code, saya tertarik untuk memesan ${service.title}. Boleh minta informasi lebih lanjut?`
+    : `Hello Lore & Code, I am interested in ordering ${service.title}. Could you provide more information?`;
+
+  const consultationMessage = isIndonesian
+    ? `Halo Lore & Code, saya butuh konsultasi mengenai projek seperti ${service.title}. Boleh minta informasi lebih lanjut?`
+    : `Hello Lore & Code, I would like a consultation about a project like ${service.title}. Could you provide more information?`;
+
+  const bookingContactUrl = `/contact?service=${encodeURIComponent(
+    service.title,
+  )}&message=${encodeURIComponent(bookingMessage)}`;
+
+  const consultationContactUrl = `/contact?service=${encodeURIComponent(
+    service.title,
+  )}&message=${encodeURIComponent(consultationMessage)}`;
 
   return (
     <section
       id="service-hero"
-      className="flex flex-col gap-6 lg:gap-8 pt-18 lg:pt-20 px-4 md:px-8 lg:px-12"
+      className="flex flex-col gap-6 lg:gap-8 pt-22 lg:pt-20 px-4 md:px-8 lg:px-12"
     >
       <nav
         aria-label="Breadcrumb"
@@ -59,10 +73,11 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
           </div>
 
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3 min-w-55">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={bookingContactUrl}
+              // href={bookingUrl}
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="bg-main text-black text-center font-black uppercase py-3 px-6 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center gap-2"
             >
               <span>{t("orderCta")}</span>
@@ -71,15 +86,16 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
                 size={22}
                 strokeWidth={2.5}
               />
-            </a>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            </Link>
+            <Link
+              href={consultationContactUrl}
+              // href={consultationUrl}
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="bg-pink-400 text-black text-center font-bold text-sm py-3 px-4 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
             >
               {t("consultCta")}
-            </a>
+            </Link>
           </div>
         </div>
       </header>

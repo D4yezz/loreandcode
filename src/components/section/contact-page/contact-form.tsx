@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
@@ -17,10 +17,15 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useSearchParams } from "next/navigation";
 
 export default function ContactForm() {
   const t = useTranslations("contactPage");
   const services = useServiceData();
+  const searchParams = useSearchParams();
+
+  const queryService = searchParams.get("service") || "";
+  const queryMessage = searchParams.get("message") || "";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -28,6 +33,19 @@ export default function ContactForm() {
     service: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (queryService || queryMessage) {
+      const setForm = () => {
+        setFormData((prev) => ({
+          ...prev,
+          service: queryService || prev.service,
+          message: queryMessage || prev.message,
+        }));
+      };
+      setForm();
+    }
+  }, [queryService, queryMessage]);
 
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
@@ -43,6 +61,13 @@ export default function ContactForm() {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSelectService = (value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      service: value,
     }));
   };
 
@@ -193,7 +218,10 @@ export default function ContactForm() {
             >
               {t("form.serviceLabel")}
             </label>
-            <Select>
+            <Select
+              value={formData.service}
+              onValueChange={handleSelectService}
+            >
               <SelectTrigger className="bg-white border-3 border-black p-3.5 font-bold text-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] focus:outline-none focus:bg-yellow-50 cursor-pointer transition-all">
                 <SelectValue placeholder={t("form.selectServiceDefault")} />
               </SelectTrigger>
@@ -204,7 +232,6 @@ export default function ContactForm() {
                       {service.title}
                     </SelectItem>
                   ))}
-                  {/* <SelectItem value="apple">Apple</SelectItem> */}
                   <SelectItem value="Custom Website">
                     {t("form.customWeb")}
                   </SelectItem>
@@ -232,6 +259,7 @@ export default function ContactForm() {
               className="bg-white border-3 border-black p-3.5 font-bold text-black placeholder:text-gray-400 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] focus:outline-none focus:bg-yellow-50 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all resize-none"
             ></Textarea>
           </div>
+          <p className="text-xs font-semibold italic">{t("form.disclaimer")}</p>
 
           <button
             type="submit"

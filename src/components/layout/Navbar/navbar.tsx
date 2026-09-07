@@ -23,11 +23,12 @@ export default function Navbar() {
   const isTablet = useMediaQuery("(min-width: 768px)");
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const menu = [
     {
       title: t("home"),
-      href: "/",
+      href: pathname === "/" ? "#hero" : "/",
     },
     {
       title: t("services"),
@@ -39,7 +40,7 @@ export default function Navbar() {
     },
     {
       title: t("contact"),
-      href: "/contact",
+      href: pathname === "/contact" ? "#hero" : "/contact",
     },
   ];
 
@@ -211,13 +212,13 @@ export default function Navbar() {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="w-full pl-2 pr-4 mb-4 mt-10"
+                      className="w-full pl-2 pr-4 mt-10 mb-4"
                     >
-                      <ul className="grid w-full grid-cols-2 gap-2 text-md font-semibold">
+                      <ul className="flex flex-col w-full gap-2 font-semibold text-md">
                         {connect.map((item, i) => (
                           <li
                             key={i}
-                            className="flex w-full gap-2 px-2 py-3 bg-white border-3 last:col-span-2"
+                            className="flex w-full gap-2 px-2 py-3 bg-white border-3"
                           >
                             <HugeiconsIcon
                               icon={item.icon}

@@ -304,7 +304,7 @@
     "form": {
       "badge": "Contact Form",
       "title": "Send a Direct Message",
-      "nameLabel": "Full Name",
+      "nameLabel": "Name",
       "namePlaceholder": "Enter your name...",
       "emailLabel": "Email Address",
       "emailPlaceholder": "name@email.com",
@@ -313,14 +313,15 @@
       "customWeb": "Custom Project / Other",
       "messageLabel": "Message / Project Details",
       "messagePlaceholder": "Tell us about your project concept, required features, or questions...",
-      "submitBtn": "Send Message to Telegram",
+      "submitBtn": "Send Message",
       "sendingBtn": "Sending...",
       "successTitle": "Message Sent Successfully!",
       "successDesc": "Thank you for reaching out. Your message has been sent to our Telegram and we will respond shortly.",
       "errorTitle": "Failed to Send Message",
       "errorDesc": "An issue occurred while sending the message. You can reach out directly via Telegram manually.",
       "orTelegramBtn": "Send via Telegram Directly",
-      "anotherMessageBtn": "Send Another Message"
+      "anotherMessageBtn": "Send Another Message",
+      "disclaimer": "*Please make sure the information you enter—such as your email address and name—is correct so that we can contact you."
     },
     "info": {
       "badge": "CONTACT INFO",
@@ -328,9 +329,7 @@
       "fastResponseTitle": "Fast Response",
       "fastResponseDesc": "We actively reply to messages within < 1 hour during business hours.",
       "telegramTitle": "Official Telegram",
-      "telegramUsername": "@loreandcode",
       "emailTitle": "Official Email",
-      "emailAddress": "adiasmuhsin1206@gmail.com",
       "locationTitle": "Location",
       "location": "Malang City, East Java, Indonesia",
       "hoursTitle": "Working Hours",

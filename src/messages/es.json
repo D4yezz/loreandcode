@@ -313,7 +313,7 @@
     "form": {
       "badge": "Formulario de contacto",
       "title": "Enviar un mensaje directo",
-      "nameLabel": "Nombre Completo",
+      "nameLabel": "Nombre",
       "namePlaceholder": "Ingresa tu nombre...",
       "emailLabel": "Correo Electrónico",
       "emailPlaceholder": "nombre@email.com",
@@ -322,14 +322,15 @@
       "customWeb": "Proyecto a medida / Otros",
       "messageLabel": "Mensaje / Detalles del Proyecto",
       "messagePlaceholder": "Cuéntanos sobre tu concepto de proyecto o preguntas...",
-      "submitBtn": "Enviar Mensaje a Telegram",
+      "submitBtn": "Enviar mensaje",
       "sendingBtn": "Enviando...",
       "successTitle": "¡Mensaje Enviado con Éxito!",
       "successDesc": "Gracias por contactarnos. Tu mensaje ha sido enviado a nuestro Telegram y responderemos a la brevedad.",
       "errorTitle": "Error al Enviar el Mensaje",
       "errorDesc": "Ocurrió un problema al enviar el mensaje. Puedes contactarnos directamente por Telegram.",
       "orTelegramBtn": "Enviar por Telegram Directamente",
-      "anotherMessageBtn": "Enviar Otro Mensaje"
+      "anotherMessageBtn": "Enviar Otro Mensaje",
+      "disclaimer": "*Asegúrate de que la información que introduzcas, como tu dirección de correo electrónico y tu nombre, sea correcta para que podamos ponernos en contacto contigo."
     },
     "info": {
       "badge": "INFO DE CONTACTO",
@@ -337,9 +338,7 @@
       "fastResponseTitle": "Respuesta Rápida",
       "fastResponseDesc": "Respondemos activamente a los mensajes en < 1 hora durante el horario laboral.",
       "telegramTitle": "Telegram Oficial",
-      "telegramUsername": "@loreandcode",
       "emailTitle": "Correo Oficial",
-      "emailAddress": "adiasmuhsin1206@gmail.com",
       "locationTitle": "Ubicación",
       "location": "Ciudad de Malang, Java Oriental, Indonesia",
       "hoursTitle": "Horario de Atención",

@@ -9,6 +9,7 @@ import {
   NewTwitterIcon,
   MailCheckIcon,
 } from "@hugeicons/core-free-icons";
+import { LINKS } from "@/constants/links";
 
 export default function ContactInfo() {
   const t = useTranslations("contactPage.info");
@@ -53,12 +54,12 @@ export default function ContactInfo() {
                 {t("telegramTitle")}
               </span>
               <span className="font-black text-lg text-black">
-                {t("telegramUsername")}
+                {LINKS.telegram.replace("https://t.me/", "@")}
               </span>
             </div>
           </div>
           <a
-            href="https://t.me/loreandcode"
+            href={LINKS.telegram}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-black p-2.5 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all shrink-0"
@@ -79,12 +80,12 @@ export default function ContactInfo() {
                 {t("emailTitle")}
               </span>
               <span className="font-black text-sm md:text-base text-black truncate block">
-                {t("emailAddress")}
+                {LINKS.email}
               </span>
             </div>
           </div>
           <a
-            href={`mailto:${t("emailAddress")}`}
+            href={`mailto:${LINKS.email}`}
             className="bg-white text-black p-2.5 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all shrink-0"
             aria-label="Email"
           >
@@ -124,7 +125,7 @@ export default function ContactInfo() {
           </span>
           <div className="flex md:gap-3 gap-2 md:flex-row flex-col md:flex-wrap">
             <a
-              href="https://www.instagram.com/loreandcode/"
+              href={LINKS.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="md:flex-1 bg-main border-2 border-black md:p-2.5 p-2 text-center font-black text-sm uppercase shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all flex items-center justify-center gap-2"
@@ -133,7 +134,7 @@ export default function ContactInfo() {
               <span>Instagram</span>
             </a>
             <a
-              href="https://github.com/D4yezz/"
+              href={LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className="md:flex-1 bg-third border-2 border-black md:p-2.5 p-2 text-center font-black text-sm uppercase shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all flex items-center justify-center gap-2"
@@ -142,7 +143,7 @@ export default function ContactInfo() {
               <span>GitHub</span>
             </a>
             <a
-              href="https://www.twitter.com/loreandcode/"
+              href={LINKS.x}
               target="_blank"
               rel="noopener noreferrer"
               className="md:flex-1 bg-pink-400 border-2 border-black md:p-2.5 p-2 text-center font-black text-sm uppercase shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all flex items-center justify-center gap-2"

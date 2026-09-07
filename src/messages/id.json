@@ -303,7 +303,7 @@
     "form": {
       "badge": "Formulir Kontak",
       "title": "Kirim Pesan Langsung",
-      "nameLabel": "Nama Lengkap",
+      "nameLabel": "Nama",
       "namePlaceholder": "Masukkan nama Anda...",
       "emailLabel": "Alamat Email",
       "emailPlaceholder": "nama@email.com",
@@ -312,14 +312,15 @@
       "customWeb": "Kustom Projek / Lainnya",
       "messageLabel": "Pesan / Detail Proyek",
       "messagePlaceholder": "Ceritakan tentang konsep, fitur, atau pertanyaan proyek Anda...",
-      "submitBtn": "Kirim Pesan ke Telegram",
+      "submitBtn": "Kirim Pesan",
       "sendingBtn": "Mengirim...",
       "successTitle": "Pesan Berhasil Terkirim!",
       "successDesc": "Terima kasih telah menghubungi kami. Pesan Anda telah diteruskan ke Telegram kami dan akan segera kami respon.",
       "errorTitle": "Gagal Mengirim Pesan",
       "errorDesc": "Terjadi kendala saat mengirim pesan otomatis. Anda bisa langsung menghubungi kami via Telegram secara manual.",
       "orTelegramBtn": "Kirim via Telegram Manual",
-      "anotherMessageBtn": "Kirim Pesan Lain"
+      "anotherMessageBtn": "Kirim Pesan Lain",
+      "disclaimer": "*Pastikan data seperti Email dan Nama yang anda masukkan sudah benar, agar kami dapat menghubungi anda."
     },
     "info": {
       "badge": "INFO KONTAK",
@@ -327,9 +328,7 @@
       "fastResponseTitle": "Respon Cepat",
       "fastResponseDesc": "Kami aktif membalas pesan rata-rata < 1 jam pada jam operasional.",
       "telegramTitle": "Telegram Resmi",
-      "telegramUsername": "@loreandcode",
       "emailTitle": "Email Resmi",
-      "emailAddress": "adiasmuhsin1206@gmail.com",
       "locationTitle": "Lokasi",
       "location": "Kota Malang, Jawa Timur, Indonesia",
       "hoursTitle": "Jam Operasional",

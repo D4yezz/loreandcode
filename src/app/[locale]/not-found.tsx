@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Navbar from "@/components/layout/Navbar/navbar";
 import Footer from "@/components/layout/Footer/footer";
 import { Link } from "@/i18n/navigation";
-import { AlertTriangle, Home, Layers, ArrowLeft } from "lucide-react";
+import { AlertTriangle, Home, Layers } from "lucide-react";
 
 export default function NotFound() {
   const t = useTranslations("notFound");
