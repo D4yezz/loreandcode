@@ -4,7 +4,7 @@ import { MetadataRoute } from "next";
 const BASE_URL = "https://loreandcode.vercel.app";
 const LOCALES = ["id", "en", "de", "es"];
 
-const PAGES = ["", "/contact"];
+const PAGES = ["/", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
