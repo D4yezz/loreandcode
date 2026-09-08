@@ -96,7 +96,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--foreground);
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
