@@ -1,6 +1,10 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { getServiceItemServer, getRecommendedServicesServer, SERVICE_SLUGS } from "@/utils/services-data";
+import {
+  getServiceItemServer,
+  getRecommendedServicesServer,
+  SERVICE_SLUGS,
+} from "@/utils/services-data";
 import Navbar from "@/components/layout/Navbar/navbar";
 import Footer from "@/components/layout/Footer/footer";
 import ServiceHero from "@/components/section/service-page/hero";
@@ -18,8 +22,18 @@ interface PageProps {
   }>;
 }
 
+const LOCALES = ["id", "en", "de", "es"];
+
 export async function generateStaticParams() {
-  return SERVICE_SLUGS.map((slug) => ({ slug }));
+  const params: { locale: string; slug: string }[] = [];
+
+  LOCALES.forEach((locale) => {
+    SERVICE_SLUGS.forEach((slug) => {
+      params.push({ locale, slug });
+    });
+  });
+
+  return params;
 }
 
 export async function generateMetadata({
@@ -37,13 +51,15 @@ export async function generateMetadata({
     };
   }
 
+  const firstImage = service.images?.[0];
+
   return {
     title: `${service.title} | Lore & Code`,
     description: service.desc,
     openGraph: {
       title: service.title,
       description: service.desc,
-      images: service.images[0] ? [{ url: service.images[0] }] : [],
+      images: firstImage ? [{ url: firstImage }] : [],
     },
   };
 }
@@ -96,4 +112,3 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     </main>
   );
 }
-
