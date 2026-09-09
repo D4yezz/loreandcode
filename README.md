@@ -1,166 +1,187 @@
-# Lore & Code — Company Profile & Jasa Website
+# Lore & Code
 
-Website resmi **Lore & Code**, sebuah studio jasa pembuatan website dengan gaya visual **Neo-Brutalism**. Menampilkan daftar layanan, detail tiap layanan, dan form kontak yang terintegrasi dengan fallback ke Telegram, dibangun dengan Next.js App Router dan mendukung multi-bahasa (ID, EN, DE, ES).
+Official website for **Lore & Code**, a web development studio, built as a multi-language company profile and lead-generation site. It showcases services, per-service detail pages with pricing, and a contact flow that falls back to Telegram when the primary submission channel fails.
 
----
-
-## ✨ Fitur Utama
-
-- **Landing Page & Service Detail** — Hero section, daftar layanan, dan halaman detail per layanan lengkap dengan rentang harga.
-- **Form Kontak Pintar** — Auto-fill field `service` & `message` dari query parameter saat user klik CTA "Order" / "Consult" di halaman layanan, dengan fallback link ke Telegram jika pengiriman via API gagal.
-- **Multi-language (i18n)** — Didukung `next-intl` dengan 4 bahasa: Indonesia (`id`), Inggris (`en`), Jerman (`de`), Spanyol (`es`).
-- **Desain Neo-Brutalism** — Border tebal, hard shadow, dan palet warna OKLCH yang konsisten di seluruh komponen.
-- **Komponen Modular** — Struktur atomic design: `sections` → `layout` → `common` → `ui`.
+The interface follows a **Neo-Brutalism** design language — thick borders, hard drop shadows, and a high-contrast OKLCH color palette — applied consistently across every component.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-| Kategori        | Teknologi                                      |
-| --------------- | ---------------------------------------------- |
-| Framework       | [Next.js 15+](https://nextjs.org) (App Router) |
-| Bahasa          | TypeScript (Strict Mode)                       |
-| Styling         | Tailwind CSS v4 (OKLCH Color Palette)          |
-| Animasi         | Framer Motion / Motion                         |
-| Komponen UI     | shadcn/ui & Radix UI                           |
-| Ikon            | Hugeicons, Lucide, Simple Icons                |
-| i18n            | next-intl                                      |
-| Notifikasi      | Sonner (toast)                                 |
-| Package Manager | npm                                            |
+- **Landing & Service Detail Pages** — hero sections, a service catalog, and dedicated detail pages with price ranges per service.
+- **Smart Contact Form** — the `service` and `message` fields auto-fill from URL query parameters when a visitor clicks an "Order" / "Consult" CTA on a service page, with a Telegram fallback link if the contact API call fails.
+- **Multi-language (i18n)** — powered by `next-intl`, supporting Indonesian (`id`), English (`en`), German (`de`), and Spanish (`es`).
+- **Neo-Brutalist Design System** — consistent thick borders, hard shadows, and OKLCH-based color tokens.
+- **Analytics** — integrated with Vercel Analytics.
+- **Modular Component Architecture** — atomic-style breakdown: `sections` → `layout` → `common` → `ui`.
 
 ---
 
-## 📁 Struktur Direktori
+## Tech Stack
+
+| Category | Technology |
+|---|---|
+| Framework | [Next.js](https://nextjs.org) (App Router) |
+| Language | TypeScript (Strict Mode) |
+| Styling | Tailwind CSS v4 (OKLCH color palette) |
+| Animation | Motion (Framer Motion) |
+| UI Components | shadcn/ui & Radix UI |
+| Icons | Hugeicons, Lucide, Simple Icons |
+| i18n | next-intl |
+| Notifications | Sonner (toast) |
+| Analytics | Vercel Analytics |
+| Package Manager | npm |
+
+> Exact package versions are pinned in [`package.json`](./package.json).
+
+---
+
+## Project Structure
 
 ```
+loreandcode/
+├── public/                    # Static assets (images, icons, fonts)
 ├── src/
-│   ├── app/                 # Next.js App Router: pages & API routes
-│   │   └── [locale]/        # Dynamic locale route (id, en, de, es)
-│   │       ├── layout.tsx   # Root layout
-│   │       └── page.tsx     # Home page
+│   ├── app/                   # Next.js App Router: pages & API routes
+│   │   ├── [locale]/          # Dynamic locale segment (id, en, de, es)
+│   │   │   ├── layout.tsx     # Root layout
+│   │   │   └── page.tsx       # Home page
+│   │   └── api/
+│   │       └── contact/       # Contact form submission endpoint (Telegram integration)
 │   ├── components/
-│   │   ├── ui/               # Reusable primitive components (shadcn)
-│   │   ├── common/            # Pecahan component di beberapa section
-│   │   ├── layout/             # Component yang dipakai di banyak halaman
-│   │   └── sections/          # Section per halaman (Home, Service, Contact, dll)
-│   ├── utils/                # Static data & helpers (services-data.ts, dll)
-│   ├── lib/                  # Fungsi utilitas (utils.ts, cn helper)
-│   └── types/                # TypeScript interfaces & types
-├── messages/                 # Kamus terjemahan
-│   ├── id.json
-│   ├── en.json
-│   ├── de.json
-│   └── es.json
-└── public/                   # Aset statis (gambar, ikon, font)
+│   │   ├── ui/                 # Reusable primitive components (shadcn)
+│   │   ├── common/             # Shared fragments used across sections
+│   │   ├── layout/             # Components reused across multiple pages
+│   │   └── sections/           # Page-level sections (Home, Service, Contact, etc.)
+│   ├── i18n/                   # next-intl navigation & routing config
+│   ├── constants/               # Shared constants (e.g. Telegram link)
+│   ├── utils/                   # Static data & helpers (services-data, etc.)
+│   ├── lib/                     # Utility functions (utils.ts, cn helper)
+│   └── messages/                 # i18n translation dictionaries
+│       ├── id.json
+│       ├── en.json
+│       ├── de.json
+│       └── es.json
+├── AGENTS.md                   # Guidelines for AI coding agents
+├── CLAUDE.md                   # Points Claude Code to AGENTS.md
+├── components.json             # shadcn/ui configuration
+├── next.config.ts
+├── tsconfig.json
+├── eslint.config.mjs
+├── postcss.config.mjs
+└── package.json
 ```
+
+> This layout is reconstructed from the repository's root listing and from import paths used across components (`@/utils/...`, `@/i18n/...`, `@/constants/...`, `@/components/ui/...`). Some nested folders under `src/` are inferred rather than exhaustively verified — feel free to correct any mismatch.
 
 ---
 
-## 🚀 Instalasi & Menjalankan Proyek
+## Getting Started
 
-Pastikan menggunakan **npm** (bukan `pnpm`/`yarn`).
+This project uses **npm** exclusively — do not use `pnpm` or `yarn`.
 
 ```bash
-# 1. Clone repository
+# 1. Clone the repository
 git clone https://github.com/D4yezz/loreandcode.git
 cd loreandcode
 
 # 2. Install dependencies
 npm install
 
-# 3. Siapkan environment variables
-cp .env.example .env.local   # sesuaikan isinya (lihat bagian Environment Variables)
+# 3. Set up environment variables
+cp .env.example .env.local   # then fill in the values, see below
 
-# 4. Jalankan development server
+# 4. Start the development server
 npm run dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya.
+Open [http://localhost:3000](http://localhost:3000) to view the result.
 
-### Perintah Lain
+### Available Scripts
 
 ```bash
-npm run build      # Build untuk production
-npm run start       # Menjalankan hasil build
-npm run lint         # Cek kualitas kode dengan ESLint
+npm run dev      # Start the local dev server
+npm run build    # Build for production
+npm run start    # Run the production build
+npm run lint     # Lint the codebase with ESLint
 ```
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
-Sesuaikan dengan kredensial masing-masing (jangan pernah commit nilai asli ke repo):
+Set these in `.env.local` — never commit real values to the repository:
 
 ```env
-# Telegram Bot untuk notifikasi form kontak
+# Telegram Bot used for contact form notifications
 TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
 
-# Link fallback Telegram (jika API gagal)
+# Public fallback link shown to users if the contact API call fails
 NEXT_PUBLIC_TELEGRAM_LINK=
 ```
 
 ---
 
-## 🌍 Localization (i18n)
+## Localization (i18n)
 
-- Semua teks yang tampil di layar **wajib** menggunakan `next-intl` — dilarang hardcode teks langsung di komponen.
-- Setiap penambahan key terjemahan baru harus ditambahkan secara seimbang ke seluruh file: `id.json`, `en.json`, `de.json`, `es.json`.
-- Untuk data array dari JSON, gunakan `t.raw("key_name")`, bukan pemanggilan indeks satu per satu.
-
----
-
-## 🎨 Design System
-
-Gaya visual mengikuti prinsip **Neo-Brutalism**:
-
-- **Border**: konsisten tebal — `border-3` atau `border-4 border-black`.
-- **Shadow**: hard box-shadow kaku, contoh `shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]` atau class `shadow-shadow` bawaan `globals.css`.
-- **Warna**: menggunakan CSS variables / OKLCH yang sudah didefinisikan di `globals.css` (`color-main`, `color-third`, `color-pink-400`, dst).
-- **Responsive**: pendekatan mobile-first — rapi di `sm:`, `md:`, dan `lg:`/`xl:`.
+- All on-screen text **must** go through `next-intl` — hardcoded strings inside visual components are not allowed.
+- New translation keys must be added consistently across every locale file (`id.json`, `en.json`, `de.json`, `es.json`).
+- For array data pulled from translation files, use `t.raw("key_name")` directly instead of accessing items one by one by index.
 
 ---
 
-## 📐 Konvensi Kode
+## Design System
 
-- **TypeScript**: explicit typing wajib, dilarang menggunakan `any`. Gunakan `interface` untuk props/struktur data, `type` untuk union/primitive.
-- **Komponen**: functional component (`export default function ComponentName()`), dipecah mengikuti atomic design sesuai struktur folder.
-- **"use client"**: hanya ditambahkan pada komponen yang butuh state, effect, event handler, atau Framer Motion.
-- **Class Tailwind**: gunakan helper `cn()` dari `@/lib/utils` untuk penggabungan class.
+The interface follows **Neo-Brutalism** principles:
 
-Panduan lengkap untuk AI coding agent tersedia di [`AGENTS.md`](./AGENTS.md).
-
----
-
-## 🚧 Batasan Proyek
-
-1. Tidak ada kredensial hardcoded — semua rahasia disimpan di `.env.local`.
-2. Tidak menambah dependency baru tanpa instruksi eksplisit.
-3. File konfigurasi (`next.config.ts`, `tailwind.config`, `tsconfig.json`, `package.json`) tidak diubah kecuali diminta secara khusus.
-4. Proyek murni SSG / data JSON lokal + action trigger (Telegram/WhatsApp) — tidak ada logic database/CRUD.
+- **Borders**: consistently thick — `border-3` or `border-4 border-black`.
+- **Shadows**: hard, non-blurred box shadows, e.g. `shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`, `shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`, or the `shadow-shadow` utility defined in `globals.css`.
+- **Colors**: driven by CSS variables / OKLCH values defined in `globals.css` (`color-main`, `color-third`, `color-pink-400`, etc.).
+- **Responsiveness**: mobile-first — every component should look clean at `sm:`, `md:`, and `lg:`/`xl:` breakpoints.
 
 ---
 
-## 📝 Commit Convention
+## Coding Conventions
 
-Menggunakan [Conventional Commits](https://www.conventionalcommits.org/):
+- **TypeScript**: explicit typing is required; `any` is not allowed. Use `interface` for component/props data shapes and `type` for unions or primitives.
+- **Components**: functional components using `export default function ComponentName()`, broken down following the atomic structure of the `components/` folder.
+- **`"use client"`**: only added to components that require React state, effects, event handlers, or Motion/Framer Motion.
+- **Class merging**: always use the `cn()` helper from `@/lib/utils` to combine Tailwind classes.
 
-| Prefix     | Kegunaan                   | Contoh                                        |
-| ---------- | -------------------------- | --------------------------------------------- |
-| `feat`     | Fitur baru                 | `feat: add FAQ section component`             |
-| `fix`      | Perbaikan bug              | `fix: resolve mobile overflow in navbar`      |
-| `style`    | Perubahan tampilan/UI      | `style: update footer colors to OKLCH`        |
-| `docs`     | Dokumentasi/i18n           | `docs: update translation strings in es.json` |
-| `refactor` | Refaktor tanpa ubah fungsi | `refactor: extract workflow data hook`        |
+Full guidelines for AI coding agents working on this repository live in [`AGENTS.md`](./AGENTS.md).
 
 ---
 
-## 📄 Lisensi
+## Project Constraints
 
-Proyek ini bersifat privat dan merupakan properti dari **Lore & Code**. Seluruh hak cipta dilindungi.
+1. **No hardcoded credentials** — API keys, tokens, or sensitive URLs must live in `.env.local`.
+2. **No unnecessary dependencies** — new npm packages are not added without explicit instruction.
+3. **Configuration files are off-limits** — `next.config.ts`, `tailwind.config`, `tsconfig.json`, and `package.json` are not modified unless specifically requested.
+4. **No database/backend logic** — this project relies on static generation (SSG) with local JSON data and action triggers (Telegram API / WhatsApp direct links); no database or CRUD logic is introduced.
 
 ---
 
-## 📬 Kontak
+## Commit Convention
 
-Untuk pertanyaan terkait proyek atau pemesanan jasa, silakan hubungi melalui form kontak di website atau langsung via Telegram.
+This project follows [Conventional Commits](https://www.conventionalcommits.org/):
+
+| Prefix | Purpose | Example |
+|---|---|---|
+| `feat` | New feature | `feat: add FAQ section component` |
+| `fix` | Bug fix | `fix: resolve mobile overflow in navbar` |
+| `style` | Visual/UI changes | `style: update footer colors to OKLCH` |
+| `docs` | Documentation/i18n changes | `docs: update translation strings in es.json` |
+| `refactor` | Refactor without behavior change | `refactor: extract workflow data hook` |
+
+---
+
+## License
+
+This project is private and proprietary to **Lore & Code**. All rights reserved.
+
+---
+
+## Contact
+
+For questions about this project or to inquire about services, please use the contact form on the website or reach out directly via Telegram.
