@@ -20,10 +20,6 @@ type ServiceTranslations = {
   raw(key: string): unknown;
 };
 
-// function createServiceSlug(title: string): string {
-//   return title.trim().replace(/\s+/g, "-").replace(/&/g, "dan").toLowerCase();
-// }
-
 export const SERVICE_CONFIGS = [
   {
     id: "1",

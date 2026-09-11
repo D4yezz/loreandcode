@@ -62,8 +62,8 @@
         "1": {
           "title": "Digital Invitation Website",
           "desc": "Aesthetic and interactive digital invitations (e-invitations). Cut printing costs while delivering a seamless RSVP experience for your guests right in their hands.",
-          "priceStart": "$25",
-          "priceEnd": "$50",
+          "priceStart": "$35",
+          "priceEnd": "$100",
           "features": [
             "Premium design & layout",
             "100% responsive across all devices",
@@ -96,8 +96,8 @@
         "2": {
           "title": "MSME Website and Business Profile",
           "desc": "Professional business profile website engineered to boost credibility, build a strong brand identity, and reach more customers in the digital era.",
-          "priceStart": "$35",
-          "priceEnd": "$135",
+          "priceStart": "$120",
+          "priceEnd": "$350",
           "features": [
             "Modern & responsive layout",
             "Multi-page / landing page architecture",
@@ -130,8 +130,8 @@
         "3": {
           "title": "Corporate Company Profile",
           "desc": "High-standard corporate website crafted to strengthen market position, attract potential partners, and expand reach to global markets.",
-          "priceStart": "$55",
-          "priceEnd": "$400",
+          "priceStart": "$250",
+          "priceEnd": "$750",
           "features": [
             "Premium corporate design",
             "100% responsive across devices & SEO-friendly",
@@ -159,8 +159,8 @@
         "4": {
           "title": "Portfolio and Personal Blog Web",
           "desc": "Showcase your finest work, achievements, and skills with a modern, responsive portfolio website built to level up your professional reputation.",
-          "priceStart": "$30",
-          "priceEnd": "$270",
+          "priceStart": "$80",
+          "priceEnd": "$300",
           "features": [
             "Sleek professional layout",
             "Responsive across all screen sizes",
